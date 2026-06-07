@@ -5,7 +5,11 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function getDifficultyColorClass(bucket: string | null | undefined): string {
+export function getDifficultyColorClass(
+  bucket: string | null | undefined,
+  isBye?: boolean,
+): string {
+  if (isBye) return "bg-zinc-800/40 text-zinc-500 italic"
   switch (bucket) {
     case "VERY_TOUGH":
       return "bg-red-900 text-red-100"
@@ -16,7 +20,7 @@ export function getDifficultyColorClass(bucket: string | null | undefined): stri
     case "FAVORABLE":
       return "bg-emerald-800 text-emerald-100"
     case "SMASH_SPOT":
-      return "bg-emerald-600 text-emerald-50"
+      return "bg-emerald-600 text-emerald-50 font-bold"
     default:
       return "bg-zinc-800 text-zinc-400"
   }

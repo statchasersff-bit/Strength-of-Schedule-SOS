@@ -7,9 +7,10 @@ interface FpaTableProps {
 }
 
 export function FpaTable({ filters }: FpaTableProps) {
+  const fpaQueryParams = { season: 2025, position: filters.position, scoring: filters.scoring };
   const { data, isLoading } = useGetFantasyPointsAllowed(
-    { season: filters.season, position: filters.position, scoring: filters.scoring },
-    { query: { enabled: !!filters.season, queryKey: getGetFantasyPointsAllowedQueryKey({ season: filters.season, position: filters.position, scoring: filters.scoring }) } }
+    fpaQueryParams,
+    { query: { enabled: !!filters.position, queryKey: getGetFantasyPointsAllowedQueryKey(fpaQueryParams) } }
   );
 
   if (isLoading) {
