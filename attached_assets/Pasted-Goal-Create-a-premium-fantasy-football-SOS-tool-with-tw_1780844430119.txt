@@ -1,0 +1,57 @@
+Goal:
+Create a premium fantasy football SOS tool with two main views:
+
+Team SOS
+Player SOS
+
+The tool should support:
+
+Season selector, default 2026
+Position filter: QB, RB, WR, TE, K, DST
+Scoring filter: PPR, Half-PPR, Standard
+View filter: Full Season, Rest of Season, Playoffs
+Metric filter: Opponent, Rank, Adjusted Fantasy Points Allowed, Difficulty Score
+Download CSV button
+
+Data model:
+Create or use tables/data files for:
+
+nfl_schedules: season, week, team, opponent, is_home, game_date, bye
+fantasy_points_allowed: season, week, defense_team, position, scoring_format, raw_points_allowed, adjusted_points_allowed, rank, difficulty_bucket
+team_sos: season, team, position, scoring_format, weeks 1-18, po2, po3, ros
+player_sos: season, player_id, player_name, team, position, weeks 1-18, po2, po3, ros
+
+For 2026 preseason:
+Use the released 2026 NFL schedule and apply 2025 adjusted fantasy points allowed as the baseline difficulty model. Once 2026 games begin, blend 2026 data into the model.
+
+Difficulty buckets:
+
+Rank 1-5: Very Tough
+Rank 6-10: Tough
+Rank 11-22: Neutral
+Rank 23-27: Favorable
+Rank 28-32: Smash Spot
+
+Team SOS table:
+Rows should be NFL teams. Columns should be W1-W18 plus PO2, PO3, and ROS. Each weekly cell should show opponent and either adjusted points allowed, rank, or difficulty depending on selected metric.
+
+Player SOS table:
+Rows should be fantasy players. Columns should include Player, Team, Position, SOS Rank, Playoff SOS, ROS SOS, and weekly opponent cells.
+
+UI/UX:
+Use StatChasers branding. Dark background, clean card containers, gold accent lines, subtle shadows, rounded corners, sticky table headers, sticky first column, and mobile horizontal scrolling. Do not copy competitor wording or design. Make the page feel like a premium StatChasers tool.
+
+Add top insight cards:
+
+Best QB Playoff Schedule
+Worst RB Playoff Schedule
+Best ROS Schedule
+Toughest Opening Stretch
+
+Add methodology section:
+Explain that SOS is based on adjusted fantasy points allowed by position, removing schedule bias so teams are compared more fairly.
+
+Add SEO:
+H1: Fantasy Football Strength of Schedule
+Meta title: Fantasy Football Strength of Schedule | 2026 SOS by Team & Player
+Meta description: View 2026 fantasy football strength of schedule by team, player, position, scoring format, rest-of-season, and fantasy playoff weeks.

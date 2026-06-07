@@ -3,13 +3,20 @@ info:
   # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: StatChasers Fantasy Football SOS API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: sos
+    description: Strength of Schedule operations
+  - name: schedule
+    description: NFL Schedule operations
+  - name: insights
+    description: Insight card operations
+
 paths:
   /healthz:
     get:
@@ -24,6 +31,249 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /sos/teams:
+    get:
+      operationId: getTeamSos
+      tags: [sos]
+      summary: Get Team SOS matrix
+      description: Returns SOS data for all NFL teams with weekly opponent difficulty
+      parameters:
+        - name: season
+          in: query
+          schema:
+            type: integer
+            default: 2026
+        - name: position
+          in: query
+          schema:
+            type: string
+            enum: [QB, RB, WR, TE, K, DST]
+            default: RB
+        - name: scoring
+          in: query
+          schema:
+            type: string
+            enum: [PPR, HALF_PPR, STANDARD]
+            default: PPR
+        - name: view
+          in: query
+          schema:
+            type: string
+            enum: [FULL_SEASON, REST_OF_SEASON, PLAYOFFS]
+            default: FULL_SEASON
+        - name: metric
+          in: query
+          schema:
+            type: string
+            enum: [OPPONENT, RANK, ADJUSTED_POINTS, DIFFICULTY]
+            default: RANK
+      responses:
+        "200":
+          description: Team SOS matrix
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TeamSosResponse"
+
+  /sos/players:
+    get:
+      operationId: getPlayerSos
+      tags: [sos]
+      summary: Get Player SOS matrix
+      description: Returns SOS data for fantasy players
+      parameters:
+        - name: season
+          in: query
+          schema:
+            type: integer
+            default: 2026
+        - name: position
+          in: query
+          schema:
+            type: string
+            enum: [QB, RB, WR, TE, K, DST]
+            default: RB
+        - name: scoring
+          in: query
+          schema:
+            type: string
+            enum: [PPR, HALF_PPR, STANDARD]
+            default: PPR
+        - name: view
+          in: query
+          schema:
+            type: string
+            enum: [FULL_SEASON, REST_OF_SEASON, PLAYOFFS]
+            default: FULL_SEASON
+        - name: metric
+          in: query
+          schema:
+            type: string
+            enum: [OPPONENT, RANK, ADJUSTED_POINTS, DIFFICULTY]
+            default: RANK
+      responses:
+        "200":
+          description: Player SOS matrix
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PlayerSosResponse"
+
+  /sos/export/teams:
+    get:
+      operationId: exportTeamSosCsv
+      tags: [sos]
+      summary: Export Team SOS as CSV
+      parameters:
+        - name: season
+          in: query
+          schema:
+            type: integer
+            default: 2026
+        - name: position
+          in: query
+          schema:
+            type: string
+            enum: [QB, RB, WR, TE, K, DST]
+            default: RB
+        - name: scoring
+          in: query
+          schema:
+            type: string
+            enum: [PPR, HALF_PPR, STANDARD]
+            default: PPR
+        - name: metric
+          in: query
+          schema:
+            type: string
+            enum: [OPPONENT, RANK, ADJUSTED_POINTS, DIFFICULTY]
+            default: RANK
+      responses:
+        "200":
+          description: CSV file
+          content:
+            text/csv:
+              schema:
+                type: string
+
+  /sos/export/players:
+    get:
+      operationId: exportPlayerSosCsv
+      tags: [sos]
+      summary: Export Player SOS as CSV
+      parameters:
+        - name: season
+          in: query
+          schema:
+            type: integer
+            default: 2026
+        - name: position
+          in: query
+          schema:
+            type: string
+            enum: [QB, RB, WR, TE, K, DST]
+            default: RB
+        - name: scoring
+          in: query
+          schema:
+            type: string
+            enum: [PPR, HALF_PPR, STANDARD]
+            default: PPR
+        - name: metric
+          in: query
+          schema:
+            type: string
+            enum: [OPPONENT, RANK, ADJUSTED_POINTS, DIFFICULTY]
+            default: RANK
+      responses:
+        "200":
+          description: CSV file
+          content:
+            text/csv:
+              schema:
+                type: string
+
+  /insights:
+    get:
+      operationId: getInsights
+      tags: [insights]
+      summary: Get top insight cards
+      description: Returns curated insight cards for best/worst schedules
+      parameters:
+        - name: season
+          in: query
+          schema:
+            type: integer
+            default: 2026
+        - name: scoring
+          in: query
+          schema:
+            type: string
+            enum: [PPR, HALF_PPR, STANDARD]
+            default: PPR
+      responses:
+        "200":
+          description: Insight cards
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InsightsResponse"
+
+  /schedule:
+    get:
+      operationId: getSchedule
+      tags: [schedule]
+      summary: Get NFL schedule
+      parameters:
+        - name: season
+          in: query
+          schema:
+            type: integer
+            default: 2026
+        - name: team
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: NFL Schedule
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScheduleResponse"
+
+  /fpa:
+    get:
+      operationId: getFantasyPointsAllowed
+      tags: [sos]
+      summary: Get fantasy points allowed by defense
+      parameters:
+        - name: season
+          in: query
+          schema:
+            type: integer
+            default: 2025
+        - name: position
+          in: query
+          schema:
+            type: string
+            enum: [QB, RB, WR, TE, K, DST]
+            default: RB
+        - name: scoring
+          in: query
+          schema:
+            type: string
+            enum: [PPR, HALF_PPR, STANDARD]
+            default: PPR
+      responses:
+        "200":
+          description: Fantasy points allowed data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FpaResponse"
+
 components:
   schemas:
     HealthStatus:
@@ -34,3 +284,274 @@ components:
       required:
         - status
 
+    WeekCell:
+      type: object
+      properties:
+        week:
+          type: integer
+        opponent:
+          type: string
+          nullable: true
+        isHome:
+          type: boolean
+          nullable: true
+        isBye:
+          type: boolean
+        rank:
+          type: integer
+          nullable: true
+        adjustedPoints:
+          type: number
+          nullable: true
+        difficultyBucket:
+          type: string
+          enum: [VERY_TOUGH, TOUGH, NEUTRAL, FAVORABLE, SMASH_SPOT]
+          nullable: true
+        difficultyScore:
+          type: number
+          nullable: true
+      required:
+        - week
+        - isBye
+
+    TeamSosRow:
+      type: object
+      properties:
+        team:
+          type: string
+        teamFullName:
+          type: string
+        division:
+          type: string
+        overallRank:
+          type: integer
+        rosRank:
+          type: integer
+        playoffRank:
+          type: integer
+        weeks:
+          type: array
+          items:
+            $ref: "#/components/schemas/WeekCell"
+        playoff2:
+          $ref: "#/components/schemas/WeekCell"
+        playoff3:
+          $ref: "#/components/schemas/WeekCell"
+        rosSummary:
+          type: number
+          nullable: true
+      required:
+        - team
+        - teamFullName
+        - division
+        - overallRank
+        - rosRank
+        - playoffRank
+        - weeks
+
+    TeamSosResponse:
+      type: object
+      properties:
+        season:
+          type: integer
+        position:
+          type: string
+        scoring:
+          type: string
+        currentWeek:
+          type: integer
+        rows:
+          type: array
+          items:
+            $ref: "#/components/schemas/TeamSosRow"
+      required:
+        - season
+        - position
+        - scoring
+        - currentWeek
+        - rows
+
+    PlayerSosRow:
+      type: object
+      properties:
+        playerId:
+          type: string
+        playerName:
+          type: string
+        team:
+          type: string
+        position:
+          type: string
+        sosRank:
+          type: integer
+        playoffSosRank:
+          type: integer
+        rosSosRank:
+          type: integer
+        weeks:
+          type: array
+          items:
+            $ref: "#/components/schemas/WeekCell"
+        playoff2:
+          $ref: "#/components/schemas/WeekCell"
+        playoff3:
+          $ref: "#/components/schemas/WeekCell"
+      required:
+        - playerId
+        - playerName
+        - team
+        - position
+        - sosRank
+        - playoffSosRank
+        - rosSosRank
+        - weeks
+
+    PlayerSosResponse:
+      type: object
+      properties:
+        season:
+          type: integer
+        position:
+          type: string
+        scoring:
+          type: string
+        currentWeek:
+          type: integer
+        rows:
+          type: array
+          items:
+            $ref: "#/components/schemas/PlayerSosRow"
+      required:
+        - season
+        - position
+        - scoring
+        - currentWeek
+        - rows
+
+    InsightCard:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        subtitle:
+          type: string
+        value:
+          type: string
+        detail:
+          type: string
+        position:
+          type: string
+        team:
+          type: string
+        trend:
+          type: string
+          enum: [positive, negative, neutral]
+      required:
+        - id
+        - title
+        - subtitle
+        - value
+        - detail
+        - position
+        - team
+        - trend
+
+    InsightsResponse:
+      type: object
+      properties:
+        season:
+          type: integer
+        scoring:
+          type: string
+        cards:
+          type: array
+          items:
+            $ref: "#/components/schemas/InsightCard"
+      required:
+        - season
+        - scoring
+        - cards
+
+    ScheduleGame:
+      type: object
+      properties:
+        week:
+          type: integer
+        team:
+          type: string
+        opponent:
+          type: string
+          nullable: true
+        isHome:
+          type: boolean
+        isBye:
+          type: boolean
+        gameDate:
+          type: string
+          nullable: true
+      required:
+        - week
+        - team
+        - isHome
+        - isBye
+
+    ScheduleResponse:
+      type: object
+      properties:
+        season:
+          type: integer
+        games:
+          type: array
+          items:
+            $ref: "#/components/schemas/ScheduleGame"
+      required:
+        - season
+        - games
+
+    FpaRow:
+      type: object
+      properties:
+        defenseTeam:
+          type: string
+        position:
+          type: string
+        scoringFormat:
+          type: string
+        rawPointsAllowed:
+          type: number
+        adjustedPointsAllowed:
+          type: number
+        rank:
+          type: integer
+        difficultyBucket:
+          type: string
+          enum: [VERY_TOUGH, TOUGH, NEUTRAL, FAVORABLE, SMASH_SPOT]
+      required:
+        - defenseTeam
+        - position
+        - scoringFormat
+        - rawPointsAllowed
+        - adjustedPointsAllowed
+        - rank
+        - difficultyBucket
+
+    FpaResponse:
+      type: object
+      properties:
+        season:
+          type: integer
+        position:
+          type: string
+        scoring:
+          type: string
+        rows:
+          type: array
+          items:
+            $ref: "#/components/schemas/FpaRow"
+      required:
+        - season
+        - position
+        - scoring
+        - rows
