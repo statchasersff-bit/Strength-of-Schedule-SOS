@@ -1,0 +1,295 @@
+{
+  "season": 2025,
+  "position": "QB",
+  "scoring": "PPR",
+  "rows": [
+    {
+      "defenseTeam": "MIN",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 11.1,
+      "adjustedPointsAllowed": 10.8,
+      "rank": 1,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "HOU",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 12.8,
+      "adjustedPointsAllowed": 12.3,
+      "rank": 2,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "LAC",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 12.6,
+      "adjustedPointsAllowed": 13.1,
+      "rank": 3,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "PHI",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.5,
+      "adjustedPointsAllowed": 13.3,
+      "rank": 4,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "CAR",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.8,
+      "adjustedPointsAllowed": 13.4,
+      "rank": 5,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "CLE",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.3,
+      "adjustedPointsAllowed": 13.8,
+      "rank": 6,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "SEA",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.0,
+      "adjustedPointsAllowed": 14.0,
+      "rank": 7,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "BUF",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.1,
+      "adjustedPointsAllowed": 14.1,
+      "rank": 8,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "DEN",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.2,
+      "adjustedPointsAllowed": 14.1,
+      "rank": 9,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "NO",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.0,
+      "adjustedPointsAllowed": 14.2,
+      "rank": 10,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "KC",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.1,
+      "adjustedPointsAllowed": 14.5,
+      "rank": 11,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "GB",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.0,
+      "adjustedPointsAllowed": 15.1,
+      "rank": 12,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "LV",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 16.1,
+      "adjustedPointsAllowed": 15.1,
+      "rank": 13,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "LAR",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.2,
+      "adjustedPointsAllowed": 15.4,
+      "rank": 14,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "NE",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.7,
+      "adjustedPointsAllowed": 16.1,
+      "rank": 15,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "JAX",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.9,
+      "adjustedPointsAllowed": 16.4,
+      "rank": 16,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "ATL",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 16.3,
+      "adjustedPointsAllowed": 16.5,
+      "rank": 17,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "ARI",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 17.0,
+      "adjustedPointsAllowed": 16.7,
+      "rank": 18,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "SF",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 17.1,
+      "adjustedPointsAllowed": 17.2,
+      "rank": 19,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "IND",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 16.9,
+      "adjustedPointsAllowed": 17.4,
+      "rank": 20,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "NYG",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 18.3,
+      "adjustedPointsAllowed": 17.5,
+      "rank": 21,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "BAL",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 17.7,
+      "adjustedPointsAllowed": 17.9,
+      "rank": 22,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "MIA",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 18.2,
+      "adjustedPointsAllowed": 17.9,
+      "rank": 23,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "DET",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 18.2,
+      "adjustedPointsAllowed": 18.0,
+      "rank": 24,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "TEN",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 19.0,
+      "adjustedPointsAllowed": 18.4,
+      "rank": 25,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "CHI",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 18.1,
+      "adjustedPointsAllowed": 18.7,
+      "rank": 26,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "CIN",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 18.4,
+      "adjustedPointsAllowed": 18.8,
+      "rank": 27,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "PIT",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 18.8,
+      "adjustedPointsAllowed": 19.2,
+      "rank": 28,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "WAS",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 19.5,
+      "adjustedPointsAllowed": 19.2,
+      "rank": 29,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "NYJ",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 19.9,
+      "adjustedPointsAllowed": 19.6,
+      "rank": 30,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "TB",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 19.5,
+      "adjustedPointsAllowed": 19.6,
+      "rank": 31,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "DAL",
+      "position": "QB",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 23.3,
+      "adjustedPointsAllowed": 23.1,
+      "rank": 32,
+      "difficultyBucket": "SMASH_SPOT"
+    }
+  ]
+}

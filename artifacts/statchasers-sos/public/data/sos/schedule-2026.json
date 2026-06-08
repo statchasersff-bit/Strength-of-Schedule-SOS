@@ -1,0 +1,4613 @@
+{
+  "season": 2026,
+  "games": [
+    {
+      "week": 1,
+      "team": "ARI",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "ARI",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "ARI",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "ARI",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "ARI",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "ARI",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "ARI",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "ARI",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "ARI",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "ARI",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "ARI",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "ARI",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "ARI",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "ARI",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 15,
+      "team": "ARI",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "ARI",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "ARI",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "ARI",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "ATL",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "ATL",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "ATL",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-24"
+    },
+    {
+      "week": 4,
+      "team": "ATL",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-05"
+    },
+    {
+      "week": 5,
+      "team": "ATL",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "ATL",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "ATL",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "ATL",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "ATL",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "ATL",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "ATL",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 12,
+      "team": "ATL",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "ATL",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "ATL",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "ATL",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "ATL",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "ATL",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "ATL",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "BAL",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "BAL",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "BAL",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "BAL",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "BAL",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "BAL",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "BAL",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "BAL",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "BAL",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-05"
+    },
+    {
+      "week": 10,
+      "team": "BAL",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-16"
+    },
+    {
+      "week": 11,
+      "team": "BAL",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "BAL",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "BAL",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 14,
+      "team": "BAL",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "BAL",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "BAL",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "BAL",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-31"
+    },
+    {
+      "week": 18,
+      "team": "BAL",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "BUF",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "BUF",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-17"
+    },
+    {
+      "week": 3,
+      "team": "BUF",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "BUF",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "BUF",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-12"
+    },
+    {
+      "week": 6,
+      "team": "BUF",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "BUF",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 8,
+      "team": "BUF",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "BUF",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-09"
+    },
+    {
+      "week": 10,
+      "team": "BUF",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "BUF",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "BUF",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-26"
+    },
+    {
+      "week": 13,
+      "team": "BUF",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "BUF",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "BUF",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-19"
+    },
+    {
+      "week": 16,
+      "team": "BUF",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-25"
+    },
+    {
+      "week": 17,
+      "team": "BUF",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "BUF",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "CAR",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "CAR",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "CAR",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "CAR",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "CAR",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 6,
+      "team": "CAR",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "CAR",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "CAR",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-29"
+    },
+    {
+      "week": 9,
+      "team": "CAR",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "CAR",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "CAR",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "CAR",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-30"
+    },
+    {
+      "week": 13,
+      "team": "CAR",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "CAR",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "CAR",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "CAR",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "CAR",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "CAR",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "CHI",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "CHI",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "CHI",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-28"
+    },
+    {
+      "week": 4,
+      "team": "CHI",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "CHI",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "CHI",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "CHI",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-22"
+    },
+    {
+      "week": 8,
+      "team": "CHI",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-02"
+    },
+    {
+      "week": 9,
+      "team": "CHI",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "CHI",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 11,
+      "team": "CHI",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "CHI",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-26"
+    },
+    {
+      "week": 13,
+      "team": "CHI",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "CHI",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "CHI",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-19"
+    },
+    {
+      "week": 16,
+      "team": "CHI",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-25"
+    },
+    {
+      "week": 17,
+      "team": "CHI",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "CHI",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "CIN",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "CIN",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "CIN",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "CIN",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "CIN",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "CIN",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 7,
+      "team": "CIN",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "CIN",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "CIN",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "CIN",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "CIN",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-23"
+    },
+    {
+      "week": 12,
+      "team": "CIN",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "CIN",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "CIN",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "CIN",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "CIN",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "CIN",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-31"
+    },
+    {
+      "week": 18,
+      "team": "CIN",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "CLE",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "CLE",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "CLE",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "CLE",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-01"
+    },
+    {
+      "week": 5,
+      "team": "CLE",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "CLE",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "CLE",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "CLE",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "CLE",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "CLE",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "CLE",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 12,
+      "team": "CLE",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "CLE",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "CLE",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "CLE",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "CLE",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "CLE",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "CLE",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "DAL",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "DAL",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "DAL",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "DAL",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "DAL",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-08"
+    },
+    {
+      "week": 6,
+      "team": "DAL",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "DAL",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-26"
+    },
+    {
+      "week": 8,
+      "team": "DAL",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "DAL",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "DAL",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "DAL",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "DAL",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-26"
+    },
+    {
+      "week": 13,
+      "team": "DAL",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-07"
+    },
+    {
+      "week": 14,
+      "team": "DAL",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 15,
+      "team": "DAL",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "DAL",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "DAL",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "DAL",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "DEN",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-14"
+    },
+    {
+      "week": 2,
+      "team": "DEN",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "DEN",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "DEN",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "DEN",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "DEN",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-15"
+    },
+    {
+      "week": 7,
+      "team": "DEN",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "DEN",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "DEN",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "DEN",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 11,
+      "team": "DEN",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "DEN",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-27"
+    },
+    {
+      "week": 13,
+      "team": "DEN",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "DEN",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "DEN",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "DEN",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-25"
+    },
+    {
+      "week": 17,
+      "team": "DEN",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "DEN",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "DET",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "DET",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-17"
+    },
+    {
+      "week": 3,
+      "team": "DET",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "DET",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "DET",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "DET",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 7,
+      "team": "DET",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "DET",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "DET",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "DET",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "DET",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "DET",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-26"
+    },
+    {
+      "week": 13,
+      "team": "DET",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "DET",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "DET",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "DET",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-28"
+    },
+    {
+      "week": 17,
+      "team": "DET",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "DET",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "GB",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "GB",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "GB",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-24"
+    },
+    {
+      "week": 4,
+      "team": "GB",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "GB",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "GB",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "GB",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "GB",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-29"
+    },
+    {
+      "week": 9,
+      "team": "GB",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "GB",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "GB",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 12,
+      "team": "GB",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-25"
+    },
+    {
+      "week": 13,
+      "team": "GB",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "GB",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "GB",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "GB",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-25"
+    },
+    {
+      "week": 17,
+      "team": "GB",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-04"
+    },
+    {
+      "week": 18,
+      "team": "GB",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "HOU",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "HOU",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "HOU",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "HOU",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "HOU",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "HOU",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "HOU",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "HOU",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 9,
+      "team": "HOU",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "HOU",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "HOU",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-19"
+    },
+    {
+      "week": 12,
+      "team": "HOU",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "HOU",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "HOU",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "HOU",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "HOU",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-24"
+    },
+    {
+      "week": 17,
+      "team": "HOU",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-04"
+    },
+    {
+      "week": 18,
+      "team": "HOU",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "IND",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "IND",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "IND",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "IND",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "IND",
+      "opponent": "PIT",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "IND",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "IND",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "IND",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "IND",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "IND",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "IND",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-19"
+    },
+    {
+      "week": 12,
+      "team": "IND",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "IND",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 14,
+      "team": "IND",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "IND",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "IND",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "IND",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "IND",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "JAX",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "JAX",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "JAX",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "JAX",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "JAX",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "JAX",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "JAX",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 8,
+      "team": "JAX",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "JAX",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-05"
+    },
+    {
+      "week": 10,
+      "team": "JAX",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "JAX",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "JAX",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "JAX",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "JAX",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-14"
+    },
+    {
+      "week": 15,
+      "team": "JAX",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "JAX",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "JAX",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "JAX",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "KC",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-14"
+    },
+    {
+      "week": 2,
+      "team": "KC",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "KC",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "KC",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "KC",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 6,
+      "team": "KC",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "KC",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "KC",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "KC",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "KC",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "KC",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "KC",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-26"
+    },
+    {
+      "week": 13,
+      "team": "KC",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-03"
+    },
+    {
+      "week": 14,
+      "team": "KC",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "KC",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-21"
+    },
+    {
+      "week": 16,
+      "team": "KC",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "KC",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "KC",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "LAC",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "LAC",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "LAC",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "LAC",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "LAC",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "LAC",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "LAC",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 8,
+      "team": "LAC",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "LAC",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "LAC",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-16"
+    },
+    {
+      "week": 11,
+      "team": "LAC",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "LAC",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "LAC",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "LAC",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "LAC",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-17"
+    },
+    {
+      "week": 16,
+      "team": "LAC",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "LAC",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "LAC",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "LAR",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-10"
+    },
+    {
+      "week": 2,
+      "team": "LAR",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-21"
+    },
+    {
+      "week": 3,
+      "team": "LAR",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "LAR",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "LAR",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-12"
+    },
+    {
+      "week": 6,
+      "team": "LAR",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "LAR",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "LAR",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "LAR",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "LAR",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "LAR",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 12,
+      "team": "LAR",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-25"
+    },
+    {
+      "week": 13,
+      "team": "LAR",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-03"
+    },
+    {
+      "week": 14,
+      "team": "LAR",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "LAR",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "LAR",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-25"
+    },
+    {
+      "week": 17,
+      "team": "LAR",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "LAR",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "LV",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "LV",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "LV",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "LV",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "LV",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "LV",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "LV",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "LV",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "LV",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "LV",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "LV",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "LV",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "LV",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 14,
+      "team": "LV",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "LV",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "LV",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "LV",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "LV",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "MIA",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "MIA",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "MIA",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "MIA",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "MIA",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "MIA",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 7,
+      "team": "MIA",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "MIA",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "MIA",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "MIA",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "MIA",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "MIA",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "MIA",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "MIA",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "MIA",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "MIA",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "MIA",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "MIA",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "MIN",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "MIN",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "MIN",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "MIN",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "MIN",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "MIN",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 7,
+      "team": "MIN",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "MIN",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "MIN",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-09"
+    },
+    {
+      "week": 10,
+      "team": "MIN",
+      "opponent": "GB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "MIN",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "MIN",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "MIN",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "MIN",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-10"
+    },
+    {
+      "week": 15,
+      "team": "MIN",
+      "opponent": "DET",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "MIN",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "MIN",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "MIN",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "NE",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-09"
+    },
+    {
+      "week": 2,
+      "team": "NE",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "NE",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "NE",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "NE",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "NE",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "NE",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-22"
+    },
+    {
+      "week": 8,
+      "team": "NE",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "NE",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "NE",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "NE",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 12,
+      "team": "NE",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "NE",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "NE",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-10"
+    },
+    {
+      "week": 15,
+      "team": "NE",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-21"
+    },
+    {
+      "week": 16,
+      "team": "NE",
+      "opponent": "NYJ",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "NE",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "NE",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "NO",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "NO",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "NO",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "NO",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-05"
+    },
+    {
+      "week": 5,
+      "team": "NO",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "NO",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "NO",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "NO",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 9,
+      "team": "NO",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "NO",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "NO",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "NO",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "NO",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "NO",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "NO",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "NO",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "NO",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "NO",
+      "opponent": "TB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "NYG",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "NYG",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-21"
+    },
+    {
+      "week": 3,
+      "team": "NYG",
+      "opponent": "TEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "NYG",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "NYG",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "NYG",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "NYG",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "NYG",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 9,
+      "team": "NYG",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "NYG",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-12"
+    },
+    {
+      "week": 11,
+      "team": "NYG",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "NYG",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "NYG",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "NYG",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "NYG",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "NYG",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-28"
+    },
+    {
+      "week": 17,
+      "team": "NYG",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "NYG",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "NYJ",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "NYJ",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "NYJ",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "NYJ",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "NYJ",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "NYJ",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "NYJ",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "NYJ",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "NYJ",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "NYJ",
+      "opponent": "BUF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "NYJ",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "NYJ",
+      "opponent": "MIA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "NYJ",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 14,
+      "team": "NYJ",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "NYJ",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "NYJ",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "NYJ",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "NYJ",
+      "opponent": "BUF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "PHI",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "PHI",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "PHI",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-28"
+    },
+    {
+      "week": 4,
+      "team": "PHI",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "PHI",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "PHI",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "PHI",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-26"
+    },
+    {
+      "week": 8,
+      "team": "PHI",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "PHI",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "PHI",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 11,
+      "team": "PHI",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "PHI",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-26"
+    },
+    {
+      "week": 13,
+      "team": "PHI",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "PHI",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "PHI",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-19"
+    },
+    {
+      "week": 16,
+      "team": "PHI",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-24"
+    },
+    {
+      "week": 17,
+      "team": "PHI",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "PHI",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "PIT",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "PIT",
+      "opponent": "NE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "PIT",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "PIT",
+      "opponent": "CLE",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-01"
+    },
+    {
+      "week": 5,
+      "team": "PIT",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "PIT",
+      "opponent": "TB",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "PIT",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "PIT",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "PIT",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 10,
+      "team": "PIT",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "PIT",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "PIT",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-27"
+    },
+    {
+      "week": 13,
+      "team": "PIT",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "PIT",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-14"
+    },
+    {
+      "week": 15,
+      "team": "PIT",
+      "opponent": "BAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "PIT",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "PIT",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "PIT",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "SEA",
+      "opponent": "NE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-09"
+    },
+    {
+      "week": 2,
+      "team": "SEA",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "SEA",
+      "opponent": "WAS",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "SEA",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "SEA",
+      "opponent": "SF",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "SEA",
+      "opponent": "DEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-15"
+    },
+    {
+      "week": 7,
+      "team": "SEA",
+      "opponent": "KC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "SEA",
+      "opponent": "CHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-02"
+    },
+    {
+      "week": 9,
+      "team": "SEA",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "SEA",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "SEA",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 12,
+      "team": "SEA",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "SEA",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-07"
+    },
+    {
+      "week": 14,
+      "team": "SEA",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "SEA",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-19"
+    },
+    {
+      "week": 16,
+      "team": "SEA",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-25"
+    },
+    {
+      "week": 17,
+      "team": "SEA",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "SEA",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "SF",
+      "opponent": "LAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-10"
+    },
+    {
+      "week": 2,
+      "team": "SF",
+      "opponent": "MIA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "SF",
+      "opponent": "ARI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "SF",
+      "opponent": "DEN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "SF",
+      "opponent": "SEA",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "SF",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-19"
+    },
+    {
+      "week": 7,
+      "team": "SF",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "SF",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 9,
+      "team": "SF",
+      "opponent": "LV",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "SF",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "SF",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "SF",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "SF",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "SF",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "SF",
+      "opponent": "LAC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-17"
+    },
+    {
+      "week": 16,
+      "team": "SF",
+      "opponent": "KC",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "SF",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "SF",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "TB",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "TB",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "TB",
+      "opponent": "MIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "TB",
+      "opponent": "GB",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "TB",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-08"
+    },
+    {
+      "week": 6,
+      "team": "TB",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "TB",
+      "opponent": "CAR",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "TB",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "TB",
+      "opponent": "CHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "TB",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 11,
+      "team": "TB",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "TB",
+      "opponent": "CAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-30"
+    },
+    {
+      "week": 13,
+      "team": "TB",
+      "opponent": "LAC",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "TB",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "TB",
+      "opponent": "NO",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "TB",
+      "opponent": "ATL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "TB",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "TB",
+      "opponent": "NO",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "TEN",
+      "opponent": "NYJ",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "TEN",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "TEN",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "TEN",
+      "opponent": "BAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "TEN",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "TEN",
+      "opponent": "IND",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-18"
+    },
+    {
+      "week": 7,
+      "team": "TEN",
+      "opponent": "CLE",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-25"
+    },
+    {
+      "week": 8,
+      "team": "TEN",
+      "opponent": "CIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "TEN",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 10,
+      "team": "TEN",
+      "opponent": "JAX",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-15"
+    },
+    {
+      "week": 11,
+      "team": "TEN",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-22"
+    },
+    {
+      "week": 12,
+      "team": "TEN",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "TEN",
+      "opponent": "WAS",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "TEN",
+      "opponent": "DET",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "TEN",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "TEN",
+      "opponent": "LV",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "TEN",
+      "opponent": "PIT",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "TEN",
+      "opponent": "HOU",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    },
+    {
+      "week": 1,
+      "team": "WAS",
+      "opponent": "PHI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-13"
+    },
+    {
+      "week": 2,
+      "team": "WAS",
+      "opponent": "DAL",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-09-20"
+    },
+    {
+      "week": 3,
+      "team": "WAS",
+      "opponent": "SEA",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-09-27"
+    },
+    {
+      "week": 4,
+      "team": "WAS",
+      "opponent": "IND",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-04"
+    },
+    {
+      "week": 5,
+      "team": "WAS",
+      "opponent": "NYG",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-10-11"
+    },
+    {
+      "week": 6,
+      "team": "WAS",
+      "opponent": "SF",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-10-19"
+    },
+    {
+      "week": 7,
+      "team": "WAS",
+      "opponent": null,
+      "isHome": false,
+      "isBye": true,
+      "gameDate": null
+    },
+    {
+      "week": 8,
+      "team": "WAS",
+      "opponent": "PHI",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-01"
+    },
+    {
+      "week": 9,
+      "team": "WAS",
+      "opponent": "LAR",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-08"
+    },
+    {
+      "week": 10,
+      "team": "WAS",
+      "opponent": "NYG",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-12"
+    },
+    {
+      "week": 11,
+      "team": "WAS",
+      "opponent": "CIN",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-11-23"
+    },
+    {
+      "week": 12,
+      "team": "WAS",
+      "opponent": "ARI",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-11-29"
+    },
+    {
+      "week": 13,
+      "team": "WAS",
+      "opponent": "TEN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-06"
+    },
+    {
+      "week": 14,
+      "team": "WAS",
+      "opponent": "HOU",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-13"
+    },
+    {
+      "week": 15,
+      "team": "WAS",
+      "opponent": "ATL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2026-12-20"
+    },
+    {
+      "week": 16,
+      "team": "WAS",
+      "opponent": "MIN",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2026-12-27"
+    },
+    {
+      "week": 17,
+      "team": "WAS",
+      "opponent": "JAX",
+      "isHome": false,
+      "isBye": false,
+      "gameDate": "2027-01-03"
+    },
+    {
+      "week": 18,
+      "team": "WAS",
+      "opponent": "DAL",
+      "isHome": true,
+      "isBye": false,
+      "gameDate": "2027-01-10"
+    }
+  ]
+}

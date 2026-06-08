@@ -1,0 +1,46 @@
+{
+  "season": 2026,
+  "scoring": "STANDARD",
+  "cards": [
+    {
+      "id": "easiest-schedule",
+      "title": "Easiest Schedule",
+      "subtitle": "Full season",
+      "value": "PHI",
+      "detail": "16.4 adj pts",
+      "position": "ALL",
+      "team": "PHI",
+      "trend": "positive"
+    },
+    {
+      "id": "toughest-schedule",
+      "title": "Toughest Schedule",
+      "subtitle": "Full season",
+      "value": "LV",
+      "detail": "14.8 adj pts",
+      "position": "ALL",
+      "team": "LV",
+      "trend": "negative"
+    },
+    {
+      "id": "best-playoff",
+      "title": "Best Playoff Slate",
+      "subtitle": "Weeks 15-17",
+      "value": "MIN",
+      "detail": "17.8 adj pts",
+      "position": "ALL",
+      "team": "MIN",
+      "trend": "positive"
+    },
+    {
+      "id": "toughest-playoff",
+      "title": "Toughest Playoff Slate",
+      "subtitle": "Weeks 15-17",
+      "value": "SF",
+      "detail": "13.2 adj pts",
+      "position": "ALL",
+      "team": "SF",
+      "trend": "negative"
+    }
+  ]
+}

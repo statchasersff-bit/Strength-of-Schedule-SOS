@@ -1,0 +1,61 @@
+{
+  "season": 2026,
+  "baselineSeasons": [
+    2025
+  ],
+  "updatedAt": "2026-06-08T12:05:59.781476+00:00",
+  "currentWeek": 1,
+  "positions": [
+    "QB",
+    "RB",
+    "WR",
+    "TE"
+  ],
+  "scoring": [
+    "PPR",
+    "HALF_PPR",
+    "STANDARD"
+  ],
+  "files": [
+    "fpa-2025-qb-half-ppr.json",
+    "fpa-2025-qb-ppr.json",
+    "fpa-2025-qb-std.json",
+    "fpa-2025-rb-half-ppr.json",
+    "fpa-2025-rb-ppr.json",
+    "fpa-2025-rb-std.json",
+    "fpa-2025-te-half-ppr.json",
+    "fpa-2025-te-ppr.json",
+    "fpa-2025-te-std.json",
+    "fpa-2025-wr-half-ppr.json",
+    "fpa-2025-wr-ppr.json",
+    "fpa-2025-wr-std.json",
+    "insights-2026-half-ppr.json",
+    "insights-2026-ppr.json",
+    "insights-2026-std.json",
+    "player-sos-2026-qb-half-ppr.json",
+    "player-sos-2026-qb-ppr.json",
+    "player-sos-2026-qb-std.json",
+    "player-sos-2026-rb-half-ppr.json",
+    "player-sos-2026-rb-ppr.json",
+    "player-sos-2026-rb-std.json",
+    "player-sos-2026-te-half-ppr.json",
+    "player-sos-2026-te-ppr.json",
+    "player-sos-2026-te-std.json",
+    "player-sos-2026-wr-half-ppr.json",
+    "player-sos-2026-wr-ppr.json",
+    "player-sos-2026-wr-std.json",
+    "schedule-2026.json",
+    "team-sos-2026-qb-half-ppr.json",
+    "team-sos-2026-qb-ppr.json",
+    "team-sos-2026-qb-std.json",
+    "team-sos-2026-rb-half-ppr.json",
+    "team-sos-2026-rb-ppr.json",
+    "team-sos-2026-rb-std.json",
+    "team-sos-2026-te-half-ppr.json",
+    "team-sos-2026-te-ppr.json",
+    "team-sos-2026-te-std.json",
+    "team-sos-2026-wr-half-ppr.json",
+    "team-sos-2026-wr-ppr.json",
+    "team-sos-2026-wr-std.json"
+  ]
+}

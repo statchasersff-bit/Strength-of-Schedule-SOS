@@ -1,0 +1,295 @@
+{
+  "season": 2025,
+  "position": "TE",
+  "scoring": "PPR",
+  "rows": [
+    {
+      "defenseTeam": "BUF",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 8.0,
+      "adjustedPointsAllowed": 8.4,
+      "rank": 1,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "PHI",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 8.3,
+      "adjustedPointsAllowed": 9.1,
+      "rank": 2,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "ATL",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 10.2,
+      "adjustedPointsAllowed": 10.4,
+      "rank": 3,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "BAL",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 11.4,
+      "adjustedPointsAllowed": 10.6,
+      "rank": 4,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "LAC",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 10.5,
+      "adjustedPointsAllowed": 10.8,
+      "rank": 5,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "LV",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 10.1,
+      "adjustedPointsAllowed": 10.9,
+      "rank": 6,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "MIN",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 10.7,
+      "adjustedPointsAllowed": 11.2,
+      "rank": 7,
+      "difficultyBucket": "VERY_TOUGH"
+    },
+    {
+      "defenseTeam": "HOU",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 12.3,
+      "adjustedPointsAllowed": 11.8,
+      "rank": 8,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "NYG",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 11.4,
+      "adjustedPointsAllowed": 11.8,
+      "rank": 9,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "KC",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 11.0,
+      "adjustedPointsAllowed": 11.8,
+      "rank": 10,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "CLE",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 12.7,
+      "adjustedPointsAllowed": 12.2,
+      "rank": 11,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "GB",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 12.1,
+      "adjustedPointsAllowed": 12.4,
+      "rank": 12,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "NO",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 12.5,
+      "adjustedPointsAllowed": 12.6,
+      "rank": 13,
+      "difficultyBucket": "TOUGH"
+    },
+    {
+      "defenseTeam": "LAR",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.1,
+      "adjustedPointsAllowed": 12.7,
+      "rank": 14,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "CHI",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.1,
+      "adjustedPointsAllowed": 13.3,
+      "rank": 15,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "SEA",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.8,
+      "adjustedPointsAllowed": 13.3,
+      "rank": 16,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "DAL",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 12.3,
+      "adjustedPointsAllowed": 13.3,
+      "rank": 17,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "TEN",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.2,
+      "adjustedPointsAllowed": 13.4,
+      "rank": 18,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "CAR",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.7,
+      "adjustedPointsAllowed": 13.4,
+      "rank": 19,
+      "difficultyBucket": "NEUTRAL"
+    },
+    {
+      "defenseTeam": "SF",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.8,
+      "adjustedPointsAllowed": 13.8,
+      "rank": 20,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "DET",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.7,
+      "adjustedPointsAllowed": 13.8,
+      "rank": 21,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "DEN",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 13.7,
+      "adjustedPointsAllowed": 14.3,
+      "rank": 22,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "JAX",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.8,
+      "adjustedPointsAllowed": 14.5,
+      "rank": 23,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "NE",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 14.7,
+      "adjustedPointsAllowed": 14.7,
+      "rank": 24,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "IND",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.3,
+      "adjustedPointsAllowed": 14.7,
+      "rank": 25,
+      "difficultyBucket": "FAVORABLE"
+    },
+    {
+      "defenseTeam": "NYJ",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.2,
+      "adjustedPointsAllowed": 15.1,
+      "rank": 26,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "TB",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.8,
+      "adjustedPointsAllowed": 15.4,
+      "rank": 27,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "ARI",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 16.9,
+      "adjustedPointsAllowed": 16.8,
+      "rank": 28,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "WAS",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 15.9,
+      "adjustedPointsAllowed": 16.8,
+      "rank": 29,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "PIT",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 16.6,
+      "adjustedPointsAllowed": 16.9,
+      "rank": 30,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "MIA",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 16.7,
+      "adjustedPointsAllowed": 16.9,
+      "rank": 31,
+      "difficultyBucket": "SMASH_SPOT"
+    },
+    {
+      "defenseTeam": "CIN",
+      "position": "TE",
+      "scoringFormat": "PPR",
+      "rawPointsAllowed": 20.9,
+      "adjustedPointsAllowed": 20.1,
+      "rank": 32,
+      "difficultyBucket": "SMASH_SPOT"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+name: Update SOS Data
+
+on:
+  schedule:
+    # Every 3 days at 09:22 UTC. During the season, lower the interval.
+    - cron: "22 9 */3 * *"
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season to build (e.g. 2026)"
+        required: false
+        default: "2026"
+      baseline_seasons:
+        description: "Comma-separated baseline seasons for FPA (e.g. 2025 or 2025,2026)"
+        required: false
+        default: "2025"
+
+concurrency:
+  group: update-sos
+  cancel-in-progress: false
+
+jobs:
+  build-sos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Build SOS data
+        env:
+          SOS_SEASON: ${{ github.event.inputs.season || '2026' }}
+          SOS_BASELINE_SEASONS: ${{ github.event.inputs.baseline_seasons || '2025' }}
+        run: python scripts/build_sos.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "StatChasers Bot"
+          git config user.email "bot@statchasers.com"
+          git add artifacts/statchasers-sos/public/data/sos
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update SOS data [skip ci]"
+            git push
+          fi

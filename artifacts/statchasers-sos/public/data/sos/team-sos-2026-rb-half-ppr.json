@@ -1,0 +1,6760 @@
+{
+  "season": 2026,
+  "position": "RB",
+  "scoring": "HALF_PPR",
+  "currentWeek": 1,
+  "rows": [
+    {
+      "team": "PHI",
+      "teamFullName": "Philadelphia Eagles",
+      "division": "NFC East",
+      "overallRank": 1,
+      "rosRank": 1,
+      "playoffRank": 31,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 2,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 3,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 4,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 5,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 6,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 7,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 8,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 9,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 10,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 11,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 12,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 13,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 14,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 15,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 16,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 17,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 18,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "HOU",
+        "isHome": true,
+        "isBye": false,
+        "rank": 2,
+        "adjustedPoints": 19.5,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 19.5
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "SF",
+        "isHome": false,
+        "isBye": false,
+        "rank": 2,
+        "adjustedPoints": 18.3,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 18.3
+      },
+      "rosSummary": 20.9
+    },
+    {
+      "team": "WAS",
+      "teamFullName": "Washington Commanders",
+      "division": "NFC East",
+      "overallRank": 2,
+      "rosRank": 2,
+      "playoffRank": 32,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 2,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 3,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 4,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 5,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 6,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 7,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 8,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 9,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 10,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 11,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 12,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 13,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 14,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 15,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 16,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 17,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 18,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "MIN",
+        "isHome": false,
+        "isBye": false,
+        "rank": 1,
+        "adjustedPoints": 17.2,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 17.2
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "JAX",
+        "isHome": false,
+        "isBye": false,
+        "rank": 1,
+        "adjustedPoints": 18.1,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 18.1
+      },
+      "rosSummary": 20.9
+    },
+    {
+      "team": "LAR",
+      "teamFullName": "Los Angeles Rams",
+      "division": "NFC West",
+      "overallRank": 3,
+      "rosRank": 3,
+      "playoffRank": 19,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 2,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 3,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 4,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 5,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 6,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 7,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 8,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 9,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 10,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 11,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 12,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 13,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 14,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 15,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 16,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 17,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 18,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "SEA",
+        "isHome": false,
+        "isBye": false,
+        "rank": 14,
+        "adjustedPoints": 17.5,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 17.5
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "TB",
+        "isHome": false,
+        "isBye": false,
+        "rank": 14,
+        "adjustedPoints": 19.9,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 19.9
+      },
+      "rosSummary": 20.8
+    },
+    {
+      "team": "SEA",
+      "teamFullName": "Seattle Seahawks",
+      "division": "NFC West",
+      "overallRank": 4,
+      "rosRank": 4,
+      "playoffRank": 18,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 2,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 3,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 4,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 5,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 6,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 7,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 8,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 9,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 10,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 11,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 12,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 13,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 14,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 15,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 16,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 17,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 18,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "LAR",
+        "isHome": true,
+        "isBye": false,
+        "rank": 15,
+        "adjustedPoints": 19.3,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 19.3
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "CAR",
+        "isHome": false,
+        "isBye": false,
+        "rank": 15,
+        "adjustedPoints": 19.9,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 19.9
+      },
+      "rosSummary": 20.8
+    },
+    {
+      "team": "DAL",
+      "teamFullName": "Dallas Cowboys",
+      "division": "NFC East",
+      "overallRank": 5,
+      "rosRank": 5,
+      "playoffRank": 21,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 2,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 3,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 4,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 5,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 6,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 7,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 8,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 9,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 10,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 11,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 12,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 13,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 14,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 15,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 16,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 17,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 18,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "JAX",
+        "isHome": true,
+        "isBye": false,
+        "rank": 12,
+        "adjustedPoints": 21,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 21
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "NYG",
+        "isHome": true,
+        "isBye": false,
+        "rank": 12,
+        "adjustedPoints": 19.8,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.8
+      },
+      "rosSummary": 20.6
+    },
+    {
+      "team": "HOU",
+      "teamFullName": "Houston Texans",
+      "division": "AFC South",
+      "overallRank": 6,
+      "rosRank": 6,
+      "playoffRank": 24,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 2,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 3,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 4,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 5,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 6,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 7,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 8,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 9,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 10,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 11,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 12,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 13,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 14,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 15,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 16,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 17,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 18,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "PHI",
+        "isHome": false,
+        "isBye": false,
+        "rank": 9,
+        "adjustedPoints": 20.1,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 20.1
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "GB",
+        "isHome": false,
+        "isBye": false,
+        "rank": 9,
+        "adjustedPoints": 19.3,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.3
+      },
+      "rosSummary": 20.4
+    },
+    {
+      "team": "CLE",
+      "teamFullName": "Cleveland Browns",
+      "division": "AFC North",
+      "overallRank": 7,
+      "rosRank": 7,
+      "playoffRank": 6,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 2,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 3,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 4,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 5,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 6,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 7,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 8,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 9,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 10,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 11,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 12,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 13,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 14,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 15,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 16,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 17,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 18,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "BAL",
+        "isHome": false,
+        "isBye": false,
+        "rank": 27,
+        "adjustedPoints": 19.3,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 19.3
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "IND",
+        "isHome": true,
+        "isBye": false,
+        "rank": 27,
+        "adjustedPoints": 21,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 21
+      },
+      "rosSummary": 20.4
+    },
+    {
+      "team": "NYG",
+      "teamFullName": "New York Giants",
+      "division": "NFC East",
+      "overallRank": 8,
+      "rosRank": 8,
+      "playoffRank": 11,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 2,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 3,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 4,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 5,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 6,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 7,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 8,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 9,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 10,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 11,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 12,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 13,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 14,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 15,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 16,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 17,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 18,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "DET",
+        "isHome": false,
+        "isBye": false,
+        "rank": 22,
+        "adjustedPoints": 21.3,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 21.3
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "DAL",
+        "isHome": false,
+        "isBye": false,
+        "rank": 22,
+        "adjustedPoints": 20.3,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 20.3
+      },
+      "rosSummary": 20.4
+    },
+    {
+      "team": "TEN",
+      "teamFullName": "Tennessee Titans",
+      "division": "AFC South",
+      "overallRank": 9,
+      "rosRank": 9,
+      "playoffRank": 26,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 2,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 3,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 4,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 5,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 6,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 7,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 8,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 9,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 10,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 11,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 12,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 13,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 14,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 15,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 16,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 17,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 18,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "LV",
+        "isHome": false,
+        "isBye": false,
+        "rank": 7,
+        "adjustedPoints": 19.3,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 19.3
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "PIT",
+        "isHome": true,
+        "isBye": false,
+        "rank": 7,
+        "adjustedPoints": 19,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 19
+      },
+      "rosSummary": 20.4
+    },
+    {
+      "team": "KC",
+      "teamFullName": "Kansas City Chiefs",
+      "division": "AFC West",
+      "overallRank": 10,
+      "rosRank": 10,
+      "playoffRank": 29,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 2,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 3,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 4,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 5,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 6,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 7,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 8,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 9,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 10,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 11,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 12,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 13,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 14,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 15,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 16,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 17,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 18,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "SF",
+        "isHome": true,
+        "isBye": false,
+        "rank": 4,
+        "adjustedPoints": 19.9,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 19.9
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "LAC",
+        "isHome": false,
+        "isBye": false,
+        "rank": 4,
+        "adjustedPoints": 18.7,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 18.7
+      },
+      "rosSummary": 20.3
+    },
+    {
+      "team": "NO",
+      "teamFullName": "New Orleans Saints",
+      "division": "NFC South",
+      "overallRank": 11,
+      "rosRank": 11,
+      "playoffRank": 5,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 2,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 3,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 4,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 5,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 6,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 7,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 8,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 9,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 10,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 11,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 12,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 13,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 14,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 15,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 16,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 17,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 18,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "ARI",
+        "isHome": true,
+        "isBye": false,
+        "rank": 28,
+        "adjustedPoints": 22,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 22
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "ATL",
+        "isHome": false,
+        "isBye": false,
+        "rank": 28,
+        "adjustedPoints": 21.1,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 21.1
+      },
+      "rosSummary": 20.3
+    },
+    {
+      "team": "SF",
+      "teamFullName": "San Francisco 49ers",
+      "division": "NFC West",
+      "overallRank": 12,
+      "rosRank": 12,
+      "playoffRank": 25,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 2,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 3,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 4,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 5,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 6,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 7,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 8,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 9,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 10,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 11,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 12,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 13,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 14,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 15,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 16,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 17,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 18,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "KC",
+        "isHome": false,
+        "isBye": false,
+        "rank": 8,
+        "adjustedPoints": 19.5,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.5
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "PHI",
+        "isHome": true,
+        "isBye": false,
+        "rank": 8,
+        "adjustedPoints": 19.1,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.1
+      },
+      "rosSummary": 20.2
+    },
+    {
+      "team": "DET",
+      "teamFullName": "Detroit Lions",
+      "division": "NFC North",
+      "overallRank": 13,
+      "rosRank": 13,
+      "playoffRank": 13,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 2,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 3,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 4,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 5,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 6,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 7,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 8,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 9,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 10,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 11,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 12,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 13,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 14,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 15,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 16,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 17,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 18,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "NYG",
+        "isHome": true,
+        "isBye": false,
+        "rank": 20,
+        "adjustedPoints": 21.9,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 21.9
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "CHI",
+        "isHome": false,
+        "isBye": false,
+        "rank": 20,
+        "adjustedPoints": 20.2,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 20.2
+      },
+      "rosSummary": 20.2
+    },
+    {
+      "team": "MIA",
+      "teamFullName": "Miami Dolphins",
+      "division": "AFC East",
+      "overallRank": 14,
+      "rosRank": 14,
+      "playoffRank": 15,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 2,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 3,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 4,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 5,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 6,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 7,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 8,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 9,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 10,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 11,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 12,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 13,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 14,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 15,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 16,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 17,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 18,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "LAC",
+        "isHome": true,
+        "isBye": false,
+        "rank": 18,
+        "adjustedPoints": 20.5,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 20.5
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "BUF",
+        "isHome": true,
+        "isBye": false,
+        "rank": 18,
+        "adjustedPoints": 20.1,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 20.1
+      },
+      "rosSummary": 20.2
+    },
+    {
+      "team": "IND",
+      "teamFullName": "Indianapolis Colts",
+      "division": "AFC South",
+      "overallRank": 15,
+      "rosRank": 15,
+      "playoffRank": 4,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 2,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 3,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 4,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 5,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 6,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 7,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 8,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 9,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 10,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 11,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 12,
+          "opponent": "NYG",
+          "isHome": true,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 13,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 14,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 15,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 16,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 17,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 18,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "CIN",
+        "isHome": true,
+        "isBye": false,
+        "rank": 29,
+        "adjustedPoints": 21.7,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 21.7
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "CLE",
+        "isHome": false,
+        "isBye": false,
+        "rank": 29,
+        "adjustedPoints": 21.4,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 21.4
+      },
+      "rosSummary": 20.1
+    },
+    {
+      "team": "JAX",
+      "teamFullName": "Jacksonville Jaguars",
+      "division": "AFC South",
+      "overallRank": 16,
+      "rosRank": 16,
+      "playoffRank": 2,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 2,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 3,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 4,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 5,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 6,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 7,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 8,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 9,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 10,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 11,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 12,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 13,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 14,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 15,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 16,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 17,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 18,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "DAL",
+        "isHome": false,
+        "isBye": false,
+        "rank": 31,
+        "adjustedPoints": 24.1,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 24.1
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "WAS",
+        "isHome": true,
+        "isBye": false,
+        "rank": 31,
+        "adjustedPoints": 21.9,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 21.9
+      },
+      "rosSummary": 20.1
+    },
+    {
+      "team": "MIN",
+      "teamFullName": "Minnesota Vikings",
+      "division": "NFC North",
+      "overallRank": 17,
+      "rosRank": 17,
+      "playoffRank": 1,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 2,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 3,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 4,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 5,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 6,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 7,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 8,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 9,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 10,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 11,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 12,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 13,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 14,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 15,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 16,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 17,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 18,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "WAS",
+        "isHome": true,
+        "isBye": false,
+        "rank": 32,
+        "adjustedPoints": 24.3,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 24.3
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "NYJ",
+        "isHome": false,
+        "isBye": false,
+        "rank": 32,
+        "adjustedPoints": 22.2,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 22.2
+      },
+      "rosSummary": 20.1
+    },
+    {
+      "team": "ARI",
+      "teamFullName": "Arizona Cardinals",
+      "division": "NFC West",
+      "overallRank": 18,
+      "rosRank": 18,
+      "playoffRank": 3,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 2,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 3,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 4,
+          "opponent": "NYG",
+          "isHome": false,
+          "isBye": false,
+          "rank": 29,
+          "adjustedPoints": 24.4,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.4
+        },
+        {
+          "week": 5,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 6,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 7,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 8,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 9,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 10,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 11,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 12,
+          "opponent": "WAS",
+          "isHome": true,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 13,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 14,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 15,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 16,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 17,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 18,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "NO",
+        "isHome": false,
+        "isBye": false,
+        "rank": 30,
+        "adjustedPoints": 20.1,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 20.1
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "LV",
+        "isHome": true,
+        "isBye": false,
+        "rank": 30,
+        "adjustedPoints": 21.6,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 21.6
+      },
+      "rosSummary": 20
+    },
+    {
+      "team": "NE",
+      "teamFullName": "New England Patriots",
+      "division": "AFC East",
+      "overallRank": 19,
+      "rosRank": 19,
+      "playoffRank": 12,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 2,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 3,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 4,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 5,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 6,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 7,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 8,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 9,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 10,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 11,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 12,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 13,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 14,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 15,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 16,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 17,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 18,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "NYJ",
+        "isHome": false,
+        "isBye": false,
+        "rank": 21,
+        "adjustedPoints": 21.4,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 21.4
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "DEN",
+        "isHome": true,
+        "isBye": false,
+        "rank": 21,
+        "adjustedPoints": 20.2,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 20.2
+      },
+      "rosSummary": 19.9
+    },
+    {
+      "team": "LAC",
+      "teamFullName": "Los Angeles Chargers",
+      "division": "AFC West",
+      "overallRank": 20,
+      "rosRank": 20,
+      "playoffRank": 10,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "ARI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 2,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 3,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 4,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 5,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 6,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 7,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 8,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 9,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 10,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 11,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 12,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 13,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 14,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 15,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 16,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 17,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 18,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "MIA",
+        "isHome": false,
+        "isBye": false,
+        "rank": 23,
+        "adjustedPoints": 19.9,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 19.9
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "KC",
+        "isHome": true,
+        "isBye": false,
+        "rank": 23,
+        "adjustedPoints": 20.4,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 20.4
+      },
+      "rosSummary": 19.9
+    },
+    {
+      "team": "BAL",
+      "teamFullName": "Baltimore Ravens",
+      "division": "AFC North",
+      "overallRank": 21,
+      "rosRank": 21,
+      "playoffRank": 20,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 2,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 3,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 4,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 5,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 6,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 7,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 8,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 9,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 10,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 11,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 12,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 13,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 14,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 15,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 16,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 17,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 18,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "CLE",
+        "isHome": true,
+        "isBye": false,
+        "rank": 13,
+        "adjustedPoints": 21.7,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 21.7
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "CIN",
+        "isHome": false,
+        "isBye": false,
+        "rank": 13,
+        "adjustedPoints": 19.8,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.8
+      },
+      "rosSummary": 19.8
+    },
+    {
+      "team": "DEN",
+      "teamFullName": "Denver Broncos",
+      "division": "AFC West",
+      "overallRank": 22,
+      "rosRank": 22,
+      "playoffRank": 9,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 2,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 3,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 4,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 5,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 6,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 7,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 8,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 9,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 10,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 11,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 12,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 13,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 14,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 15,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 16,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 17,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 18,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "BUF",
+        "isHome": true,
+        "isBye": false,
+        "rank": 24,
+        "adjustedPoints": 19.5,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 19.5
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "NE",
+        "isHome": false,
+        "isBye": false,
+        "rank": 24,
+        "adjustedPoints": 20.5,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 20.5
+      },
+      "rosSummary": 19.8
+    },
+    {
+      "team": "NYJ",
+      "teamFullName": "New York Jets",
+      "division": "AFC East",
+      "overallRank": 23,
+      "rosRank": 23,
+      "playoffRank": 28,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 2,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 3,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 4,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 5,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 6,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 7,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 8,
+          "opponent": "LV",
+          "isHome": true,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 9,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 10,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 11,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 12,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 13,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 14,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 15,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 16,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 17,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 18,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "NE",
+        "isHome": true,
+        "isBye": false,
+        "rank": 5,
+        "adjustedPoints": 16.5,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 16.5
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "MIN",
+        "isHome": true,
+        "isBye": false,
+        "rank": 5,
+        "adjustedPoints": 19,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 19
+      },
+      "rosSummary": 19.7
+    },
+    {
+      "team": "PIT",
+      "teamFullName": "Pittsburgh Steelers",
+      "division": "AFC North",
+      "overallRank": 24,
+      "rosRank": 24,
+      "playoffRank": 8,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 2,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 3,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 4,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 5,
+          "opponent": "IND",
+          "isHome": true,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 6,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 7,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 8,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 9,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 10,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 11,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 12,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 13,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 14,
+          "opponent": "JAX",
+          "isHome": false,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 15,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 16,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 17,
+          "opponent": "TEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 18,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "CAR",
+        "isHome": true,
+        "isBye": false,
+        "rank": 25,
+        "adjustedPoints": 21,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 21
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "TEN",
+        "isHome": false,
+        "isBye": false,
+        "rank": 25,
+        "adjustedPoints": 20.7,
+        "difficultyBucket": "FAVORABLE",
+        "difficultyScore": 20.7
+      },
+      "rosSummary": 19.7
+    },
+    {
+      "team": "ATL",
+      "teamFullName": "Atlanta Falcons",
+      "division": "NFC South",
+      "overallRank": 25,
+      "rosRank": 25,
+      "playoffRank": 14,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 2,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 3,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 4,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 5,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 6,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 7,
+          "opponent": "SF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 8,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 9,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 10,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 11,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 12,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 13,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 14,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 15,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 16,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 17,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 18,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "TB",
+        "isHome": true,
+        "isBye": false,
+        "rank": 19,
+        "adjustedPoints": 18.4,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 18.4
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "NO",
+        "isHome": true,
+        "isBye": false,
+        "rank": 19,
+        "adjustedPoints": 20.2,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 20.2
+      },
+      "rosSummary": 19.5
+    },
+    {
+      "team": "GB",
+      "teamFullName": "Green Bay Packers",
+      "division": "NFC North",
+      "overallRank": 26,
+      "rosRank": 26,
+      "playoffRank": 23,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 2,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 3,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 4,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 5,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 6,
+          "opponent": "DAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 7,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 8,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 9,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 10,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 11,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 12,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 13,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 14,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 15,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 16,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 17,
+          "opponent": "HOU",
+          "isHome": true,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 18,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "CHI",
+        "isHome": false,
+        "isBye": false,
+        "rank": 10,
+        "adjustedPoints": 18.5,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 18.5
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "HOU",
+        "isHome": true,
+        "isBye": false,
+        "rank": 10,
+        "adjustedPoints": 19.6,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.6
+      },
+      "rosSummary": 19.5
+    },
+    {
+      "team": "TB",
+      "teamFullName": "Tampa Bay Buccaneers",
+      "division": "NFC South",
+      "overallRank": 27,
+      "rosRank": 27,
+      "playoffRank": 30,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "CIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 2,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 3,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 4,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 5,
+          "opponent": "DAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 30,
+          "adjustedPoints": 24.5,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.5
+        },
+        {
+          "week": 6,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 7,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 8,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 9,
+          "opponent": "CHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 10,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 11,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 12,
+          "opponent": "CAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 13,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 14,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 15,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 16,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 17,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 18,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "ATL",
+        "isHome": false,
+        "isBye": false,
+        "rank": 3,
+        "adjustedPoints": 18.8,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 18.8
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "LAR",
+        "isHome": true,
+        "isBye": false,
+        "rank": 3,
+        "adjustedPoints": 18.4,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 18.4
+      },
+      "rosSummary": 19.5
+    },
+    {
+      "team": "BUF",
+      "teamFullName": "Buffalo Bills",
+      "division": "AFC East",
+      "overallRank": 28,
+      "rosRank": 28,
+      "playoffRank": 22,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 2,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 3,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 4,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 5,
+          "opponent": "LAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 6,
+          "opponent": "LV",
+          "isHome": false,
+          "isBye": false,
+          "rank": 25,
+          "adjustedPoints": 22.5,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 22.5
+        },
+        {
+          "week": 7,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 8,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 9,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 10,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 11,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 12,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 13,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 14,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 15,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 16,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 17,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 18,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "DEN",
+        "isHome": false,
+        "isBye": false,
+        "rank": 11,
+        "adjustedPoints": 19.9,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.9
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "MIA",
+        "isHome": false,
+        "isBye": false,
+        "rank": 11,
+        "adjustedPoints": 19.8,
+        "difficultyBucket": "TOUGH",
+        "difficultyScore": 19.8
+      },
+      "rosSummary": 19.5
+    },
+    {
+      "team": "LV",
+      "teamFullName": "Las Vegas Raiders",
+      "division": "AFC West",
+      "overallRank": 29,
+      "rosRank": 29,
+      "playoffRank": 7,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "MIA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 2,
+          "opponent": "LAC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 3,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 4,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 5,
+          "opponent": "NE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 6,
+          "opponent": "BUF",
+          "isHome": true,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 7,
+          "opponent": "LAR",
+          "isHome": true,
+          "isBye": false,
+          "rank": 5,
+          "adjustedPoints": 17.5,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.5
+        },
+        {
+          "week": 8,
+          "opponent": "NYJ",
+          "isHome": false,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 9,
+          "opponent": "SF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 23,
+          "adjustedPoints": 21.4,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.4
+        },
+        {
+          "week": 10,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 11,
+          "opponent": "DEN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 12,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 13,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 14,
+          "opponent": "LAC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 13,
+          "adjustedPoints": 18.4,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.4
+        },
+        {
+          "week": 15,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 16,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 17,
+          "opponent": "ARI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 28,
+          "adjustedPoints": 24,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24
+        },
+        {
+          "week": 18,
+          "opponent": "KC",
+          "isHome": false,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "TEN",
+        "isHome": true,
+        "isBye": false,
+        "rank": 26,
+        "adjustedPoints": 22.4,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 22.4
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "ARI",
+        "isHome": false,
+        "isBye": false,
+        "rank": 26,
+        "adjustedPoints": 20.9,
+        "difficultyBucket": "SMASH_SPOT",
+        "difficultyScore": 20.9
+      },
+      "rosSummary": 19.4
+    },
+    {
+      "team": "CHI",
+      "teamFullName": "Chicago Bears",
+      "division": "NFC North",
+      "overallRank": 30,
+      "rosRank": 30,
+      "playoffRank": 16,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 2,
+          "opponent": "MIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 3,
+          "opponent": "PHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 4,
+          "opponent": "NYJ",
+          "isHome": true,
+          "isBye": false,
+          "rank": 31,
+          "adjustedPoints": 24.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 24.7
+        },
+        {
+          "week": 5,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 6,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 7,
+          "opponent": "NE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 3,
+          "adjustedPoints": 16.4,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.4
+        },
+        {
+          "week": 8,
+          "opponent": "SEA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 9,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 10,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 11,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 12,
+          "opponent": "DET",
+          "isHome": false,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 13,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 14,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 15,
+          "opponent": "BUF",
+          "isHome": false,
+          "isBye": false,
+          "rank": 26,
+          "adjustedPoints": 22.7,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 22.7
+        },
+        {
+          "week": 16,
+          "opponent": "GB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 17,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 18,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "GB",
+        "isHome": true,
+        "isBye": false,
+        "rank": 17,
+        "adjustedPoints": 18.6,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 18.6
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "DET",
+        "isHome": true,
+        "isBye": false,
+        "rank": 17,
+        "adjustedPoints": 20,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 20
+      },
+      "rosSummary": 19.2
+    },
+    {
+      "team": "CIN",
+      "teamFullName": "Cincinnati Bengals",
+      "division": "AFC North",
+      "overallRank": 31,
+      "rosRank": 31,
+      "playoffRank": 17,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 2,
+          "opponent": "HOU",
+          "isHome": false,
+          "isBye": false,
+          "rank": 7,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 3,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 4,
+          "opponent": "JAX",
+          "isHome": true,
+          "isBye": false,
+          "rank": 6,
+          "adjustedPoints": 17.6,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 17.6
+        },
+        {
+          "week": 5,
+          "opponent": "MIA",
+          "isHome": false,
+          "isBye": false,
+          "rank": 24,
+          "adjustedPoints": 21.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.8
+        },
+        {
+          "week": 6,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 7,
+          "opponent": "BAL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 8,
+          "opponent": "TEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 20,
+          "adjustedPoints": 20.8,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 20.8
+        },
+        {
+          "week": 9,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 10,
+          "opponent": "PIT",
+          "isHome": true,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 11,
+          "opponent": "WAS",
+          "isHome": false,
+          "isBye": false,
+          "rank": 27,
+          "adjustedPoints": 23.8,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 23.8
+        },
+        {
+          "week": 12,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 13,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 14,
+          "opponent": "KC",
+          "isHome": true,
+          "isBye": false,
+          "rank": 9,
+          "adjustedPoints": 17.9,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.9
+        },
+        {
+          "week": 15,
+          "opponent": "CAR",
+          "isHome": false,
+          "isBye": false,
+          "rank": 22,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 16,
+          "opponent": "IND",
+          "isHome": false,
+          "isBye": false,
+          "rank": 14,
+          "adjustedPoints": 18.6,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 18.6
+        },
+        {
+          "week": 17,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 18,
+          "opponent": "CLE",
+          "isHome": true,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "IND",
+        "isHome": false,
+        "isBye": false,
+        "rank": 16,
+        "adjustedPoints": 19.3,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 19.3
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "BAL",
+        "isHome": true,
+        "isBye": false,
+        "rank": 16,
+        "adjustedPoints": 19.9,
+        "difficultyBucket": "NEUTRAL",
+        "difficultyScore": 19.9
+      },
+      "rosSummary": 19.1
+    },
+    {
+      "team": "CAR",
+      "teamFullName": "Carolina Panthers",
+      "division": "NFC South",
+      "overallRank": 32,
+      "rosRank": 32,
+      "playoffRank": 27,
+      "weeks": [
+        {
+          "week": 1,
+          "opponent": "CHI",
+          "isHome": true,
+          "isBye": false,
+          "rank": 17,
+          "adjustedPoints": 19.5,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.5
+        },
+        {
+          "week": 2,
+          "opponent": "ATL",
+          "isHome": false,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 3,
+          "opponent": "CLE",
+          "isHome": false,
+          "isBye": false,
+          "rank": 12,
+          "adjustedPoints": 18.3,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.3
+        },
+        {
+          "week": 4,
+          "opponent": "DET",
+          "isHome": true,
+          "isBye": false,
+          "rank": 11,
+          "adjustedPoints": 18.2,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18.2
+        },
+        {
+          "week": 5,
+          "opponent": null,
+          "isHome": null,
+          "isBye": true,
+          "rank": null,
+          "adjustedPoints": null,
+          "difficultyBucket": null,
+          "difficultyScore": null
+        },
+        {
+          "week": 6,
+          "opponent": "PHI",
+          "isHome": false,
+          "isBye": false,
+          "rank": 21,
+          "adjustedPoints": 21.1,
+          "difficultyBucket": "FAVORABLE",
+          "difficultyScore": 21.1
+        },
+        {
+          "week": 7,
+          "opponent": "TB",
+          "isHome": true,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 8,
+          "opponent": "GB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 16,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 9,
+          "opponent": "DEN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 10,
+          "adjustedPoints": 18,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 18
+        },
+        {
+          "week": 10,
+          "opponent": "NO",
+          "isHome": false,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 11,
+          "opponent": "BAL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 18,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        },
+        {
+          "week": 12,
+          "opponent": "TB",
+          "isHome": false,
+          "isBye": false,
+          "rank": 15,
+          "adjustedPoints": 19.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 19.1
+        },
+        {
+          "week": 13,
+          "opponent": "MIN",
+          "isHome": false,
+          "isBye": false,
+          "rank": 4,
+          "adjustedPoints": 16.7,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.7
+        },
+        {
+          "week": 14,
+          "opponent": "NO",
+          "isHome": true,
+          "isBye": false,
+          "rank": 8,
+          "adjustedPoints": 17.7,
+          "difficultyBucket": "TOUGH",
+          "difficultyScore": 17.7
+        },
+        {
+          "week": 15,
+          "opponent": "CIN",
+          "isHome": true,
+          "isBye": false,
+          "rank": 32,
+          "adjustedPoints": 25,
+          "difficultyBucket": "SMASH_SPOT",
+          "difficultyScore": 25
+        },
+        {
+          "week": 16,
+          "opponent": "PIT",
+          "isHome": false,
+          "isBye": false,
+          "rank": 2,
+          "adjustedPoints": 16.1,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16.1
+        },
+        {
+          "week": 17,
+          "opponent": "SEA",
+          "isHome": true,
+          "isBye": false,
+          "rank": 1,
+          "adjustedPoints": 16,
+          "difficultyBucket": "VERY_TOUGH",
+          "difficultyScore": 16
+        },
+        {
+          "week": 18,
+          "opponent": "ATL",
+          "isHome": true,
+          "isBye": false,
+          "rank": 19,
+          "adjustedPoints": 20.1,
+          "difficultyBucket": "NEUTRAL",
+          "difficultyScore": 20.1
+        }
+      ],
+      "playoff2": {
+        "week": 16,
+        "opponent": "PIT",
+        "isHome": false,
+        "isBye": false,
+        "rank": 6,
+        "adjustedPoints": 16.1,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 16.1
+      },
+      "playoff3": {
+        "week": 17,
+        "opponent": "SEA",
+        "isHome": true,
+        "isBye": false,
+        "rank": 6,
+        "adjustedPoints": 19,
+        "difficultyBucket": "VERY_TOUGH",
+        "difficultyScore": 19
+      },
+      "rosSummary": 18.9
+    }
+  ]
+}

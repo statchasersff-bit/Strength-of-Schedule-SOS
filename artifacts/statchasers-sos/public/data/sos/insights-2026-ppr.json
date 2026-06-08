@@ -1,0 +1,46 @@
+{
+  "season": 2026,
+  "scoring": "PPR",
+  "cards": [
+    {
+      "id": "easiest-schedule",
+      "title": "Easiest Schedule",
+      "subtitle": "Full season",
+      "value": "PHI",
+      "detail": "21.8 adj pts",
+      "position": "ALL",
+      "team": "PHI",
+      "trend": "positive"
+    },
+    {
+      "id": "toughest-schedule",
+      "title": "Toughest Schedule",
+      "subtitle": "Full season",
+      "value": "CHI",
+      "detail": "19.8 adj pts",
+      "position": "ALL",
+      "team": "CHI",
+      "trend": "negative"
+    },
+    {
+      "id": "best-playoff",
+      "title": "Best Playoff Slate",
+      "subtitle": "Weeks 15-17",
+      "value": "MIN",
+      "detail": "22.8 adj pts",
+      "position": "ALL",
+      "team": "MIN",
+      "trend": "positive"
+    },
+    {
+      "id": "toughest-playoff",
+      "title": "Toughest Playoff Slate",
+      "subtitle": "Weeks 15-17",
+      "value": "SF",
+      "detail": "17.9 adj pts",
+      "position": "ALL",
+      "team": "SF",
+      "trend": "negative"
+    }
+  ]
+}
