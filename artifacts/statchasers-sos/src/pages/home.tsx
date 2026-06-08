@@ -9,7 +9,7 @@ import { TeamMatrix } from "@/components/sos/team-matrix";
 import { PlayerMatrix } from "@/components/sos/player-matrix";
 import { FpaTable } from "@/components/sos/fpa-table";
 import { ScheduleTable } from "@/components/sos/schedule-table";
-import { getExportTeamSosCsvUrl, getExportPlayerSosCsvUrl } from "@workspace/api-client-react";
+import { fetchTeamSosCsv, fetchPlayerSosCsv } from "@/lib/sos-client";
 
 export default function Home() {
   const { filters, setFilters } = useFilters();
@@ -27,26 +27,27 @@ export default function Home() {
     meta.setAttribute('content', 'View 2026 fantasy football strength of schedule by team, player, position, scoring format, rest-of-season, and fantasy playoff weeks.');
   }, []);
 
+  const downloadBlob = (blob: Blob, filename: string) => {
+    const objectUrl = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = objectUrl;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(objectUrl);
+  };
+
   const handleExportTeam = async () => {
     try {
-       // Since the export hooks from orval just return the string content for csv 
-       // but we want a browser download, we can use the generated URL builders:
-       const url = getExportTeamSosCsvUrl({
-         season: filters.season,
-         position: filters.position as any,
-         scoring: filters.scoring as any,
-         metric: filters.metric as any,
-       });
-       const res = await fetch(url);
-       const blob = await res.blob();
-       const objectUrl = URL.createObjectURL(blob);
-       const a = document.createElement("a");
-       a.href = objectUrl;
-       a.download = `statchasers_team_sos_${filters.season}_${filters.position}.csv`;
-       document.body.appendChild(a);
-       a.click();
-       document.body.removeChild(a);
-       URL.revokeObjectURL(objectUrl);
+      // CSV is built client-side from the static SOS JSON.
+      const blob = await fetchTeamSosCsv({
+        season: filters.season,
+        position: filters.position as any,
+        scoring: filters.scoring as any,
+        metric: filters.metric as any,
+      });
+      downloadBlob(blob, `statchasers_team_sos_${filters.season}_${filters.position}.csv`);
     } catch (e) {
       console.error(e);
     }
@@ -54,22 +55,13 @@ export default function Home() {
 
   const handleExportPlayer = async () => {
     try {
-       const url = getExportPlayerSosCsvUrl({
-         season: filters.season,
-         position: filters.position as any,
-         scoring: filters.scoring as any,
-         metric: filters.metric as any,
-       });
-       const res = await fetch(url);
-       const blob = await res.blob();
-       const objectUrl = URL.createObjectURL(blob);
-       const a = document.createElement("a");
-       a.href = objectUrl;
-       a.download = `statchasers_player_sos_${filters.season}_${filters.position}.csv`;
-       document.body.appendChild(a);
-       a.click();
-       document.body.removeChild(a);
-       URL.revokeObjectURL(objectUrl);
+      const blob = await fetchPlayerSosCsv({
+        season: filters.season,
+        position: filters.position as any,
+        scoring: filters.scoring as any,
+        metric: filters.metric as any,
+      });
+      downloadBlob(blob, `statchasers_player_sos_${filters.season}_${filters.position}.csv`);
     } catch (e) {
       console.error(e);
     }
@@ -126,7 +118,7 @@ export default function Home() {
               Instead of looking at raw points allowed (which unfairly penalizes defenses that have played elite offenses), our model adjusts for the strength of the opponent. This gives you a much clearer picture of whether a matchup is a true "Smash Spot" or a trap.
             </p>
             <p>
-              The color coding highlights the opportunity: <span className="text-emerald-400 font-semibold">Green (Smash Spot/Favorable)</span> indicates a highly exploitable matchup, while <span className="text-red-400 font-semibold">Red (Very Tough)</span> warns of a shutdown defense.
+              The color coding highlights the opportunity: <span className="text-emerald-600 font-semibold">Green (Smash Spot/Favorable)</span> indicates a highly exploitable matchup, while <span className="text-red-600 font-semibold">Red (Very Tough)</span> warns of a shutdown defense.
             </p>
           </div>
         </section>

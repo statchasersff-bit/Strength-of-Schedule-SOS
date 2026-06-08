@@ -5,6 +5,15 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+/**
+ * ESPN team-logo CDN URL for a team abbreviation (e.g. "PHI" -> .../phi.png).
+ * ESPN serves every abbreviation used in our data as a lowercase slug.
+ */
+export function getTeamLogoUrl(team?: string | null): string | null {
+  if (!team) return null
+  return `https://a.espncdn.com/i/teamlogos/nfl/500/${team.toLowerCase()}.png`
+}
+
 export function getDifficultyColorClass(
   bucket: string | null | undefined,
   isBye?: boolean,

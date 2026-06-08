@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUp, Minus } from "lucide-react";
 import { FilterState } from "@/hooks/use-filters";
-import { useGetInsights, getGetInsightsQueryKey } from "@workspace/api-client-react";
+import { useGetInsights, getGetInsightsQueryKey } from "@/lib/sos-client";
 
 interface InsightCardsProps {
   filters: FilterState;

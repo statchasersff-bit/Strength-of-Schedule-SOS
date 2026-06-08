@@ -60,39 +60,49 @@
 }
 
 :root {
-  /* StatChasers Branding - Dark By Default */
-  --background: 225 21% 7%; /* #0d0f14 */
-  --foreground: 210 40% 98%;
-  
-  --border: 217 19% 15%;
-  --input: 217 19% 20%;
-  --ring: 44 53% 54%; /* Gold */
-  
-  --card: 222 20% 10%;
-  --card-foreground: 210 40% 98%;
-  --card-border: 217 19% 15%;
-  
-  --popover: 222 20% 10%;
-  --popover-foreground: 210 40% 98%;
-  --popover-border: 217 19% 15%;
-  
-  --primary: 44 53% 54%; /* Gold #C9A84C */
-  --primary-foreground: 225 21% 7%;
-  
-  --secondary: 217 19% 15%;
-  --secondary-foreground: 210 40% 98%;
-  
-  --muted: 217 19% 15%;
-  --muted-foreground: 215 20.2% 65.1%;
-  
-  --accent: 44 53% 54%;
-  --accent-foreground: 225 21% 7%;
-  
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
+  /* StatChasers Branding - Light theme (navy / gold on white) */
+  --background: 0 0% 100%;            /* white #FFFFFF */
+  --foreground: 220 47% 11%;          /* navy #0B1F3A */
 
-  --radius: 0.5rem;
-  
+  --border: 220 13% 91%;              /* light divider */
+  --input: 220 13% 91%;
+  --ring: 43 96% 56%;                 /* gold focus ring #F4C430 */
+
+  --card: 0 0% 100%;                  /* white */
+  --card-foreground: 220 47% 11%;     /* navy */
+  --card-border: 220 13% 91%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 47% 11%;
+  --popover-border: 220 13% 91%;
+
+  --primary: 43 96% 56%;              /* gold #F4C430 */
+  --primary-foreground: 220 47% 11%;  /* navy text on gold */
+
+  --secondary: 220 14% 96%;           /* light gray (inactive buttons) */
+  --secondary-foreground: 220 47% 11%;/* navy */
+
+  --muted: 220 14% 97%;               /* alt row #FAFBFC */
+  --muted-foreground: 215 25% 40%;    /* slate gray ~#64748B */
+
+  --accent: 43 96% 56%;               /* gold */
+  --accent-foreground: 220 47% 11%;   /* navy */
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --radius: 0.5rem;                   /* 8px */
+
+  /* Sidebar */
+  --sidebar: 0 0% 100%;
+  --sidebar-foreground: 220 47% 11%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-primary: 43 96% 56%;
+  --sidebar-primary-foreground: 220 47% 11%;
+  --sidebar-accent: 220 14% 97%;
+  --sidebar-accent-foreground: 220 47% 11%;
+  --sidebar-ring: 43 96% 56%;
+
   /* Fallbacks for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
   --sidebar-accent-border: hsl(var(--sidebar-accent));
@@ -101,37 +111,38 @@
   --muted-border: hsl(var(--muted));
   --accent-border: hsl(var(--accent));
   --destructive-border: hsl(var(--destructive));
-  
-  --button-outline: rgba(255,255,255, .10);
-  --badge-outline: rgba(255,255,255, .05);
+
+  /* Navy-alpha overlays so hover/outline render on the light theme */
+  --button-outline: rgba(11, 31, 58, .14);   /* navy #0B1F3A */
+  --badge-outline: rgba(11, 31, 58, .08);
   --opaque-button-border-intensity: -8;
-  --elevate-1: rgba(255,255,255, .03);
-  --elevate-2: rgba(255,255,255, .08);
+  --elevate-1: rgba(11, 31, 58, .04);
+  --elevate-2: rgba(11, 31, 58, .07);
 }
 
 .dark {
-  /* Same as root because app is forced dark */
-  --background: 225 21% 7%;
-  --foreground: 210 40% 98%;
-  --border: 217 19% 15%;
-  --input: 217 19% 20%;
-  --ring: 44 53% 54%;
-  --card: 222 20% 10%;
-  --card-foreground: 210 40% 98%;
-  --card-border: 217 19% 15%;
-  --popover: 222 20% 10%;
-  --popover-foreground: 210 40% 98%;
-  --popover-border: 217 19% 15%;
-  --primary: 44 53% 54%;
-  --primary-foreground: 225 21% 7%;
-  --secondary: 217 19% 15%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 217 19% 15%;
-  --muted-foreground: 215 20.2% 65.1%;
-  --accent: 44 53% 54%;
-  --accent-foreground: 225 21% 7%;
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
+  /* App forced light — mirror :root so an accidental .dark stays on-brand */
+  --background: 0 0% 100%;
+  --foreground: 220 47% 11%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 43 96% 56%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 47% 11%;
+  --card-border: 220 13% 91%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 47% 11%;
+  --popover-border: 220 13% 91%;
+  --primary: 43 96% 56%;
+  --primary-foreground: 220 47% 11%;
+  --secondary: 220 14% 96%;
+  --secondary-foreground: 220 47% 11%;
+  --muted: 220 14% 97%;
+  --muted-foreground: 215 25% 40%;
+  --accent: 43 96% 56%;
+  --accent-foreground: 220 47% 11%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
 }
 
 @layer base {
@@ -144,10 +155,10 @@
 }
 
 @layer utilities {
-  .bg-difficulty-smash { @apply bg-emerald-900/80 text-emerald-100 border-emerald-800; }
-  .bg-difficulty-fav { @apply bg-teal-900/60 text-teal-100 border-teal-800/80; }
-  .bg-difficulty-neut { @apply bg-gray-800/80 text-gray-200 border-gray-700/80; }
-  .bg-difficulty-tough { @apply bg-orange-900/60 text-orange-100 border-orange-800/80; }
-  .bg-difficulty-v-tough { @apply bg-red-900/80 text-red-100 border-red-800; }
-  .bg-difficulty-bye { @apply bg-gray-900/50 text-gray-500 border-gray-800/50; }
+  .bg-difficulty-smash { @apply bg-emerald-100 text-emerald-900 border-emerald-300; }
+  .bg-difficulty-fav { @apply bg-teal-50 text-teal-900 border-teal-200; }
+  .bg-difficulty-neut { @apply bg-gray-100 text-gray-700 border-gray-200; }
+  .bg-difficulty-tough { @apply bg-orange-50 text-orange-900 border-orange-200; }
+  .bg-difficulty-v-tough { @apply bg-red-100 text-red-900 border-red-300; }
+  .bg-difficulty-bye { @apply bg-gray-50 text-gray-400 border-gray-200; }
 }
