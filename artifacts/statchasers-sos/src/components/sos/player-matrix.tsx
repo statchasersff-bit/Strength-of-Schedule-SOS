@@ -1,17 +1,46 @@
 import { FilterState } from "@/hooks/use-filters";
-import { useGetPlayerSos, getGetPlayerSosQueryKey } from "@workspace/api-client-react";
+import { useGetPlayerSos, getGetPlayerSosQueryKey } from "@/lib/sos-client";
 import { cn, getDifficultyColorClass } from "@/lib/utils";
 import { GetPlayerSosMetric, WeekCell, WeekCellDifficultyBucket } from "@workspace/api-client-react";
+import { SortHeader, useSort, type Accessor } from "./sortable";
 
 interface PlayerMatrixProps {
   filters: FilterState;
 }
+
+type PlayerRow = {
+  playerId: string;
+  playerName: string;
+  team: string;
+  position: string;
+  sosRank: number;
+  rosSosRank: number;
+  playoffSosRank: number;
+  weeks: (WeekCell | undefined)[];
+  playoff2?: WeekCell | null;
+  playoff3?: WeekCell | null;
+};
+
+const PLAYER_ACCESSORS: Record<string, Accessor<PlayerRow>> = {
+  player: (r) => r.playerName,
+  team: (r) => r.team,
+  ovr: (r) => r.sosRank,
+  ros: (r) => r.rosSosRank,
+  playoff: (r) => r.playoffSosRank,
+  po2: (r) => r.playoff2?.rank,
+  po3: (r) => r.playoff3?.rank,
+  // Week columns sort by opponent-defense rank (BYE weeks fall to the bottom).
+  ...Object.fromEntries(
+    Array.from({ length: 18 }, (_, i) => [`w${i + 1}`, (r: PlayerRow) => r.weeks[i]?.rank] as const),
+  ),
+};
 
 export function PlayerMatrix({ filters }: PlayerMatrixProps) {
   const { data, isLoading } = useGetPlayerSos(
     filters,
     { query: { enabled: !!filters.season, queryKey: getGetPlayerSosQueryKey(filters) } }
   );
+  const { sorted, sort, toggle } = useSort(data?.rows as PlayerRow[] | undefined, PLAYER_ACCESSORS);
 
   if (isLoading) {
     return <div className="h-96 w-full flex items-center justify-center bg-card rounded-lg border border-border animate-pulse"><span className="text-muted-foreground font-mono">LOADING PLAYER DATA...</span></div>;
@@ -49,22 +78,22 @@ export function PlayerMatrix({ filters }: PlayerMatrixProps) {
   return (
     <div className="w-full overflow-x-auto rounded-lg border border-border bg-card pb-4">
       <table className="w-full text-sm text-left border-collapse">
-        <thead className="text-xs uppercase bg-muted/50 text-muted-foreground sticky top-0 z-20">
+        <thead className="text-xs uppercase bg-foreground text-background sticky top-0 z-20">
           <tr>
-            <th className="sticky left-0 bg-muted px-4 py-3 font-semibold border-b border-r border-border z-30 min-w-[180px]">Player</th>
-            <th className="px-4 py-3 font-semibold border-b border-r border-border min-w-[60px] text-center">Team</th>
-            <th className="px-4 py-3 font-semibold border-b border-r border-border min-w-[60px] text-center">OVR</th>
-            <th className="px-4 py-3 font-semibold border-b border-r border-border min-w-[60px] text-center">ROS</th>
-            <th className="px-4 py-3 font-semibold border-b border-r border-border min-w-[80px] text-center">PLAYOFF</th>
+            <SortHeader label="Player" sortKey="player" sort={sort} onSort={toggle} align="left" className="sticky left-0 bg-foreground px-4 py-3 border-b border-r border-border z-30 min-w-[180px]" />
+            <SortHeader label="Team" sortKey="team" sort={sort} onSort={toggle} className="px-4 py-3 border-b border-r border-border min-w-[60px]" />
+            <SortHeader label="OVR" sortKey="ovr" sort={sort} onSort={toggle} className="px-4 py-3 border-b border-r border-border min-w-[60px]" />
+            <SortHeader label="ROS" sortKey="ros" sort={sort} onSort={toggle} className="px-4 py-3 border-b border-r border-border min-w-[60px]" />
+            <SortHeader label="PLAYOFF" sortKey="playoff" sort={sort} onSort={toggle} className="px-4 py-3 border-b border-r border-border min-w-[80px]" />
             {weeks.map(w => (
-              <th key={w} className="px-2 py-3 font-semibold border-b border-r border-border min-w-[60px] text-center">W{w}</th>
+              <SortHeader key={w} label={`W${w}`} sortKey={`w${w}`} sort={sort} onSort={toggle} className="px-2 py-3 border-b border-r border-border min-w-[60px]" />
             ))}
-            <th className="px-2 py-3 font-semibold border-b border-r border-border min-w-[60px] text-center">PO2</th>
-            <th className="px-2 py-3 font-semibold border-b border-border min-w-[60px] text-center">PO3</th>
+            <SortHeader label="PO2" sortKey="po2" sort={sort} onSort={toggle} className="px-2 py-3 border-b border-r border-border min-w-[60px]" />
+            <SortHeader label="PO3" sortKey="po3" sort={sort} onSort={toggle} className="px-2 py-3 border-b border-border min-w-[60px]" />
           </tr>
         </thead>
         <tbody className="font-mono">
-          {data.rows.map((row, i) => (
+          {(sorted ?? []).map((row, i) => (
             <tr key={row.playerId} data-testid={`player-row-${row.playerId}`} className={cn("border-b border-border/50 hover:bg-muted/20 transition-colors", i % 2 === 0 ? "bg-transparent" : "bg-muted/10")}>
               <td className="sticky left-0 bg-card px-4 py-2 border-r border-border font-semibold flex items-center gap-2 z-10 truncate max-w-[200px]">
                 <span className="text-foreground truncate">{row.playerName}</span>
