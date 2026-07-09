@@ -202,7 +202,7 @@ export function SosTeamInsightCard({
             className="h-7 w-7 shrink-0 object-contain"
           />
         )}
-        <div className="min-w-0 flex-1">
+        <div className="relative min-w-0 flex-1">
           {/* Row 1: team abbreviation + aFPA stat, aligned on one baseline.
               Auto-fit down (in lockstep with the sibling cards) so long values
               never clip on narrow cards. */}
@@ -222,8 +222,18 @@ export function SosTeamInsightCard({
               dropped from every card at once (nameFit.hidden) the moment it
               would truncate on any one of them, so the row stays uniform;
               the delta always stays, right-aligned under the aFPA value, and
-              drops "league" once the full form would overflow (deltaFit). */}
-          <div ref={setRowRef} className="relative mt-1 flex items-baseline gap-2">
+              drops "league" once the full form would overflow (deltaFit).
+              Once the name is gone this row carries only the delta, so we take
+              it out of flow (absolute, under row 1) — the column then collapses
+              to the abbreviation row and the `items-center` logo lines up with
+              the abbreviation instead of floating between the two rows. */}
+          <div
+            ref={setRowRef}
+            className={cn(
+              "mt-1 flex items-baseline gap-2",
+              nameFit.hidden ? "absolute inset-x-0 top-full" : "relative",
+            )}
+          >
             {teamFullName && !nameFit.hidden && (
               <span className="min-w-0 flex-1 truncate text-[8.5px] font-bold text-muted-foreground">
                 {teamFullName}

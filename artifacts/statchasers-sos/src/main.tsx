@@ -27,47 +27,57 @@ function registerTailwindProperties() {
   document.head.appendChild(style);
 }
 
-/** Roots keyed by host element — lets HMR re-renders re-use the existing root. */
-const roots = new Map<HTMLElement, ReturnType<typeof createRoot>>();
+// Augment HTMLElement so we can stash the React root directly on the DOM node.
+// This survives Vite HMR module re-executions (the DOM outlives the module scope)
+// so we never call createRoot() twice on the same shell.
+declare global {
+  interface HTMLElement {
+    _sosReactRoot?: ReturnType<typeof createRoot>;
+  }
+}
 
 /**
  * Mount the app into a Shadow DOM under `host`, isolating its styles from (and
  * against) the surrounding page. `host` is the `.sos-app-root` wrapper the
  * WordPress plugin emits; in local dev it's the `#root` div from index.html.
+ *
+ * Safe to call repeatedly (HMR re-executions). On repeat calls it:
+ *   - reuses the existing shadow root
+ *   - patches the inline CSS so styles stay up-to-date
+ *   - calls root.render() on the existing React root (never createRoot() twice)
  */
 function mount(host: HTMLElement) {
   try {
     registerTailwindProperties();
 
+    // --- shadow root ---
     let shadow = host.shadowRoot;
-    let shell: HTMLElement;
-
     if (!shadow) {
       shadow = host.attachShadow({ mode: "open" });
+    }
 
-      const style = document.createElement("style");
-      style.textContent = cssText;
-      shadow.appendChild(style);
+    // --- inline <style> (always refresh so CSS edits take effect via HMR) ---
+    let styleEl = shadow.querySelector("style");
+    if (!styleEl) {
+      styleEl = document.createElement("style");
+      shadow.appendChild(styleEl);
+    }
+    styleEl.textContent = cssText;
 
+    // --- shell div (Radix portal target + React mount point) ---
+    let shell = shadow.querySelector<HTMLElement>(".sos-app-shell");
+    if (!shell) {
       shell = document.createElement("div");
       shell.className = "sos-app-shell";
       shadow.appendChild(shell);
-    } else {
-      const existing = shadow.querySelector<HTMLElement>(".sos-app-shell");
-      shell = existing ?? shadow.appendChild(Object.assign(document.createElement("div"), { className: "sos-app-shell" }));
-
-      const style = shadow.querySelector("style");
-      if (style) style.textContent = cssText;
     }
 
-    if (!roots.has(host)) {
-      roots.set(
-        host,
-        createRoot(shell),
-      );
+    // --- React root (reuse across HMR re-runs via the DOM-attached reference) ---
+    if (!shell._sosReactRoot) {
+      shell._sosReactRoot = createRoot(shell);
     }
 
-    roots.get(host)!.render(
+    shell._sosReactRoot.render(
       <ShadowContainerProvider value={shell}>
         <App />
       </ShadowContainerProvider>,
@@ -89,10 +99,10 @@ function mountAll() {
 
 mountAll();
 
-// During Vite HMR, accept CSS/module updates gracefully by re-rendering into
-// the existing React root rather than crashing on a double attachShadow call.
+// Tell Vite this module handles its own HMR updates. Without this, any change
+// that touches main.tsx (including transitive CSS updates via the ?inline import)
+// triggers a full-page reload. With it, Vite re-evaluates the module — but
+// mount() now safely reuses the existing shadow root and React root.
 if (import.meta.hot) {
-  import.meta.hot.accept(() => {
-    mountAll();
-  });
+  import.meta.hot.accept();
 }

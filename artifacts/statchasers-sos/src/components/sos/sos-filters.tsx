@@ -72,8 +72,10 @@ export function SosFilters({ filters, setFilters, activeTab, setActiveTab, onExp
         </Tabs>
 
         {/* Right cluster: the filter group + export, so they share the header row
-            opposite the view tabs. */}
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-3">
+            opposite the view tabs. Stays a single row on mobile too, so the
+            export button sits beside the Position/Scoring pills instead of
+            stacking full-width beneath them. */}
+        <div className="flex flex-row items-center gap-2 md:gap-3">
         {/* Desktop: grouped control bar — one pill containing the two filters. */}
         <div className="hidden md:flex flex-wrap items-center divide-x divide-border rounded-lg border border-border bg-card shadow-sm">
           <label className="flex items-center gap-2 px-3 py-2">
@@ -102,7 +104,7 @@ export function SosFilters({ filters, setFilters, activeTab, setActiveTab, onExp
         </div>
 
         {/* Mobile: app-style filter pills, horizontally scrollable, hidden scrollbar. */}
-        <div className="flex md:hidden justify-center gap-2 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex md:hidden flex-1 min-w-0 gap-2 overflow-x-auto pb-0.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <FilterPill label="Position" value={filters.position}>
             <select
               data-testid="select-position-mobile"
@@ -134,7 +136,7 @@ export function SosFilters({ filters, setFilters, activeTab, setActiveTab, onExp
               size="sm"
               onClick={onExport}
               data-testid={activeTab === "player" ? "btn-export-player" : "btn-export-team"}
-              className="h-11 w-full md:h-9 md:w-auto"
+              className="h-11 w-auto shrink-0 md:h-9"
             >
               <Download className="w-4 h-4 mr-2" />
               {exportLabel}
