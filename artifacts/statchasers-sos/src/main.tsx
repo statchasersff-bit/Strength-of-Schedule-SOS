@@ -7,6 +7,30 @@ import { ShadowContainerProvider } from "./lib/shadow-container";
 import cssText from "./index.css?inline";
 
 /**
+ * `@property` at-rules are IGNORED inside a Shadow DOM — the browser only honors
+ * them at the document level. Tailwind v4 leans on them heavily: `--tw-border-style`
+ * (defaults to `solid`), the transform/gradient/ring vars, etc. all get their
+ * initial values from `@property`. Inside our shadow root those registrations
+ * never take effect, so e.g. `border-style: var(--tw-border-style)` resolves to
+ * an empty value and every `border-*` utility collapses to `border-style: none` —
+ * i.e. borders disappear tool-wide.
+ *
+ * Fix: lift the `@property` rules into the document head once. They only REGISTER
+ * custom properties (no selectors, no visual styles), so nothing leaks into the
+ * host WordPress/Divi page, but the registrations now apply to the shadow tree
+ * too and Tailwind's borders/transforms/gradients render as intended.
+ */
+function registerTailwindProperties() {
+  if (document.getElementById("sos-tw-properties")) return;
+  const rules = cssText.match(/@property\s+--[\w-]+\s*\{[^}]*\}/g);
+  if (!rules?.length) return;
+  const style = document.createElement("style");
+  style.id = "sos-tw-properties";
+  style.textContent = rules.join("\n");
+  document.head.appendChild(style);
+}
+
+/**
  * Mount the app into a Shadow DOM under `host`, isolating its styles from (and
  * against) the surrounding page. `host` is the `.sos-app-root` wrapper the
  * WordPress plugin emits; in local dev it's the `#root` div from index.html.
@@ -14,6 +38,10 @@ import cssText from "./index.css?inline";
 function mount(host: HTMLElement) {
   // Guard against double-mounting (e.g. HMR or a stray second script tag).
   if (host.shadowRoot) return;
+
+  // Register Tailwind's `@property` custom props at the document level so they
+  // apply inside the shadow root (they don't work when scoped to a shadow tree).
+  registerTailwindProperties();
 
   const shadow = host.attachShadow({ mode: "open" });
 
