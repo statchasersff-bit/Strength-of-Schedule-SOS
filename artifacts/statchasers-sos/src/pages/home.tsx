@@ -17,11 +17,6 @@ import { DifficultyLegend } from "@/components/sos/difficulty-legend";
 import { BaselineNotice } from "@/components/sos/baseline-notice";
 import { fetchTeamSosCsv, fetchPlayerSosCsv } from "@/lib/sos-client";
 
-const SCORING_LABELS: Record<string, string> = {
-  PPR: "PPR",
-  HALF_PPR: "Half-PPR",
-  STANDARD: "Standard",
-};
 // Map between the filter enum values and the URL scoring slugs.
 const SCORING_TO_SLUG: Record<string, SosScoring> = {
   PPR: "ppr",
@@ -242,27 +237,19 @@ export default function Home() {
               >
                 How aFPA works →
               </a>
-              <BaselineNotice />
             </div>
           </div>
-          <p className="mt-1 pl-6 text-xs font-medium text-muted-foreground">
-            {[
-              String(filters.season),
-              filters.position,
-              SCORING_LABELS[filters.scoring] ?? filters.scoring,
-              "Weeks 1–17",
-            ].join(" · ")}
-          </p>
         </div>
 
         {/* One light divider is all the separation the context vs. legend/actions
             needs — no surrounding box. */}
         <hr className="mb-3 border-t border-[rgba(11,31,58,0.08)]" />
 
-        {/* Flat legend row — the color key. (Export now lives in the header next
-            to the view tabs; baseline lives in the context block above.) */}
-        <div className="mb-4">
-          <DifficultyLegend bare />
+        {/* Flat legend row — the color key on the left, preseason baseline pill on
+            the right. (Export lives in the header next to the view tabs.) */}
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 max-sm:justify-center">
+          <DifficultyLegend bare className="w-auto" />
+          <BaselineNotice className="shrink-0" />
         </div>
 
         {/* Scroll region so a wide table scrolls within the tool instead of pushing the page wider on the right.

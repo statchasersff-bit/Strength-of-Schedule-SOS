@@ -51,7 +51,7 @@ function FilterPill({
 }
 
 export function SosFilters({ filters, setFilters, activeTab, setActiveTab, onExport }: SosFiltersProps) {
-  const exportLabel = `Export ${activeTab === "player" ? "Player" : "Team"} SOS`;
+  const exportLabel = "Export";
   const selectClass =
     "bg-transparent text-sm font-semibold text-foreground cursor-pointer focus:outline-none";
   // Match the filter pill: flush, divided segments; active segment filled.
@@ -134,7 +134,7 @@ export function SosFilters({ filters, setFilters, activeTab, setActiveTab, onExp
               size="sm"
               onClick={onExport}
               data-testid={activeTab === "player" ? "btn-export-player" : "btn-export-team"}
-              className="h-11 w-full md:h-[42px] md:w-auto"
+              className="h-11 w-full md:h-9 md:w-auto"
             >
               <Download className="w-4 h-4 mr-2" />
               {exportLabel}

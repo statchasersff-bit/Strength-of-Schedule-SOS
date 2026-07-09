@@ -1,7 +1,7 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import type { SosInsightTone } from "./sos-player-insight-card";
-import { useSharedFit } from "./insight-fit";
+import { useSharedFit, useSharedTruncation } from "./insight-fit";
 
 export interface SosTeamInsightCardProps {
   /** Insight headline, e.g. "Easiest Full-Season Schedule". */
@@ -56,45 +56,31 @@ export function SosTeamInsightCard({
   const [logoFailed, setLogoFailed] = useState(false);
   const showLogo = !!teamLogoUrl && !logoFailed;
 
-  // When the full team name won't fit its box, drop the city and show just the
-  // nickname (the last word): "Buffalo Bills" -> "Bills". We compare the full
-  // name's intrinsic width against the box and only expand back once the full
-  // name fits again — that dead band keeps it from flickering at the boundary.
-  const nameRef = useRef<HTMLSpanElement>(null);
-  const fullNameWidthRef = useRef(0);
-  const [useShortName, setUseShortName] = useState(false);
-  const shortName = teamFullName?.split(" ").pop() ?? teamFullName;
-
-  useLayoutEffect(() => {
-    const el = nameRef.current;
-    if (!el || !teamFullName) return;
-
-    const measure = () => {
-      if (!useShortName) fullNameWidthRef.current = el.scrollWidth;
-      const available = el.clientWidth;
-      if (!useShortName && el.scrollWidth > available + 1) {
-        setUseShortName(true);
-      } else if (useShortName && fullNameWidthRef.current && available >= fullNameWidthRef.current) {
-        setUseShortName(false);
-      }
-    };
-
-    measure();
-    const observer = new ResizeObserver(measure);
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [useShortName, teamFullName]);
-
   // Auto-fit every single-line section that can clip on narrow cards — the
-  // title, the abbreviation ⟷ aFPA stat row, and the team name ⟷ delta row.
-  // Each shares a slot with the same section on the sibling cards, so they all
-  // shrink together and the row stays visually consistent.
+  // title and the abbreviation ⟷ aFPA stat row. Each shares a slot with the
+  // same section on the sibling cards, so they all shrink together and the row
+  // stays visually consistent.
   const titleFit = useSharedFit("insight-title");
   const statFit = useSharedFit("insight-stat");
-  const metaFit = useSharedFit("insight-meta");
   // The note is allowed to wrap; fit it into two lines so it never spills to a
   // third row and never has to ellipsis-truncate.
   const noteFit = useSharedFit("insight-note", { lines: 2 });
+  // The team name is dropped from *every* card the moment it would truncate on
+  // any one of them, so the name/delta row stays uniform across the row.
+  const nameFit = useSharedTruncation("insight-name");
+  // Likewise, once the full "… vs league avg" delta no longer fits on one line
+  // (so its right edge would stop aligning with the aFPA value above), every
+  // card drops the word "league" together: "… vs league avg" -> "… vs avg".
+  const deltaFit = useSharedTruncation("insight-delta");
+  const shortDelta = deltaText.replace("league ", "");
+  const displayedDelta = deltaFit.hidden ? shortDelta : deltaText;
+
+  // Both detectors measure against the same row width, so their box refs point
+  // at the same element.
+  const setRowRef = (el: HTMLDivElement | null) => {
+    nameFit.boxRef.current = el;
+    deltaFit.boxRef.current = el;
+  };
 
   // Reused in both the visible (scaled) copy and the invisible natural-size
   // probe so the two are guaranteed identical. Sizes are em-relative to the
@@ -232,37 +218,46 @@ export function SosTeamInsightCard({
               {statItems}
             </div>
           </div>
-          {/* Row 2: full team name + delta vs league average. Auto-fit (in
-              lockstep with the sibling cards) on top of the name → nickname
-              fallback, so neither the name nor the delta ever clips. */}
-          <div
-            ref={metaFit.boxRef}
-            className="relative mt-1"
-            style={{ fontSize: `${8.5 * metaFit.scale}px` }}
-          >
-            <div className="flex w-full items-baseline gap-[0.9em]">
-              {teamFullName && (
-                <span ref={nameRef} className="min-w-0 flex-1 truncate font-bold text-muted-foreground">
-                  {useShortName ? shortName : teamFullName}
-                </span>
+          {/* Row 2: full team name + delta vs league average. The name is
+              dropped from every card at once (nameFit.hidden) the moment it
+              would truncate on any one of them, so the row stays uniform;
+              the delta always stays, right-aligned under the aFPA value, and
+              drops "league" once the full form would overflow (deltaFit). */}
+          <div ref={setRowRef} className="relative mt-1 flex items-baseline gap-2">
+            {teamFullName && !nameFit.hidden && (
+              <span className="min-w-0 flex-1 truncate text-[8.5px] font-bold text-muted-foreground">
+                {teamFullName}
+              </span>
+            )}
+            <p
+              className={cn(
+                "shrink-0 whitespace-nowrap text-[8.5px] font-bold text-muted-foreground",
+                (nameFit.hidden || !teamFullName) && "ml-auto",
               )}
-              <span className="shrink-0 whitespace-nowrap font-bold text-muted-foreground">{deltaText}</span>
-            </div>
-            {/* Invisible natural-size probe: measures the untruncated row width.
-                Renders the same displayed text but carries no nameRef so the
-                nickname measurement stays bound to the visible span. */}
-            <div
-              ref={metaFit.probeRef}
-              aria-hidden="true"
-              className="pointer-events-none invisible absolute left-0 top-0 flex w-max items-baseline gap-[0.9em]"
-              style={{ fontSize: "8.5px" }}
             >
-              {teamFullName && (
-                <span className="whitespace-nowrap font-bold text-muted-foreground">
-                  {useShortName ? shortName : teamFullName}
-                </span>
-              )}
-              <span className="whitespace-nowrap font-bold text-muted-foreground">{deltaText}</span>
+              {displayedDelta}
+            </p>
+            {/* Invisible natural-size probe: full name + the *displayed* delta,
+                so the row can tell when the name would truncate — even while the
+                name is hidden, so it can be restored when space grows. */}
+            {teamFullName && (
+              <div
+                ref={nameFit.probeRef}
+                aria-hidden="true"
+                className="pointer-events-none invisible absolute left-0 top-0 flex w-max items-baseline gap-2 text-[8.5px] font-bold"
+              >
+                <span className="whitespace-nowrap">{teamFullName}</span>
+                <span className="whitespace-nowrap">{displayedDelta}</span>
+              </div>
+            )}
+            {/* Invisible probe of the *full* delta, so the row can tell when
+                "… vs league avg" would overflow and needs shortening. */}
+            <div
+              ref={deltaFit.probeRef}
+              aria-hidden="true"
+              className="pointer-events-none invisible absolute left-0 top-0 w-max whitespace-nowrap text-[8.5px] font-bold"
+            >
+              {deltaText}
             </div>
           </div>
         </div>

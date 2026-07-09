@@ -175,7 +175,10 @@ function buildCards(rows: SosRowLike[], isPlayer: boolean, filters: FilterState)
 /** Data for the premium player spotlight cards shown on the Player SOS tab. */
 interface PlayerInsightCard {
   id: string;
-  label: string;
+  /** Insight headline / category, e.g. "Easiest Full-Season". */
+  title: string;
+  /** One-line plain-language takeaway. */
+  note: string;
   playerName: string;
   team: string;
   position: string;
@@ -195,11 +198,10 @@ function buildPlayerInsightCards(rows: SosRowLike[], filters: FilterState): Play
   if (!full) return [];
 
   type Scored = { r: SosRowLike; v: number };
-  // Labels are kept short on purpose — the card context already implies SOS, so
-  // long labels only cause awkward wrapping.
   const make = (
     id: string,
-    label: string,
+    title: string,
+    note: string,
     x: Scored,
     mean: number,
     tone: SosInsightTone,
@@ -207,7 +209,8 @@ function buildPlayerInsightCards(rows: SosRowLike[], filters: FilterState): Play
     dir: SortDir,
   ): PlayerInsightCard => ({
     id,
-    label,
+    title,
+    note,
     playerName: x.r.playerName ?? x.r.team,
     team: x.r.team,
     position: pos,
@@ -220,10 +223,10 @@ function buildPlayerInsightCards(rows: SosRowLike[], filters: FilterState): Play
   });
 
   return [
-    make("best-full", "Easiest Full Season", full.easiest, full.mean, "good", "ovr", "asc"),
-    make("toughest-full", "Toughest Full Season", full.toughest, full.mean, "bad", "ovr", "desc"),
-    make("best-playoff", "Easiest Playoffs", po!.easiest, po!.mean, "good", "playoff", "asc"),
-    make("toughest-playoff", "Toughest Playoffs", po!.toughest, po!.mean, "bad", "playoff", "desc"),
+    make("best-full", "Easiest Full-Season", `Best ${pos} slate by opponent aFPA.`, full.easiest, full.mean, "good", "ovr", "asc"),
+    make("toughest-full", "Toughest Full-Season", `Worst ${pos} slate by opponent aFPA.`, full.toughest, full.mean, "bad", "ovr", "desc"),
+    make("best-playoff", "Easiest Playoff", `Best ${pos} playoff slate by opponent aFPA.`, po!.easiest, po!.mean, "good", "playoff", "asc"),
+    make("toughest-playoff", "Toughest Playoff", `Worst ${pos} playoff slate by opponent aFPA.`, po!.toughest, po!.mean, "bad", "playoff", "desc"),
   ];
 }
 
@@ -251,29 +254,19 @@ export function InsightCards({ filters, activeTab, onSelect }: InsightCardsProps
     | SosRowLike[]
     | undefined;
 
-  // Team KPI cards: stay 4-up in a single row from the md breakpoint on; below
-  // that (large phones / small tablets) collapse to 2x2, where the cards are
+  // Both tabs use the same KPI card grid: 4-up in a single row from md on,
+  // collapsing to 2x2 below (large phones / small tablets), where the cards are
   // roomier than a cramped 4-up row would be.
-  const teamContainerClass =
+  const containerClass =
     "grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8";
-  // Player spotlight cards need room to breathe: never force 4 across unless the
-  // screen is wide. Phones snap-scroll (cards ≥310px); tablet/small-desktop show
-  // 2-up; only xl (≥1280px) goes 4-up.
-  const playerContainerClass =
-    "flex sm:grid sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 mb-6 md:mb-8 overflow-x-auto sm:overflow-visible snap-x snap-mandatory -mx-[10px] px-[10px] sm:mx-0 sm:px-0 pb-2 sm:pb-0";
-  const playerCardSizing = "min-w-[310px] snap-start shrink-0 sm:min-w-0 sm:shrink";
 
   if (isLoading) {
-    const containerClass = isPlayer ? playerContainerClass : teamContainerClass;
     return (
       <div className={containerClass}>
         {[1, 2, 3, 4].map((i) => (
           <div
             key={i}
-            className={cn(
-              "bg-card rounded-2xl border border-border animate-pulse border-l-4 border-l-primary/50",
-              isPlayer ? cn(playerCardSizing, "min-h-[178px] rounded-[18px]") : "h-[117px]",
-            )}
+            className="h-[117px] bg-card rounded-[18px] border border-border animate-pulse border-l-4 border-l-primary/50"
           />
         ))}
       </div>
@@ -282,31 +275,33 @@ export function InsightCards({ filters, activeTab, onSelect }: InsightCardsProps
 
   if (!rows || rows.length === 0) return null;
 
-  // Player SOS tab → premium player spotlight cards.
+  // Player SOS tab → premium player spotlight cards, matching the Team cards.
   if (isPlayer) {
     const playerCards = buildPlayerInsightCards(rows, filters);
     if (playerCards.length === 0) return null;
     return (
-      <div className={playerContainerClass}>
-        {playerCards.map((card) => (
-          <SosPlayerInsightCard
-            key={card.id}
-            testId={`card-insight-${card.id}`}
-            className={playerCardSizing}
-            label={card.label}
-            playerName={card.playerName}
-            team={card.team}
-            position={card.position}
-            headshotUrl={card.headshotUrl}
-            teamLogoUrl={getTeamLogoUrl(card.team)}
-            value={card.value}
-            valueLabel={card.valueLabel}
-            deltaText={card.deltaText}
-            tone={card.tone}
-            onClick={onSelect ? () => onSelect(card.focus) : undefined}
-          />
-        ))}
-      </div>
+      <InsightFitProvider>
+        <div className={containerClass}>
+          {playerCards.map((card) => (
+            <SosPlayerInsightCard
+              key={card.id}
+              testId={`card-insight-${card.id}`}
+              title={card.title}
+              note={card.note}
+              playerName={card.playerName}
+              team={card.team}
+              position={card.position}
+              headshotUrl={card.headshotUrl}
+              teamLogoUrl={getTeamLogoUrl(card.team)}
+              value={card.value}
+              valueLabel={card.valueLabel}
+              deltaText={card.deltaText}
+              tone={card.tone}
+              onClick={onSelect ? () => onSelect(card.focus) : undefined}
+            />
+          ))}
+        </div>
+      </InsightFitProvider>
     );
   }
 
@@ -316,7 +311,7 @@ export function InsightCards({ filters, activeTab, onSelect }: InsightCardsProps
 
   return (
     <InsightFitProvider>
-      <div className={teamContainerClass}>
+      <div className={containerClass}>
         {cards.map((card) => (
           <SosTeamInsightCard
           key={card.id}

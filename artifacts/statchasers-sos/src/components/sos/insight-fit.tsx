@@ -22,25 +22,33 @@ import {
 /** Never shrink text below this fraction of its design size. Kept low so the
  *  narrow 4-up tablet layout never has to truncate; in practice the nickname
  *  fallback and short values mean sections rarely approach this floor. */
-const MIN_SCALE = 0.5;
+export const MIN_SCALE = 0.5;
 
 interface FitApi {
   report: (slot: string, id: string, needed: number) => void;
   drop: (slot: string, id: string) => void;
+  reportFlag: (slot: string, id: string, value: boolean) => void;
+  dropFlag: (slot: string, id: string) => void;
 }
 
 // The stable command API and the reactive scale values live in separate
 // contexts on purpose: the API keeps a constant identity (safe to leave out of
 // effect deps, so reporting never retriggers its own effect), while only the
-// scale map changes identity when a section needs to resize.
+// scale / flag maps change identity when a section needs to resize.
 const FitApiContext = createContext<FitApi | null>(null);
 const FitScaleContext = createContext<Record<string, number>>({});
+// Boolean slots, OR-combined across the row: true as soon as *any* card reports
+// true. Used to drop a section (e.g. the team name) from every card the moment
+// it would truncate on one of them, keeping the row uniform.
+const FitFlagContext = createContext<Record<string, boolean>>({});
 
 export function InsightFitProvider({ children }: { children: ReactNode }) {
   const [scales, setScales] = useState<Record<string, number>>({});
-  // slot -> (cardId -> scale that card needs). Kept in a ref so reporting never
+  const [flags, setFlags] = useState<Record<string, boolean>>({});
+  // slot -> (cardId -> value that card reports). Kept in refs so reporting never
   // depends on render state.
   const reports = useRef<Map<string, Map<string, number>>>(new Map());
+  const flagReports = useRef<Map<string, Map<string, boolean>>>(new Map());
   const apiRef = useRef<FitApi | null>(null);
 
   if (!apiRef.current) {
@@ -48,6 +56,11 @@ export function InsightFitProvider({ children }: { children: ReactNode }) {
       const perCard = reports.current.get(slot);
       const min = perCard && perCard.size ? Math.min(...perCard.values()) : 1;
       setScales((prev) => (prev[slot] === min ? prev : { ...prev, [slot]: min }));
+    };
+    const recomputeFlag = (slot: string) => {
+      const perCard = flagReports.current.get(slot);
+      const any = perCard ? Array.from(perCard.values()).some(Boolean) : false;
+      setFlags((prev) => (prev[slot] === any ? prev : { ...prev, [slot]: any }));
     };
     apiRef.current = {
       report(slot, id, needed) {
@@ -61,12 +74,25 @@ export function InsightFitProvider({ children }: { children: ReactNode }) {
         const perCard = reports.current.get(slot);
         if (perCard?.delete(id)) recompute(slot);
       },
+      reportFlag(slot, id, value) {
+        let perCard = flagReports.current.get(slot);
+        if (!perCard) flagReports.current.set(slot, (perCard = new Map()));
+        if (perCard.get(id) === value) return;
+        perCard.set(id, value);
+        recomputeFlag(slot);
+      },
+      dropFlag(slot, id) {
+        const perCard = flagReports.current.get(slot);
+        if (perCard?.delete(id)) recomputeFlag(slot);
+      },
     };
   }
 
   return (
     <FitApiContext.Provider value={apiRef.current}>
-      <FitScaleContext.Provider value={scales}>{children}</FitScaleContext.Provider>
+      <FitScaleContext.Provider value={scales}>
+        <FitFlagContext.Provider value={flags}>{children}</FitFlagContext.Provider>
+      </FitScaleContext.Provider>
     </FitApiContext.Provider>
   );
 }
@@ -147,4 +173,59 @@ export function useSharedFit(slot: string, opts?: { lines?: number }) {
   }, [api, id, slot, lines]);
 
   return { boxRef, probeRef, scale };
+}
+
+/**
+ * Coordinated all-or-nothing visibility for one section across the card row.
+ *
+ * Render the section inside `boxRef` and an invisible, off-flow, natural-size
+ * (`w-max`) copy inside `probeRef`. The hook reports whether this card's content
+ * would overflow the box; the provider OR-combines the reports, so the returned
+ * `hidden` flips true for *every* card the moment the section would truncate on
+ * any one of them — and back to false once they all fit again. The probe always
+ * renders the full content, so the measurement stays valid even while hidden.
+ */
+export function useSharedTruncation(slot: string, opts?: { factor?: number }) {
+  // The probe measures the content at its *design* size. `factor` scales the
+  // width the content is allowed to occupy before it's considered truncated —
+  // pass 1/MIN_SCALE for a section that auto-fits down to MIN_SCALE first, so
+  // the flag only trips once even the smallest scale can't avoid an ellipsis.
+  const factor = opts?.factor ?? 1;
+  const api = useContext(FitApiContext);
+  const flags = useContext(FitFlagContext);
+  const id = useId();
+  const boxRef = useRef<HTMLDivElement>(null);
+  const probeRef = useRef<HTMLDivElement>(null);
+  const hidden = flags[slot] ?? false;
+
+  useLayoutEffect(() => {
+    const box = boxRef.current;
+    const probe = probeRef.current;
+    if (!api || !box || !probe) return;
+
+    const measure = () => {
+      const available = box.clientWidth;
+      const natural = probe.getBoundingClientRect().width;
+      if (!available || !natural) return;
+      // +1px tolerance so an exact fit doesn't chatter at the boundary.
+      api.reportFlag(slot, id, natural > available * factor + 1);
+    };
+
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(box);
+    ro.observe(probe);
+    let cancelled = false;
+    const fonts = (document as { fonts?: { ready?: Promise<unknown> } }).fonts;
+    fonts?.ready?.then(() => {
+      if (!cancelled) measure();
+    });
+    return () => {
+      cancelled = true;
+      ro.disconnect();
+      api.dropFlag(slot, id);
+    };
+  }, [api, id, slot, factor]);
+
+  return { boxRef, probeRef, hidden };
 }

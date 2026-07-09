@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { FilterState } from "@/hooks/use-filters";
 import { useGetPlayerSos, getGetPlayerSosQueryKey } from "@/lib/sos-client";
-import { cn, getDifficultyColorClass } from "@/lib/utils";
+import { cn, getDifficultyColorClass, getPlayerProfileUrl } from "@/lib/utils";
 import { WeekCell } from "@workspace/api-client-react";
 import { SortHeader, useSort, type Accessor } from "./sortable";
 import { useCardFocus } from "./use-card-focus";
@@ -177,13 +177,21 @@ export function PlayerMatrix({ filters, focus }: PlayerMatrixProps) {
               <td className="sticky left-0 bg-card px-[var(--pad-x)] py-1 border-r border-border font-semibold z-10 max-w-[180px]">
                 {/* Full name while the table fits; "F. Last" once it would need horizontal scroll. */}
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="text-[10.1px] text-foreground truncate">{compactNames ? abbreviateName(row.playerName) : row.playerName}</span>
+                  <a
+                    href={getPlayerProfileUrl(row.playerName) ?? undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[10.1px] text-foreground truncate hover:text-primary hover:underline"
+                    title={`View ${row.playerName} on StatChasers`}
+                  >
+                    {compactNames ? abbreviateName(row.playerName) : row.playerName}
+                  </a>
                 </div>
               </td>
               <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-muted-foreground">{row.team}</td>
               <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.sosRank}</td>
-              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[8.96px] font-bold text-muted-foreground">{row.rosSosRank}</td>
-              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold text-primary">{row.playoffSosRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold text-muted-foreground">{row.rosSosRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.playoffSosRank}</td>
               
               {weeks.map((w, index) => {
                 const cell = row.weeks[index];

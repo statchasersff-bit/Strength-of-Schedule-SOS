@@ -15,6 +15,23 @@ export function getTeamLogoUrl(team?: string | null): string | null {
 }
 
 /**
+ * StatChasers player-profile URL for a full player name, using the same slug
+ * format the site expects (e.g. "Josh Allen" -> .../players/josh-allen/).
+ * Periods and apostrophes are dropped; any other non-alphanumeric run becomes a
+ * single hyphen (so "Amon-Ra St. Brown" -> "amon-ra-st-brown").
+ */
+export function getPlayerProfileUrl(name?: string | null): string | null {
+  if (!name) return null
+  const slug = name
+    .toLowerCase()
+    .replace(/['.’]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+  if (!slug) return null
+  return `https://statchasers.com/nfl/players/${slug}/`
+}
+
+/**
  * Map a rest-of-season schedule rank (1 = easiest remaining schedule … 32 =
  * hardest) onto the same difficulty buckets used for weekly/PO matchup cells, so
  * the ROS aFPA-average column can share their green→red shading. Easiest lands in

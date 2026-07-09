@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { FilterState } from "@/hooks/use-filters";
 import { useGetTeamSos, getGetTeamSosQueryKey } from "@/lib/sos-client";
 import { cn, getDifficultyColorClass, getTeamLogoUrl, bucketFromScheduleRank } from "@/lib/utils";
@@ -45,6 +46,43 @@ export function TeamMatrix({ filters, focus }: TeamMatrixProps) {
   const { sorted, sort, toggle, setSortDirect } = useSort(data?.rows as TeamRow[] | undefined, TEAM_ACCESSORS);
   const highlightId = useCardFocus(focus, setSortDirect);
 
+  // Responsive column compression. Rather than staying wide until the columns
+  // hit their vw-clamp floor and then jumping to a horizontal scrollbar, watch
+  // the table against its container and progressively shrink padding + every
+  // column's width (down to 80%) the moment the full table can no longer fit on
+  // one screen. Mirrors PlayerMatrix's padScale logic.
+  const tableRef = useRef<HTMLTableElement>(null);
+  const [padScale, setPadScale] = useState(1);
+
+  const MIN_PAD_SCALE = 0.8; // compress columns by at most 20%
+  const PAD_STEP = 0.05;
+  const PAD_BUFFER = 80; // start compressing this many px before the table would overflow
+  // Dead band before growing back, wider than one step so it can't oscillate.
+  const PAD_HYST = 100;
+
+  useLayoutEffect(() => {
+    const table = tableRef.current;
+    const parent = table?.parentElement;
+    if (!table || !parent) return;
+
+    const measure = () => {
+      const available = parent.clientWidth;
+      const width = table.scrollWidth;
+      if (width > available - PAD_BUFFER && padScale > MIN_PAD_SCALE) {
+        // Approaching the limit: compress columns pre-emptively.
+        setPadScale((s) => Math.max(MIN_PAD_SCALE, Number((s - PAD_STEP).toFixed(2))));
+      } else if (padScale < 1 && available >= width + PAD_BUFFER + PAD_HYST) {
+        // Room to spare: ease columns back out, keeping a dead band.
+        setPadScale((s) => Math.min(1, Number((s + PAD_STEP).toFixed(2))));
+      }
+    };
+
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(parent);
+    return () => observer.disconnect();
+  }, [padScale, sorted]);
+
   if (isLoading) {
     return <div className="h-96 w-full flex items-center justify-center bg-card rounded-lg border border-border animate-pulse"><span className="text-muted-foreground font-mono">LOADING TEAM DATA...</span></div>;
   }
@@ -70,25 +108,35 @@ export function TeamMatrix({ filters, focus }: TeamMatrixProps) {
   const weeks = Array.from({ length: 17 }, (_, i) => i + 1);
 
   return (
-      <table className="w-full text-sm text-left border-collapse border border-border">
+      <table
+        ref={tableRef}
+        style={
+          {
+            "--pad-x": `${(3 * padScale).toFixed(2)}px`,
+            // Unitless multiplier used to scale every column's width via calc().
+            "--pad-scale": padScale,
+          } as CSSProperties
+        }
+        className="w-full text-sm text-left border-collapse border border-border"
+      >
         <thead className="text-xs uppercase bg-foreground text-background">
           <tr>
-            <SortHeader label="Team" sortKey="team" sort={sort} onSort={toggle} align="center" tooltip="NFL team. Each weekly cell shows the opponent's defense difficulty vs this position." className="sticky left-0 bg-foreground px-[3px] py-3 border-b border-r border-border z-30 min-w-[clamp(64px,5.7vw,72px)] whitespace-nowrap" />
-            <SortHeader label="OVR" sortKey="ovr" sort={sort} onSort={toggle} tooltip="Overall schedule rank, Weeks 1-17. 1 = easiest schedule, 32 = hardest, by average opponent adjusted points allowed vs this position." className="px-[3px] py-3 border-b border-r border-border w-[clamp(43px,4.2vw,50px)]" />
-            <SortHeader label="ROS" sortKey="ros" sort={sort} onSort={toggle} tooltip="Rest-of-season schedule rank — remaining games through Week 17. 1 = easiest remaining schedule." className="px-[3px] py-3 border-b border-r border-border w-[clamp(43px,4.2vw,50px)]" />
-            <SortHeader label={<>Play<br />Off</>} sortKey="playoff" sort={sort} onSort={toggle} tooltip="Fantasy playoff schedule rank, Weeks 15-17. 1 = easiest playoff slate." className="px-[3px] py-3 border-b border-r border-border w-[clamp(55px,5.4vw,65px)]" />
+            <SortHeader label="Team" sortKey="team" sort={sort} onSort={toggle} align="center" tooltip="NFL team. Each weekly cell shows the opponent's defense difficulty vs this position." className="sticky left-0 bg-foreground px-[var(--pad-x)] py-3 border-b border-r border-border z-30 min-w-[calc(clamp(64px,5.7vw,72px)*var(--pad-scale))] whitespace-nowrap" />
+            <SortHeader label="OVR" sortKey="ovr" sort={sort} onSort={toggle} tooltip="Overall schedule rank, Weeks 1-17. 1 = easiest schedule, 32 = hardest, by average opponent adjusted points allowed vs this position." className="px-[var(--pad-x)] py-3 border-b border-r border-border w-[calc(clamp(43px,4.2vw,50px)*var(--pad-scale))]" />
+            <SortHeader label="ROS" sortKey="ros" sort={sort} onSort={toggle} tooltip="Rest-of-season schedule rank — remaining games through Week 17. 1 = easiest remaining schedule." className="px-[var(--pad-x)] py-3 border-b border-r border-border w-[calc(clamp(43px,4.2vw,50px)*var(--pad-scale))]" />
+            <SortHeader label={<>Play<br />Off</>} sortKey="playoff" sort={sort} onSort={toggle} tooltip="Fantasy playoff schedule rank, Weeks 15-17. 1 = easiest playoff slate." className="px-[var(--pad-x)] py-3 border-b border-r border-border w-[calc(clamp(55px,5.4vw,65px)*var(--pad-scale))]" />
             {weeks.map(w => (
-              <SortHeader key={w} label={`W${w}`} sortKey={`w${w}`} sort={sort} onSort={toggle} tooltip={`Week ${w} matchup. Color shows how tough the opponent's defense is vs this position (their adjusted-points-allowed rank).`} className="px-[3px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
+              <SortHeader key={w} label={`W${w}`} sortKey={`w${w}`} sort={sort} onSort={toggle} tooltip={`Week ${w} matchup. Color shows how tough the opponent's defense is vs this position (their adjusted-points-allowed rank).`} className="px-[3px] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
             ))}
-            <SortHeader label="PO2" sortKey="po2" sort={sort} onSort={toggle} tooltip="Playoff Weeks 16-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
-            <SortHeader label="PO3" sortKey="po3" sort={sort} onSort={toggle} tooltip="Playoff Weeks 15-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
-            <SortHeader label="ROS" sortKey="rosSummary" sort={sort} onSort={toggle} defaultDir="desc" tooltip="Average opponent adjusted fantasy points allowed over remaining weeks (through Week 17). Higher = easier." className="px-[3px] py-3 border-b border-border min-w-[clamp(46px,4.5vw,54px)]" />
+            <SortHeader label="PO2" sortKey="po2" sort={sort} onSort={toggle} tooltip="Playoff Weeks 16-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
+            <SortHeader label="PO3" sortKey="po3" sort={sort} onSort={toggle} tooltip="Playoff Weeks 15-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
+            <SortHeader label="ROS" sortKey="rosSummary" sort={sort} onSort={toggle} defaultDir="desc" tooltip="Average opponent adjusted fantasy points allowed over remaining weeks (through Week 17). Higher = easier." className="px-[3px] py-3 border-b border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
           </tr>
         </thead>
         <tbody className="font-mono">
           {(sorted ?? []).map((row, i) => (
             <tr key={row.team} data-testid={`team-row-${row.team}`} className={cn("border-b border-border/50 hover:bg-muted/20 transition-colors", i % 2 === 0 ? "bg-transparent" : "bg-muted/10", highlightId === `team-row-${row.team}` && "ring-2 ring-inset ring-amber-400 bg-amber-400/10")}>
-              <td className="sticky left-0 bg-card px-[3px] py-1 border-r border-border font-semibold z-10 whitespace-nowrap">
+              <td className="sticky left-0 bg-card px-[var(--pad-x)] py-1 border-r border-border font-semibold z-10 whitespace-nowrap">
                 <div className="flex items-center justify-center gap-1.5">
                   <img
                     src={getTeamLogoUrl(row.team) ?? undefined}
@@ -101,9 +149,9 @@ export function TeamMatrix({ filters, focus }: TeamMatrixProps) {
                   <span className="text-[10.1px] text-foreground">{row.team}</span>
                 </div>
               </td>
-              <td className="px-[3px] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.overallRank}</td>
-              <td className="px-[3px] py-1 border-r border-border text-center text-[8.96px] font-bold text-muted-foreground">{row.rosRank}</td>
-              <td className="px-[3px] py-1 border-r border-border text-center text-[11.2px] font-bold text-primary">{row.playoffRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.overallRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold text-muted-foreground">{row.rosRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.playoffRank}</td>
               
               {weeks.map((w, index) => {
                 const cell = row.weeks[index];
