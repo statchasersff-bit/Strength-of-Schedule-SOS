@@ -9,6 +9,7 @@ import { cn, getTeamLogoUrl } from "@/lib/utils";
 import type { SortDir } from "./sortable";
 import { SosPlayerInsightCard, type SosInsightTone } from "./sos-player-insight-card";
 import { SosTeamInsightCard } from "./sos-team-insight-card";
+import { InsightFitProvider } from "./insight-fit";
 
 /** Emitted when a card is clicked — tells the table how to focus the pick. */
 export interface CardFocus {
@@ -54,16 +55,14 @@ interface Card {
   title: string;
   subtitle: string;
   value: string;
+  /** Full team name for the Team SOS cards, e.g. "Dallas Cowboys". */
+  teamFullName: string;
   /** aFPA number, already rounded, as a string. */
   detail: string;
   /** e.g. "+1.8 vs league avg". */
   deltaText: string;
   /** One-line plain-language summary of the insight. */
   note: string;
-  /** Rank chip text, e.g. "#1 Easiest". */
-  rankLabel: string;
-  /** Week-range chip, e.g. "Weeks 1-17". */
-  weeksLabel: string;
   trend: "positive" | "negative";
   /** Player headshot for the Player SOS view; null for teams / missing images. */
   imageUrl: string | null;
@@ -100,6 +99,7 @@ function extremes(rows: SosRowLike[], metric: (r: SosRowLike) => number | null) 
 
 function buildCards(rows: SosRowLike[], isPlayer: boolean, filters: FilterState): Card[] {
   const label = (r: SosRowLike) => (isPlayer ? r.playerName ?? r.team : r.team);
+  const fullName = (r: SosRowLike) => r.teamFullName ?? r.team;
   // Player headshot only — team cards don't carry an image.
   const image = (r: SosRowLike) => (isPlayer ? r.headshotUrl ?? null : null);
   const pos = filters.position;
@@ -119,56 +119,52 @@ function buildCards(rows: SosRowLike[], isPlayer: boolean, filters: FilterState)
   return [
     {
       id: "easiest-schedule",
-      title: "Easiest Full-Season Schedule",
+      title: "Easiest Full-Season",
       subtitle: sub("Weeks 1-17", full.easiest.r),
       value: label(full.easiest.r),
+      teamFullName: fullName(full.easiest.r),
       detail: `${round1(full.easiest.v)}`,
       deltaText: `${signed(full.easiest.v - full.mean)} vs league avg`,
       note: `Best ${pos} schedule by opponent aFPA.`,
-      rankLabel: "#1 Easiest",
-      weeksLabel: "Weeks 1-17",
       trend: "positive",
       imageUrl: image(full.easiest.r),
       focus: { sortKey: "ovr", dir: "asc", testId: testId(full.easiest.r) },
     },
     {
       id: "toughest-schedule",
-      title: "Toughest Full-Season Schedule",
+      title: "Toughest Full-Season",
       subtitle: sub("Weeks 1-17", full.toughest.r),
       value: label(full.toughest.r),
+      teamFullName: fullName(full.toughest.r),
       detail: `${round1(full.toughest.v)}`,
       deltaText: `${signed(full.toughest.v - full.mean)} vs league avg`,
-      note: `Toughest ${pos} gauntlet by opponent aFPA.`,
-      rankLabel: "#1 Toughest",
-      weeksLabel: "Weeks 1-17",
+      note: `Worst ${pos} schedule by opponent aFPA.`,
       trend: "negative",
       imageUrl: image(full.toughest.r),
       focus: { sortKey: "ovr", dir: "desc", testId: testId(full.toughest.r) },
     },
     {
       id: "best-playoff",
-      title: "Easiest Playoff Schedule",
+      title: "Easiest Playoff",
       subtitle: sub("Weeks 15-17", po!.easiest.r),
       value: label(po!.easiest.r),
+      teamFullName: fullName(po!.easiest.r),
       detail: `${round1(po!.easiest.v)}`,
       deltaText: `${signed(po!.easiest.v - po!.mean)} vs league avg`,
-      note: `Best playoff runway by adjusted matchup strength.`,
-      rankLabel: "#1 Easiest",
-      weeksLabel: "Weeks 15-17",
+      note: `Best ${pos} playoff schedule by opponent aFPA.`,
       trend: "positive",
       imageUrl: image(po!.easiest.r),
       focus: { sortKey: "playoff", dir: "asc", testId: testId(po!.easiest.r) },
     },
     {
       id: "toughest-playoff",
-      title: "Toughest Playoff Schedule",
+      title: "Toughest Playoff",
       subtitle: sub("Weeks 15-17", po!.toughest.r),
       value: label(po!.toughest.r),
+      teamFullName: fullName(po!.toughest.r),
       detail: `${round1(po!.toughest.v)}`,
       deltaText: `${signed(po!.toughest.v - po!.mean)} vs league avg`,
-      note: `Toughest playoff path by adjusted matchup strength.`,
-      rankLabel: "#1 Toughest",
-      weeksLabel: "Weeks 15-17",
+      note: `Worst ${pos} playoff schedule by opponent aFPA.`,
       trend: "negative",
       imageUrl: image(po!.toughest.r),
       focus: { sortKey: "playoff", dir: "desc", testId: testId(po!.toughest.r) },
@@ -184,29 +180,28 @@ interface PlayerInsightCard {
   team: string;
   position: string;
   headshotUrl: string | null;
-  chips: string[];
   value: string;
   valueLabel: string;
+  /** Secondary context line, e.g. "+1.2 vs avg". */
+  deltaText: string;
   tone: SosInsightTone;
   focus: Omit<CardFocus, "nonce">;
 }
 
 function buildPlayerInsightCards(rows: SosRowLike[], filters: FilterState): PlayerInsightCard[] {
   const pos = filters.position;
-  const scoring = scoringLabel(filters.scoring);
   const full = extremes(rows, fullSeasonAvg);
   const po = extremes(rows, playoffAvg) ?? full;
   if (!full) return [];
 
   type Scored = { r: SosRowLike; v: number };
   // Labels are kept short on purpose — the card context already implies SOS, so
-  // long labels only cause awkward wrapping. The week range lives in a chip,
-  // mirroring the Team SOS cards' [position, scoring, weeks] pill row.
+  // long labels only cause awkward wrapping.
   const make = (
     id: string,
     label: string,
     x: Scored,
-    weeksLabel: string,
+    mean: number,
     tone: SosInsightTone,
     sortKey: string,
     dir: SortDir,
@@ -217,18 +212,18 @@ function buildPlayerInsightCards(rows: SosRowLike[], filters: FilterState): Play
     team: x.r.team,
     position: pos,
     headshotUrl: x.r.headshotUrl ?? null,
-    chips: [pos, scoring, weeksLabel],
     value: `${round1(x.v)}`,
     valueLabel: "aFPA",
+    deltaText: `${signed(x.v - mean)} vs avg`,
     tone,
     focus: { sortKey, dir, testId: `player-row-${x.r.playerId ?? ""}` },
   });
 
   return [
-    make("best-full", "Best Full Season", full.easiest, "Weeks 1-17", "good", "ovr", "asc"),
-    make("toughest-full", "Toughest Full Season", full.toughest, "Weeks 1-17", "bad", "ovr", "desc"),
-    make("best-playoff", "Best Playoff", po!.easiest, "Weeks 15-17", "good", "playoff", "asc"),
-    make("toughest-playoff", "Toughest Playoff", po!.toughest, "Weeks 15-17", "bad", "playoff", "desc"),
+    make("best-full", "Easiest Full Season", full.easiest, full.mean, "good", "ovr", "asc"),
+    make("toughest-full", "Toughest Full Season", full.toughest, full.mean, "bad", "ovr", "desc"),
+    make("best-playoff", "Easiest Playoffs", po!.easiest, po!.mean, "good", "playoff", "asc"),
+    make("toughest-playoff", "Toughest Playoffs", po!.toughest, po!.mean, "bad", "playoff", "desc"),
   ];
 }
 
@@ -256,9 +251,11 @@ export function InsightCards({ filters, activeTab, onSelect }: InsightCardsProps
     | SosRowLike[]
     | undefined;
 
-  // Team KPI cards: 2x2 on phones (all four visible without scrolling), 4-up from lg.
+  // Team KPI cards: stay 4-up in a single row from the md breakpoint on; below
+  // that (large phones / small tablets) collapse to 2x2, where the cards are
+  // roomier than a cramped 4-up row would be.
   const teamContainerClass =
-    "grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8";
+    "grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8";
   // Player spotlight cards need room to breathe: never force 4 across unless the
   // screen is wide. Phones snap-scroll (cards ≥310px); tablet/small-desktop show
   // 2-up; only xl (≥1280px) goes 4-up.
@@ -275,7 +272,7 @@ export function InsightCards({ filters, activeTab, onSelect }: InsightCardsProps
             key={i}
             className={cn(
               "bg-card rounded-2xl border border-border animate-pulse border-l-4 border-l-primary/50",
-              isPlayer ? cn(playerCardSizing, "min-h-[178px] rounded-[18px]") : "h-28 md:h-40",
+              isPlayer ? cn(playerCardSizing, "min-h-[178px] rounded-[18px]") : "h-[117px]",
             )}
           />
         ))}
@@ -302,9 +299,9 @@ export function InsightCards({ filters, activeTab, onSelect }: InsightCardsProps
             position={card.position}
             headshotUrl={card.headshotUrl}
             teamLogoUrl={getTeamLogoUrl(card.team)}
-            chips={card.chips}
             value={card.value}
             valueLabel={card.valueLabel}
+            deltaText={card.deltaText}
             tone={card.tone}
             onClick={onSelect ? () => onSelect(card.focus) : undefined}
           />
@@ -316,27 +313,27 @@ export function InsightCards({ filters, activeTab, onSelect }: InsightCardsProps
   // Team SOS tab → premium, team-branded spotlight cards.
   const cards = buildCards(rows, isPlayer, filters);
   if (cards.length === 0) return null;
-  const scoring = scoringLabel(filters.scoring);
 
   return (
-    <div className={teamContainerClass}>
-      {cards.map((card) => (
-        <SosTeamInsightCard
+    <InsightFitProvider>
+      <div className={teamContainerClass}>
+        {cards.map((card) => (
+          <SosTeamInsightCard
           key={card.id}
           testId={`card-insight-${card.id}`}
           title={card.title}
-          rankLabel={card.rankLabel}
           team={card.value}
+          teamFullName={card.teamFullName}
           teamLogoUrl={getTeamLogoUrl(card.value)}
           value={card.detail}
           valueLabel="aFPA"
           deltaText={card.deltaText}
-          chips={[filters.position, scoring, card.weeksLabel]}
           note={card.note}
           tone={card.trend === "positive" ? "good" : "bad"}
           onClick={onSelect ? () => onSelect(card.focus) : undefined}
-        />
-      ))}
-    </div>
+          />
+        ))}
+      </div>
+    </InsightFitProvider>
   );
 }

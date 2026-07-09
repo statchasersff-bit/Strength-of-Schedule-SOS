@@ -14,20 +14,26 @@ const LEGEND_ITEMS: { bucket: string; label: string; range: string }[] = [
   { bucket: "VERY_TOUGH", label: "Avoid", range: "ranks 1-5" },
 ];
 
-/** Color key explaining the matchup-difficulty shading in the SOS tables. */
-export function DifficultyLegend({ className }: { className?: string }) {
+/**
+ * Color key explaining the matchup-difficulty shading in the SOS tables.
+ * `bare` drops the standalone card chrome so it can sit inside the shared
+ * analysis footer bar without a nested border.
+ */
+export function DifficultyLegend({ className, bare }: { className?: string; bare?: boolean }) {
   return (
     <div
       className={cn(
-        "flex items-center gap-3 rounded-xl border border-border bg-card px-3 py-2.5 shadow-sm w-fit max-w-full",
-        "max-sm:w-full max-sm:flex-col max-sm:items-center max-sm:gap-2",
+        "flex items-center gap-3 max-w-full",
+        bare
+          ? "w-full max-sm:flex-col max-sm:items-center max-sm:gap-2"
+          : "rounded-xl border border-border bg-card px-3 py-2.5 shadow-sm w-fit max-sm:w-full max-sm:flex-col max-sm:items-center max-sm:gap-2",
         className,
       )}
       data-testid="difficulty-legend"
     >
       <div className="flex items-center gap-1.5 shrink-0">
         <span className="text-[11px] font-extrabold uppercase tracking-wider text-muted-foreground whitespace-nowrap">
-          Matchup
+          Matchup Strength
         </span>
         <Tooltip>
           <TooltipTrigger asChild>

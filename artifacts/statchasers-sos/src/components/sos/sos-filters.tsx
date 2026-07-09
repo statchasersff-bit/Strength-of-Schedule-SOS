@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
 import { FilterState } from "@/hooks/use-filters";
 import {
   GetTeamSosPosition,
@@ -12,6 +13,8 @@ interface SosFiltersProps {
   setFilters: (filters: FilterState) => void;
   activeTab: string;
   setActiveTab: (tab: string) => void;
+  /** Export the currently-active tab's SOS table as CSV. */
+  onExport?: () => void;
 }
 
 /** "HALF_PPR" -> "Half PPR" for display. */
@@ -47,7 +50,8 @@ function FilterPill({
   );
 }
 
-export function SosFilters({ filters, setFilters, activeTab, setActiveTab }: SosFiltersProps) {
+export function SosFilters({ filters, setFilters, activeTab, setActiveTab, onExport }: SosFiltersProps) {
+  const exportLabel = `Export ${activeTab === "player" ? "Player" : "Team"} SOS`;
   const selectClass =
     "bg-transparent text-sm font-semibold text-foreground cursor-pointer focus:outline-none";
   // Match the filter pill: flush, divided segments; active segment filled.
@@ -67,6 +71,9 @@ export function SosFilters({ filters, setFilters, activeTab, setActiveTab }: Sos
           </TabsList>
         </Tabs>
 
+        {/* Right cluster: the filter group + export, so they share the header row
+            opposite the view tabs. */}
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-3">
         {/* Desktop: grouped control bar — one pill containing the two filters. */}
         <div className="hidden md:flex flex-wrap items-center divide-x divide-border rounded-lg border border-border bg-card shadow-sm">
           <label className="flex items-center gap-2 px-3 py-2">
@@ -119,6 +126,20 @@ export function SosFilters({ filters, setFilters, activeTab, setActiveTab }: Sos
               {SCORINGS.map(s => <option key={s} value={s} className="bg-background text-foreground">{prettyScoring(s)}</option>)}
             </select>
           </FilterPill>
+        </div>
+
+          {onExport && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={onExport}
+              data-testid={activeTab === "player" ? "btn-export-player" : "btn-export-team"}
+              className="h-11 w-full md:h-[42px] md:w-auto"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              {exportLabel}
+            </Button>
+          )}
         </div>
       </div>
     </div>

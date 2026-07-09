@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { FilterState } from "@/hooks/use-filters";
 import { useGetPlayerSos, getGetPlayerSosQueryKey } from "@/lib/sos-client";
 import { cn, getDifficultyColorClass } from "@/lib/utils";
@@ -14,15 +14,15 @@ interface PlayerMatrixProps {
 
 /**
  * "DeVonta Smith" -> "D. Smith" (first initial + last name). Hyphenated last
- * names collapse to all-initials so they don't blow out the column —
- * "Jacory Croskey-Merritt" -> "JCM".
+ * names collapse to the first initial plus the first segment so they don't blow
+ * out the column — "Jacory Croskey-Merritt" -> "J. Croskey".
  */
 function abbreviateName(name: string): string {
   const sp = name.indexOf(" ");
   if (sp <= 0) return name;
   const last = name.slice(sp + 1);
   if (last.includes("-")) {
-    return (name[0] + last.replace(/[^A-Za-z-]/g, "").split("-").map(p => p[0] ?? "").join("")).toUpperCase();
+    return `${name[0]}. ${last.split("-")[0]}`;
   }
   return `${name[0]}. ${last}`;
 }
@@ -63,14 +63,28 @@ export function PlayerMatrix({ filters, focus }: PlayerMatrixProps) {
   const { sorted, sort, toggle, setSortDirect } = useSort(data?.rows as PlayerRow[] | undefined, PLAYER_ACCESSORS);
   const highlightId = useCardFocus(focus, setSortDirect);
 
-  // Show full player names while the table fits on screen; collapse to
-  // "F. Last" the moment it would need horizontal scrolling. We compare the
-  // table's intrinsic width against the space available and, once collapsed,
-  // only expand again when the full-name width (captured below) fits — that
-  // dead band keeps it from oscillating at the boundary.
+  // Keep the table fitting its container without horizontal scroll, escalating
+  // the least-disruptive change first. `padScale` (1 → 0.8) uniformly tightens
+  // every column's horizontal padding AND its min-width, so stepping it down
+  // genuinely narrows the whole table by up to 20% — enough to actually stave
+  // off the horizontal scrollbar, not just close a few gaps. We start easing it
+  // in well before the limit (once free space drops within PAD_BUFFER px), so
+  // the table is already compressed by the time it would otherwise get cut off.
+  // Only if compression bottoms out and it still overflows do we collapse player
+  // names to "F. Last". Restoring reverses that order (names back first, then
+  // padding), and each direction uses a dead band to avoid oscillation.
   const tableRef = useRef<HTMLTableElement>(null);
-  const fullWidthRef = useRef(0);
+  // Table width at min scale + full names — the threshold for un-collapsing.
+  const preCompactWidthRef = useRef(0);
+  const [padScale, setPadScale] = useState(1);
   const [compactNames, setCompactNames] = useState(false);
+
+  const MIN_PAD_SCALE = 0.8; // compress columns by at most 20%
+  const PAD_STEP = 0.05;
+  const PAD_BUFFER = 80; // start compressing this many px before the table would overflow
+  // Dead band before we grow columns back. Must exceed one step's width change
+  // (a step moves every column, so ~table-width * PAD_STEP px) or it oscillates.
+  const PAD_HYST = 100;
 
   useLayoutEffect(() => {
     const table = tableRef.current;
@@ -79,11 +93,23 @@ export function PlayerMatrix({ filters, focus }: PlayerMatrixProps) {
 
     const measure = () => {
       const available = parent.clientWidth;
-      if (!compactNames) {
-        fullWidthRef.current = table.scrollWidth;
-        if (table.scrollWidth > available) setCompactNames(true);
-      } else if (fullWidthRef.current && available >= fullWidthRef.current) {
-        setCompactNames(false);
+      const width = table.scrollWidth;
+
+      if (width > available - PAD_BUFFER && padScale > MIN_PAD_SCALE) {
+        // Approaching the limit: compress columns first, pre-emptively.
+        setPadScale((s) => Math.max(MIN_PAD_SCALE, Number((s - PAD_STEP).toFixed(2))));
+      } else if (width > available && !compactNames) {
+        // Compression is maxed out and we're truly overflowing: compact names.
+        preCompactWidthRef.current = width;
+        setCompactNames(true);
+      } else if (compactNames) {
+        // Room to spare: restore names first (only once the full-name width fits).
+        if (preCompactWidthRef.current && available >= preCompactWidthRef.current) {
+          setCompactNames(false);
+        }
+      } else if (padScale < 1 && available >= width + PAD_BUFFER + PAD_HYST) {
+        // Then ease columns back out, keeping a dead band beyond the buffer.
+        setPadScale((s) => Math.min(1, Number((s + PAD_STEP).toFixed(2))));
       }
     };
 
@@ -91,7 +117,7 @@ export function PlayerMatrix({ filters, focus }: PlayerMatrixProps) {
     const observer = new ResizeObserver(measure);
     observer.observe(parent);
     return () => observer.disconnect();
-  }, [compactNames, sorted]);
+  }, [padScale, compactNames, sorted]);
 
   if (isLoading) {
     return <div className="h-96 w-full flex items-center justify-center bg-card rounded-lg border border-border animate-pulse"><span className="text-muted-foreground font-mono">LOADING PLAYER DATA...</span></div>;
@@ -120,34 +146,44 @@ export function PlayerMatrix({ filters, focus }: PlayerMatrixProps) {
   const weeks = Array.from({ length: 17 }, (_, i) => i + 1);
 
   return (
-      <table ref={tableRef} className="w-full text-sm text-left border-collapse border border-border">
+      <table
+        ref={tableRef}
+        style={
+          {
+            "--pad-x": `${(11 * padScale).toFixed(2)}px`,
+            // Unitless multiplier used to scale every column's min-width via calc().
+            "--pad-scale": padScale,
+          } as CSSProperties
+        }
+        className="w-full text-sm text-left border-collapse border border-border"
+      >
         <thead className="text-xs uppercase bg-foreground text-background">
           <tr>
-            <SortHeader label="Player" sortKey="player" sort={sort} onSort={toggle} align="left" tooltip="Player, mapped to their current NFL team. Weekly cells use their team's opponent defense vs this position." className={cn("sticky left-0 bg-foreground px-[11px] py-3 border-b border-r border-border z-30", compactNames ? "min-w-[64px]" : "min-w-[clamp(84px,8.3vw,99px)] lg:min-w-[clamp(138px,13.5vw,162px)]")} />
-            <SortHeader label="Team" sortKey="team" sort={sort} onSort={toggle} tooltip="Player's current NFL team." className="px-[11px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
-            <SortHeader label="OVR" sortKey="ovr" sort={sort} onSort={toggle} tooltip="Overall schedule rank, Weeks 1-17. 1 = easiest schedule, 32 = hardest, by average opponent adjusted points allowed vs this position." className="px-[11px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
-            <SortHeader label="ROS" sortKey="ros" sort={sort} onSort={toggle} tooltip="Rest-of-season schedule rank — remaining games through Week 17. 1 = easiest remaining schedule." className="px-[11px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
-            <SortHeader label={<>Play<br />Off</>} sortKey="playoff" sort={sort} onSort={toggle} tooltip="Fantasy playoff schedule rank, Weeks 15-17. 1 = easiest playoff slate." className="px-[11px] py-3 border-b border-r border-border min-w-[clamp(61px,6vw,72px)]" />
+            <SortHeader label="Player" sortKey="player" sort={sort} onSort={toggle} align="left" tooltip="Player, mapped to their current NFL team. Weekly cells use their team's opponent defense vs this position." className={cn("sticky left-0 bg-foreground px-[var(--pad-x)] py-3 border-b border-r border-border z-30", compactNames ? "min-w-[64px]" : "min-w-[calc(clamp(84px,8.3vw,99px)*var(--pad-scale))] lg:min-w-[calc(clamp(138px,13.5vw,162px)*var(--pad-scale))]")} />
+            <SortHeader label="Team" sortKey="team" sort={sort} onSort={toggle} tooltip="Player's current NFL team." className="px-[var(--pad-x)] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
+            <SortHeader label="OVR" sortKey="ovr" sort={sort} onSort={toggle} tooltip="Overall schedule rank, Weeks 1-17. 1 = easiest schedule, 32 = hardest, by average opponent adjusted points allowed vs this position." className="px-[var(--pad-x)] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
+            <SortHeader label="ROS" sortKey="ros" sort={sort} onSort={toggle} tooltip="Rest-of-season schedule rank — remaining games through Week 17. 1 = easiest remaining schedule." className="px-[var(--pad-x)] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
+            <SortHeader label={<>Play<br />Off</>} sortKey="playoff" sort={sort} onSort={toggle} tooltip="Fantasy playoff schedule rank, Weeks 15-17. 1 = easiest playoff slate." className="px-[var(--pad-x)] py-3 border-b border-r border-border min-w-[calc(clamp(61px,6vw,72px)*var(--pad-scale))]" />
             {weeks.map(w => (
-              <SortHeader key={w} label={`W${w}`} sortKey={`w${w}`} sort={sort} onSort={toggle} tooltip={`Week ${w} matchup. Color shows how tough the opponent's defense is vs this position (their adjusted-points-allowed rank).`} className="px-[3px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
+              <SortHeader key={w} label={`W${w}`} sortKey={`w${w}`} sort={sort} onSort={toggle} tooltip={`Week ${w} matchup. Color shows how tough the opponent's defense is vs this position (their adjusted-points-allowed rank).`} className="px-[3px] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
             ))}
-            <SortHeader label="PO2" sortKey="po2" sort={sort} onSort={toggle} tooltip="Playoff Weeks 16-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-r border-border min-w-[clamp(46px,4.5vw,54px)]" />
-            <SortHeader label="PO3" sortKey="po3" sort={sort} onSort={toggle} tooltip="Playoff Weeks 15-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-border min-w-[clamp(46px,4.5vw,54px)]" />
+            <SortHeader label="PO2" sortKey="po2" sort={sort} onSort={toggle} tooltip="Playoff Weeks 16-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-r border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
+            <SortHeader label="PO3" sortKey="po3" sort={sort} onSort={toggle} tooltip="Playoff Weeks 15-17: average opponent difficulty (adjusted points allowed)." className="px-[3px] py-3 border-b border-border min-w-[calc(clamp(46px,4.5vw,54px)*var(--pad-scale))]" />
           </tr>
         </thead>
         <tbody className="font-mono">
           {(sorted ?? []).map((row, i) => (
             <tr key={row.playerId} data-testid={`player-row-${row.playerId}`} className={cn("border-b border-border/50 hover:bg-muted/20 transition-colors", i % 2 === 0 ? "bg-transparent" : "bg-muted/10", highlightId === `player-row-${row.playerId}` && "ring-2 ring-inset ring-amber-400 bg-amber-400/10")}>
-              <td className="sticky left-0 bg-card px-[11px] py-1 border-r border-border font-semibold z-10 max-w-[180px]">
+              <td className="sticky left-0 bg-card px-[var(--pad-x)] py-1 border-r border-border font-semibold z-10 max-w-[180px]">
                 {/* Full name while the table fits; "F. Last" once it would need horizontal scroll. */}
                 <div className="flex items-center gap-2 min-w-0">
-                  <span className="text-foreground truncate">{compactNames ? abbreviateName(row.playerName) : row.playerName}</span>
+                  <span className="text-[10.1px] text-foreground truncate">{compactNames ? abbreviateName(row.playerName) : row.playerName}</span>
                 </div>
               </td>
-              <td className="px-[11px] py-1 border-r border-border text-center text-muted-foreground">{row.team}</td>
-              <td className="px-[11px] py-1 border-r border-border text-center font-bold">{row.sosRank}</td>
-              <td className="px-[11px] py-1 border-r border-border text-center font-bold text-muted-foreground">{row.rosSosRank}</td>
-              <td className="px-[11px] py-1 border-r border-border text-center font-bold text-primary">{row.playoffSosRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-muted-foreground">{row.team}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.sosRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[8.96px] font-bold text-muted-foreground">{row.rosSosRank}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold text-primary">{row.playoffSosRank}</td>
               
               {weeks.map((w, index) => {
                 const cell = row.weeks[index];

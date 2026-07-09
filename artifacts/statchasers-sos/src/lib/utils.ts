@@ -14,6 +14,23 @@ export function getTeamLogoUrl(team?: string | null): string | null {
   return `https://a.espncdn.com/i/teamlogos/nfl/500/${team.toLowerCase()}.png`
 }
 
+/**
+ * Map a rest-of-season schedule rank (1 = easiest remaining schedule … 32 =
+ * hardest) onto the same difficulty buckets used for weekly/PO matchup cells, so
+ * the ROS aFPA-average column can share their green→red shading. Easiest lands in
+ * the green (SMASH/FAVORABLE) buckets and hardest in the red (TOUGH/VERY_TOUGH),
+ * matching the "higher aFPA = easier = green" language of PO2/PO3. Bucket sizes
+ * (5/5/12/5/5 of 32) mirror the weekly-cell thresholds.
+ */
+export function bucketFromScheduleRank(rank: number | null | undefined): string | null {
+  if (rank == null) return null
+  if (rank <= 5) return "SMASH_SPOT"
+  if (rank <= 10) return "FAVORABLE"
+  if (rank <= 22) return "NEUTRAL"
+  if (rank <= 27) return "TOUGH"
+  return "VERY_TOUGH"
+}
+
 export function getDifficultyColorClass(
   bucket: string | null | undefined,
   isBye?: boolean,

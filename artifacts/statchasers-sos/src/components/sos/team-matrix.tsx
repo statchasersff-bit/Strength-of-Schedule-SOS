@@ -1,6 +1,6 @@
 import { FilterState } from "@/hooks/use-filters";
 import { useGetTeamSos, getGetTeamSosQueryKey } from "@/lib/sos-client";
-import { cn, getDifficultyColorClass, getTeamLogoUrl } from "@/lib/utils";
+import { cn, getDifficultyColorClass, getTeamLogoUrl, bucketFromScheduleRank } from "@/lib/utils";
 import { WeekCell } from "@workspace/api-client-react";
 import { SortHeader, useSort, type Accessor } from "./sortable";
 import { useCardFocus } from "./use-card-focus";
@@ -73,7 +73,7 @@ export function TeamMatrix({ filters, focus }: TeamMatrixProps) {
       <table className="w-full text-sm text-left border-collapse border border-border">
         <thead className="text-xs uppercase bg-foreground text-background">
           <tr>
-            <SortHeader label="Team" sortKey="team" sort={sort} onSort={toggle} align="left" tooltip="NFL team. Each weekly cell shows the opponent's defense difficulty vs this position." className="sticky left-0 bg-foreground px-[3px] py-3 border-b border-r border-border z-30 min-w-[clamp(64px,5.7vw,72px)] whitespace-nowrap" />
+            <SortHeader label="Team" sortKey="team" sort={sort} onSort={toggle} align="center" tooltip="NFL team. Each weekly cell shows the opponent's defense difficulty vs this position." className="sticky left-0 bg-foreground px-[3px] py-3 border-b border-r border-border z-30 min-w-[clamp(64px,5.7vw,72px)] whitespace-nowrap" />
             <SortHeader label="OVR" sortKey="ovr" sort={sort} onSort={toggle} tooltip="Overall schedule rank, Weeks 1-17. 1 = easiest schedule, 32 = hardest, by average opponent adjusted points allowed vs this position." className="px-[3px] py-3 border-b border-r border-border w-[clamp(43px,4.2vw,50px)]" />
             <SortHeader label="ROS" sortKey="ros" sort={sort} onSort={toggle} tooltip="Rest-of-season schedule rank — remaining games through Week 17. 1 = easiest remaining schedule." className="px-[3px] py-3 border-b border-r border-border w-[clamp(43px,4.2vw,50px)]" />
             <SortHeader label={<>Play<br />Off</>} sortKey="playoff" sort={sort} onSort={toggle} tooltip="Fantasy playoff schedule rank, Weeks 15-17. 1 = easiest playoff slate." className="px-[3px] py-3 border-b border-r border-border w-[clamp(55px,5.4vw,65px)]" />
@@ -89,7 +89,7 @@ export function TeamMatrix({ filters, focus }: TeamMatrixProps) {
           {(sorted ?? []).map((row, i) => (
             <tr key={row.team} data-testid={`team-row-${row.team}`} className={cn("border-b border-border/50 hover:bg-muted/20 transition-colors", i % 2 === 0 ? "bg-transparent" : "bg-muted/10", highlightId === `team-row-${row.team}` && "ring-2 ring-inset ring-amber-400 bg-amber-400/10")}>
               <td className="sticky left-0 bg-card px-[3px] py-1 border-r border-border font-semibold z-10 whitespace-nowrap">
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-center justify-center gap-1.5">
                   <img
                     src={getTeamLogoUrl(row.team) ?? undefined}
                     alt=""
@@ -98,12 +98,12 @@ export function TeamMatrix({ filters, focus }: TeamMatrixProps) {
                     className="h-5 w-5 shrink-0 object-contain"
                     onError={(e) => { e.currentTarget.style.visibility = "hidden"; }}
                   />
-                  <span className="text-foreground">{row.team}</span>
+                  <span className="text-[10.1px] text-foreground">{row.team}</span>
                 </div>
               </td>
-              <td className="px-[3px] py-1 border-r border-border text-center font-bold">{row.overallRank}</td>
-              <td className="px-[3px] py-1 border-r border-border text-center font-bold text-muted-foreground">{row.rosRank}</td>
-              <td className="px-[3px] py-1 border-r border-border text-center font-bold text-primary">{row.playoffRank}</td>
+              <td className="px-[3px] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.overallRank}</td>
+              <td className="px-[3px] py-1 border-r border-border text-center text-[8.96px] font-bold text-muted-foreground">{row.rosRank}</td>
+              <td className="px-[3px] py-1 border-r border-border text-center text-[11.2px] font-bold text-primary">{row.playoffRank}</td>
               
               {weeks.map((w, index) => {
                 const cell = row.weeks[index];
@@ -132,8 +132,14 @@ export function TeamMatrix({ filters, focus }: TeamMatrixProps) {
                   </div>
                 )}
               </td>
-              <td className="px-[11px] py-1 text-center text-muted-foreground">
-                {row.rosSummary?.toFixed(1) || "-"}
+              <td className="px-1 py-1 text-center text-xs font-semibold p-0.5">
+                {row.rosSummary != null ? (
+                  <div className={cn("w-full h-full flex items-center justify-center py-1 rounded-sm", getDifficultyColorClass(bucketFromScheduleRank(row.rosRank)))}>
+                    {row.rosSummary.toFixed(1)}
+                  </div>
+                ) : (
+                  "-"
+                )}
               </td>
             </tr>
           ))}

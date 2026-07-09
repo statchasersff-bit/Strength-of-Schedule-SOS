@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Info } from "lucide-react";
 import { useFilters, type FilterState } from "@/hooks/use-filters";
 import { getRuntimeConfig, type SosRuntimeConfig } from "@/lib/runtime-config";
 import {
@@ -60,25 +59,6 @@ function readInlineState(cfg: SosRuntimeConfig): {
     position: pick((p.get("pos") ?? init.position)?.toLowerCase(), VALID_POSITIONS, "rb"),
     scoring: pick(p.get("scoring") ?? init.scoring, VALID_SCORINGS, "ppr"),
   };
-}
-
-/** How to read each weekly cell, appended to the caption. */
-const CELL_HINT =
-  "Each cell shows the weekly opponent with their aFPA (adjusted fantasy points allowed) vs the position underneath — the higher the aFPA, the better the matchup. vs = home game, @ = away game.";
-
-/** Detailed, live summary of exactly what the active tab + filters are showing. */
-function describeView(
-  activeTab: string,
-  filters: { season: number; position: string; scoring: string },
-): string {
-  const { season, position, scoring } = filters;
-  const pos = `${position}s`;
-  const scoringLabel = SCORING_LABELS[scoring] ?? scoring;
-
-  if (activeTab === "player") {
-    return `Viewing ${season} ${scoringLabel} Strength of Schedule for ${pos} by player. Each player mapped to their team's weekly opponents (fantasy weeks 1-17). ${CELL_HINT}`;
-  }
-  return `Viewing ${season} ${scoringLabel} Strength of Schedule for ${pos} on each team (fantasy weeks 1-17). ${CELL_HINT}`;
 }
 
 export default function Home() {
@@ -226,41 +206,63 @@ export default function Home() {
 
   return (
     <div className="bg-background text-foreground flex flex-col">
-      <SosFilters filters={filters} setFilters={handleFiltersChange} activeTab={activeTab} setActiveTab={handleTabChange} />
+      <SosFilters
+        filters={filters}
+        setFilters={handleFiltersChange}
+        activeTab={activeTab}
+        setActiveTab={handleTabChange}
+        onExport={activeTab === "player" ? handleExportPlayer : handleExportTeam}
+      />
 
       <main className="flex-1 w-full max-w-[1440px] mx-auto min-w-0 px-[5px] pt-[17px] pb-[42px]">
         <InsightCards filters={filters} activeTab={activeTab} onSelect={handleCardSelect} />
 
-        <p className="text-sm font-medium text-muted-foreground mb-6" data-testid="text-view-description">
-          {describeView(activeTab, filters)}
-          {" "}To view more detailed info on aFPA, see our{" "}
-          <a
-            href="https://statchasers.com/nfl/fantasy-points-allowed/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary underline hover:no-underline"
-          >
-            Adjusted Fantasy Points Allowed data
-          </a>
-          .
-        </p>
-
-        <div className="flex flex-wrap items-center gap-3 mb-4">
-          <DifficultyLegend />
+        {/* Flat, inline "how to read" context — no card/box. Heading + key on
+            one row with the aFPA link pushed to the far right; the active
+            season/position/scoring/weeks as small muted metadata (not pills,
+            since the filters above already own those as controls). */}
+        <div className="mb-3" data-testid="text-view-description">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+            <p className="flex items-start gap-2 text-sm leading-snug">
+              <Info className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" aria-hidden="true" />
+              <span>
+                <span className="font-bold text-foreground">How to read this board</span>
+                <span className="text-muted-foreground">
+                  {" — "}Higher aFPA = easier matchup · <span className="font-bold text-foreground">vs</span> = home ·{" "}
+                  <span className="font-bold text-foreground">@</span> = away
+                </span>
+              </span>
+            </p>
+            <div className="flex flex-col items-start gap-2 pl-6 sm:items-end sm:pl-0">
+              <a
+                href="https://statchasers.com/nfl/fantasy-points-allowed/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 whitespace-nowrap text-xs font-bold text-[#17457a] hover:underline decoration-primary decoration-2 underline-offset-2"
+              >
+                How aFPA works →
+              </a>
+              <BaselineNotice />
+            </div>
+          </div>
+          <p className="mt-1 pl-6 text-xs font-medium text-muted-foreground">
+            {[
+              String(filters.season),
+              filters.position,
+              SCORING_LABELS[filters.scoring] ?? filters.scoring,
+              "Weeks 1–17",
+            ].join(" · ")}
+          </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
-          <BaselineNotice className="justify-center sm:justify-start" />
-          <div className="flex flex-row gap-2 w-full sm:w-auto">
-            <Button variant="outline" size="sm" onClick={handleExportTeam} data-testid="btn-export-team" className="flex-1 sm:flex-none">
-              <Download className="w-4 h-4 mr-2" />
-              Export Team SOS
-            </Button>
-            <Button variant="outline" size="sm" onClick={handleExportPlayer} data-testid="btn-export-player" className="flex-1 sm:flex-none">
-              <Download className="w-4 h-4 mr-2" />
-              Export Player SOS
-            </Button>
-          </div>
+        {/* One light divider is all the separation the context vs. legend/actions
+            needs — no surrounding box. */}
+        <hr className="mb-3 border-t border-[rgba(11,31,58,0.08)]" />
+
+        {/* Flat legend row — the color key. (Export now lives in the header next
+            to the view tabs; baseline lives in the context block above.) */}
+        <div className="mb-4">
+          <DifficultyLegend bare />
         </div>
 
         {/* Scroll region so a wide table scrolls within the tool instead of pushing the page wider on the right.

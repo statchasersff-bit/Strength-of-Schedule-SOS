@@ -11,11 +11,13 @@ export interface SosPlayerInsightCardProps {
   position: string;
   headshotUrl?: string | null;
   teamLogoUrl?: string | null;
-  /** Compact filter chips under the name: position, scoring, week range. */
-  chips: string[];
+  /** Optional compact filter chips under the name: position, scoring, week range. */
+  chips?: string[];
   value: string | number;
   /** Unit shown after the value, e.g. "aFPA". */
   valueLabel?: string;
+  /** Optional secondary line under the pill, e.g. "+1.2 vs avg". */
+  deltaText?: string;
   tone?: SosInsightTone;
   className?: string;
   /** data-testid passthrough so cards can be targeted in tests. */
@@ -45,6 +47,7 @@ export function SosPlayerInsightCard({
   chips,
   value,
   valueLabel,
+  deltaText,
   tone = "neutral",
   className,
   testId,
@@ -107,10 +110,11 @@ export function SosPlayerInsightCard({
             alt={playerName}
             loading="lazy"
             onError={() => setImgFailed(true)}
-            // Sized by height with width:auto so the headshot always keeps its
-            // natural aspect ratio. h-full fits the whole image within the panel
-            // so the head AND shoulders stay visible — nothing is cut off the top.
-            className="absolute left-1/2 top-0 z-10 h-full w-auto max-w-none -translate-x-1/2 object-contain object-top drop-shadow-sm"
+            // Every headshot fills the exact same portrait zone: object-contain
+            // keeps the aspect ratio while object-bottom pins the shoulder
+            // baseline to the bottom edge, so heads and footprints line up
+            // card-to-card regardless of how the source image was cropped.
+            className="absolute inset-0 z-10 h-full w-full object-contain object-bottom drop-shadow-sm"
           />
         ) : (
           <div className="absolute bottom-4 left-1/2 z-10 grid h-16 w-16 -translate-x-1/2 place-items-center rounded-full bg-foreground text-base font-black uppercase text-primary">
@@ -133,35 +137,43 @@ export function SosPlayerInsightCard({
 
       {/* Content panel. */}
       <div className="relative z-10 flex min-w-0 flex-col p-[18px]">
-        {/* The aFPA pill floats right so the title wraps AROUND it: only the
-            first line is shortened by the pill, while lines below use the full
-            card width. flow-root contains the float so it can't overlap the name. */}
-        <div className="flow-root">
-          <span className={cn("float-right ml-2 mb-1 whitespace-nowrap rounded-full px-2 py-1 text-[11px] font-black", t.chip)}>
-            {value}
-            {valueLabel ? <span className="ml-1 font-bold opacity-80">{valueLabel}</span> : null}
-          </span>
-          <p className="text-[11px] font-black uppercase leading-[1.15] tracking-[0.08em] text-[#17457a]">
-            {label}
-          </p>
-        </div>
+        <p className="text-[11px] font-black uppercase leading-[1.15] tracking-[0.08em] text-[#17457a]">
+          {label}
+        </p>
 
-        <h3 className="clear-both mt-2 truncate text-[19px] lg:text-[20px] font-black leading-[1.05] tracking-[-0.02em] text-foreground">
+        {/* Player name is the hero: heavier weight and a two-line clamp so long
+            hyphenated names (Amon-Ra St. Brown, Jaxon Smith-Njigba) wrap rather
+            than truncate. The reserved min-height keeps every card aligned; we
+            never shrink the font per player. */}
+        <h3 className="mt-2 text-[22px] font-[850] leading-[1.08] tracking-[-0.025em] text-foreground line-clamp-2 min-h-[48px]">
           {playerName}
         </h3>
 
-        {/* Compact filter chips — mirrors the Team SOS insight cards. Pinned to
-            the bottom so every card aligns. */}
-        <div className="mt-auto flex flex-wrap gap-1.5 pt-3.5">
-          {chips.map((c) => (
-            <span
-              key={c}
-              className="rounded-full bg-muted px-2 py-1 text-[10px] font-black uppercase tracking-[0.04em] text-muted-foreground"
-            >
-              {c}
-            </span>
-          ))}
+        {/* aFPA stat pill + optional delta vs positional average, just below the name. */}
+        <div className="mt-2">
+          <span className={cn("inline-block whitespace-nowrap rounded-full px-2 py-1 text-[11px] font-black", t.chip)}>
+            {value}
+            {valueLabel ? <span className="ml-1 font-bold opacity-80">{valueLabel}</span> : null}
+          </span>
+          {deltaText ? (
+            <span className="mt-1 block text-[10px] font-bold text-muted-foreground">{deltaText}</span>
+          ) : null}
         </div>
+
+        {/* Compact filter chips — mirrors the Team SOS insight cards. Pinned to
+            the bottom so every card aligns. Omitted when no chips are supplied. */}
+        {chips && chips.length > 0 && (
+          <div className="mt-auto flex flex-wrap gap-1.5 pt-3.5">
+            {chips.map((c) => (
+              <span
+                key={c}
+                className="rounded-full bg-muted px-2 py-1 text-[10px] font-black uppercase tracking-[0.04em] text-muted-foreground"
+              >
+                {c}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </article>
   );
