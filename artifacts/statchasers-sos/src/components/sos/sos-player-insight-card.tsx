@@ -80,7 +80,7 @@ export function SosPlayerInsightCard({
         // keep its natural proportions as the layout narrows.
         // Crisper border + real elevation shadow so each card reads as a
         // distinct container against the white page (mirrors the Team SOS cards).
-        "group relative grid grid-cols-[40%_60%] overflow-hidden rounded-[18px] border border-slate-200 bg-card shadow-[0_1px_2px_rgba(11,31,58,0.06),0_8px_24px_-8px_rgba(11,31,58,0.14)] transition-all duration-150",
+        "group relative grid grid-cols-[40%_60%] overflow-hidden rounded-[18px] border border-[rgba(11,31,58,0.14)] bg-card shadow-[0_1px_2px_rgba(11,31,58,0.06),0_8px_24px_-8px_rgba(11,31,58,0.14)] transition-all duration-150",
         clickable &&
           "cursor-pointer hover:-translate-y-0.5 hover:shadow-xl hover:border-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/70",
         className,

@@ -78,7 +78,7 @@ export function SosTeamInsightCard({
         // A crisper border + real elevation shadow so each card reads as a
         // distinct container against the white page (white card on white bg
         // otherwise looks like floating text with a barely-visible edge).
-        "group relative flex min-h-[180px] flex-col overflow-hidden rounded-[18px] border border-l-4 border-slate-200 bg-card p-[18px] shadow-[0_1px_2px_rgba(11,31,58,0.06),0_8px_24px_-8px_rgba(11,31,58,0.14)] transition-all duration-150",
+        "group relative flex min-h-[180px] flex-col overflow-hidden rounded-[18px] border border-l-4 border-[rgba(11,31,58,0.14)] bg-card p-[18px] shadow-[0_1px_2px_rgba(11,31,58,0.06),0_8px_24px_-8px_rgba(11,31,58,0.14)] transition-all duration-150",
         tone === "good" && "border-l-emerald-500",
         tone === "bad" && "border-l-red-500",
         tone === "neutral" && "border-l-primary",
