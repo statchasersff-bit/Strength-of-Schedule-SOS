@@ -16,6 +16,7 @@
  * `VITE_SOS_DATA_BASE=https://statchasers.com/wp-content/uploads/sc-data/sos`.
  */
 import { useQuery } from "@tanstack/react-query";
+import { getRuntimeConfig } from "./runtime-config";
 import type {
   GetTeamSosParams,
   GetPlayerSosParams,
@@ -40,7 +41,9 @@ export * from "@workspace/api-client-react";
 // ---------------------------------------------------------------------------
 
 const DATA_BASE: string = (
-  (import.meta.env.VITE_SOS_DATA_BASE as string | undefined) ?? "/data/sos"
+  getRuntimeConfig().dataBase ??
+  (import.meta.env.VITE_SOS_DATA_BASE as string | undefined) ??
+  "/data/sos"
 ).replace(/\/+$/, "");
 
 const SCORING_SLUG: Record<string, string> = {
@@ -180,7 +183,7 @@ function weekLabel(cell?: {
 }): string {
   if (!cell) return "";
   if (cell.isBye) return "BYE";
-  const opp = cell.opponent ? `${cell.isHome ? "vs " : "@ "}${cell.opponent}` : "-";
+  const opp = cell.opponent ? `${cell.isHome ? "" : "@"}${cell.opponent}` : "-";
   return cell.rank != null ? `${opp} (${cell.rank})` : opp;
 }
 

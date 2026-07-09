@@ -59,8 +59,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-:root {
+:root, :host {
   /* StatChasers Branding - Light theme (navy / gold on white) */
+  /* :host so the vars land on the Shadow DOM host (inline embed) as well as
+     the document root (standalone dev), and inherit into the app either way. */
   --background: 0 0% 100%;            /* white #FFFFFF */
   --foreground: 220 47% 11%;          /* navy #0B1F3A */
 
@@ -149,6 +151,9 @@
   * {
     @apply border-border;
   }
+  /* `:host` (shadow host) in the inline embed, `body` in standalone dev — both
+     carry the base font/background so the tool looks the same either way. */
+  :host,
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }

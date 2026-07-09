@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "hello": "tsx ./src/hello.ts",
+    "ingest:fpa": "tsx ./src/fpa-ingest.ts",
+    "build:sos": "tsx ./src/build-sos.ts",
+    "sos": "tsx ./src/fpa-ingest.ts && tsx ./src/build-sos.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {

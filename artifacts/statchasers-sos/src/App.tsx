@@ -3,7 +3,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ErrorBoundary } from "@/components/error-boundary";
-import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 
 const queryClient = new QueryClient({
@@ -17,10 +16,13 @@ const queryClient = new QueryClient({
 });
 
 function Router() {
+  // The SOS tool is a single page embedded under /nfl/strength-of-schedule/.
+  // Every pretty path (team/player + position + scoring, or schedule) resolves
+  // to the same page, which reads the URL to set its tab/filters. So render Home
+  // for any path rather than 404-ing the deeper pretty URLs.
   return (
     <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
+      <Route component={Home} />
     </Switch>
   );
 }

@@ -1,23 +1,180 @@
 import { useState, useEffect } from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import { useFilters } from "@/hooks/use-filters";
+import { useFilters, type FilterState } from "@/hooks/use-filters";
+import { getRuntimeConfig, type SosRuntimeConfig } from "@/lib/runtime-config";
+import {
+  parseSosUrl,
+  buildSosUrl,
+  type SosTab,
+  type SosPosition,
+  type SosScoring,
+} from "@/lib/sos-url";
 import { SosFilters } from "@/components/sos/sos-filters";
-import { InsightCards } from "@/components/sos/insight-cards";
+import { InsightCards, type CardFocus } from "@/components/sos/insight-cards";
 import { TeamMatrix } from "@/components/sos/team-matrix";
 import { PlayerMatrix } from "@/components/sos/player-matrix";
-import { FpaTable } from "@/components/sos/fpa-table";
-import { ScheduleTable } from "@/components/sos/schedule-table";
+import { DifficultyLegend } from "@/components/sos/difficulty-legend";
+import { BaselineNotice } from "@/components/sos/baseline-notice";
 import { fetchTeamSosCsv, fetchPlayerSosCsv } from "@/lib/sos-client";
+
+const SCORING_LABELS: Record<string, string> = {
+  PPR: "PPR",
+  HALF_PPR: "Half-PPR",
+  STANDARD: "Standard",
+};
+// Map between the filter enum values and the URL scoring slugs.
+const SCORING_TO_SLUG: Record<string, SosScoring> = {
+  PPR: "ppr",
+  HALF_PPR: "half-ppr",
+  STANDARD: "std",
+};
+const SLUG_TO_SCORING: Record<SosScoring, string> = {
+  ppr: "PPR",
+  "half-ppr": "HALF_PPR",
+  std: "STANDARD",
+};
+const VALID_TABS: SosTab[] = ["team", "player"];
+const VALID_POSITIONS: SosPosition[] = ["qb", "rb", "wr", "te"];
+const VALID_SCORINGS: SosScoring[] = ["ppr", "half-ppr", "std"];
+
+/**
+ * Resolve the inline embed's view from the host page's `?tab&pos&scoring` query
+ * string, falling back to the host-injected initial state and then hard
+ * defaults. Every value is validated so a hand-edited URL can't blank the view.
+ */
+function readInlineState(cfg: SosRuntimeConfig): {
+  tab: SosTab;
+  position: SosPosition;
+  scoring: SosScoring;
+} {
+  const p = new URLSearchParams(window.location.search);
+  const init = cfg.initialState ?? {};
+  const pick = <T extends string>(
+    v: string | undefined | null,
+    allowed: T[],
+    dflt: T,
+  ): T => (v != null && (allowed as string[]).includes(v) ? (v as T) : dflt);
+  return {
+    tab: pick(p.get("tab") ?? init.tab, VALID_TABS, "team"),
+    position: pick((p.get("pos") ?? init.position)?.toLowerCase(), VALID_POSITIONS, "rb"),
+    scoring: pick(p.get("scoring") ?? init.scoring, VALID_SCORINGS, "ppr"),
+  };
+}
+
+/** How to read each weekly cell, appended to the caption. */
+const CELL_HINT =
+  "Each cell shows the weekly opponent with their aFPA (adjusted fantasy points allowed) vs the position underneath — the higher the aFPA, the better the matchup. vs = home game, @ = away game.";
+
+/** Detailed, live summary of exactly what the active tab + filters are showing. */
+function describeView(
+  activeTab: string,
+  filters: { season: number; position: string; scoring: string },
+): string {
+  const { season, position, scoring } = filters;
+  const pos = `${position}s`;
+  const scoringLabel = SCORING_LABELS[scoring] ?? scoring;
+
+  if (activeTab === "player") {
+    return `Viewing ${season} ${scoringLabel} Strength of Schedule for ${pos} by player. Each player mapped to their team's weekly opponents (fantasy weeks 1-17). ${CELL_HINT}`;
+  }
+  return `Viewing ${season} ${scoringLabel} Strength of Schedule for ${pos} on each team (fantasy weeks 1-17). ${CELL_HINT}`;
+}
 
 export default function Home() {
   const { filters, setFilters } = useFilters();
   const [activeTab, setActiveTab] = useState("team");
+  // Set when an insight card is clicked; tells the active matrix to sort,
+  // highlight and scroll to the picked row. The nonce re-fires repeat clicks.
+  const [focus, setFocus] = useState<CardFocus | null>(null);
+  const handleCardSelect = (f: Omit<CardFocus, "nonce">) =>
+    setFocus((prev) => ({ ...f, nonce: (prev?.nonce ?? 0) + 1 }));
+
+  // --- URL / host state sync ----------------------------------------------
+  // Standalone (preview/local dev): push a clean path like
+  //   /nfl/strength-of-schedule/player/wr/half-ppr/
+  // Inline embed (WordPress/Divi, Shadow DOM): reflect the view in the host
+  //   page's own `?tab&pos&scoring` query string so it stays shareable, without
+  //   rewriting the page's path (which the host may not route).
+  const syncState = (tab: string, f: FilterState) => {
+    if (typeof window === "undefined") return;
+    const slugState = {
+      tab: tab as SosTab,
+      position: String(f.position).toLowerCase() as SosPosition,
+      scoring: SCORING_TO_SLUG[f.scoring] ?? "ppr",
+    };
+    const cfg = getRuntimeConfig();
+
+    if (cfg.inline) {
+      const u = new URL(window.location.href);
+      u.searchParams.set("tab", slugState.tab);
+      u.searchParams.set("pos", slugState.position);
+      u.searchParams.set("scoring", slugState.scoring);
+      if (u.href !== window.location.href) {
+        window.history.pushState(null, "", u.href);
+      }
+      return;
+    }
+
+    // Hosts that can't route deep pretty-URLs set prettyUrls:false.
+    if (cfg.prettyUrls === false) return;
+    const next = buildSosUrl(slugState);
+    const strip = (s: string) => s.replace(/\/+$/, "");
+    if (strip(next) !== strip(window.location.pathname)) {
+      window.history.pushState(slugState, "", next);
+    }
+  };
+
+  // A pick belongs to the tab it was made on — drop it when switching tabs so
+  // it doesn't re-sort the other table.
+  const handleTabChange = (tab: string) => {
+    setFocus(null);
+    setActiveTab(tab);
+    syncState(tab, filters);
+  };
+  const handleFiltersChange = (next: FilterState) => {
+    setFilters(next);
+    syncState(activeTab, next);
+  };
+
+  // Drive UI state from a slug triple (used by both URL parsing and the host).
+  const applySlugState = (s: { tab: string; position: string; scoring: string }) => {
+    setActiveTab(s.tab);
+    setFilters((prev) => ({
+      ...prev,
+      position: s.position.toUpperCase() as FilterState["position"],
+      scoring: (SLUG_TO_SCORING[s.scoring as SosScoring] ?? "PPR") as FilterState["scoring"],
+    }));
+    setFocus(null);
+  };
+
+  // On load + on browser back/forward, drive state from the right source.
+  useEffect(() => {
+    const cfg = getRuntimeConfig();
+
+    if (cfg.inline) {
+      // Inline embed: the view lives in the host page's `?tab&pos&scoring`
+      // query string, seeded on first load from the injected initial state.
+      const apply = () => applySlugState(readInlineState(cfg));
+      apply();
+      window.addEventListener("popstate", apply);
+      return () => window.removeEventListener("popstate", apply);
+    }
+
+    const apply = () => applySlugState(parseSosUrl(window.location.pathname));
+    apply();
+    window.addEventListener("popstate", apply);
+    return () => window.removeEventListener("popstate", apply);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
+    // Inline embeds live inside a host page that owns its own <title>/<meta> —
+    // leave the host document's head untouched.
+    if (getRuntimeConfig().inline) return;
+
     document.title = "Fantasy Football Strength of Schedule | 2026 SOS by Team & Player";
-    
+
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement('meta');
@@ -68,60 +225,50 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <SosFilters filters={filters} setFilters={setFilters} />
-      
-      <main className="flex-1 container mx-auto max-w-7xl px-4 py-8">
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold tracking-tight mb-2">Fantasy Football Strength of Schedule</h1>
-          <p className="text-muted-foreground max-w-3xl">
-            The analyst's edge. Data-dense schedule intelligence for fantasy players who want to find the angle before their league does.
-          </p>
-        </header>
+    <div className="bg-background text-foreground flex flex-col">
+      <SosFilters filters={filters} setFilters={handleFiltersChange} activeTab={activeTab} setActiveTab={handleTabChange} />
 
-        <InsightCards filters={filters} />
+      <main className="flex-1 w-full max-w-[1440px] mx-auto min-w-0 px-[5px] pt-[17px] pb-[42px]">
+        <InsightCards filters={filters} activeTab={activeTab} onSelect={handleCardSelect} />
 
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full md:w-auto">
-            <TabsList className="grid w-full grid-cols-4 bg-muted/50 p-1 md:w-[600px]">
-              <TabsTrigger value="team" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Team SOS</TabsTrigger>
-              <TabsTrigger value="player" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Player SOS</TabsTrigger>
-              <TabsTrigger value="fpa" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">FPA</TabsTrigger>
-              <TabsTrigger value="schedule" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Schedule</TabsTrigger>
-            </TabsList>
-          </Tabs>
-          
-          <div className="flex gap-2">
-            <Button variant="outline" size="sm" onClick={handleExportTeam} data-testid="btn-export-team">
+        <p className="text-sm font-medium text-muted-foreground mb-6" data-testid="text-view-description">
+          {describeView(activeTab, filters)}
+          {" "}To view more detailed info on aFPA, see our{" "}
+          <a
+            href="https://statchasers.com/nfl/fantasy-points-allowed/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline hover:no-underline"
+          >
+            Adjusted Fantasy Points Allowed data
+          </a>
+          .
+        </p>
+
+        <div className="flex flex-wrap items-center gap-3 mb-4">
+          <DifficultyLegend />
+        </div>
+
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+          <BaselineNotice className="justify-center sm:justify-start" />
+          <div className="flex flex-row gap-2 w-full sm:w-auto">
+            <Button variant="outline" size="sm" onClick={handleExportTeam} data-testid="btn-export-team" className="flex-1 sm:flex-none">
               <Download className="w-4 h-4 mr-2" />
               Export Team SOS
             </Button>
-            <Button variant="outline" size="sm" onClick={handleExportPlayer} data-testid="btn-export-player">
+            <Button variant="outline" size="sm" onClick={handleExportPlayer} data-testid="btn-export-player" className="flex-1 sm:flex-none">
               <Download className="w-4 h-4 mr-2" />
               Export Player SOS
             </Button>
           </div>
         </div>
 
-        {activeTab === "team" && <TeamMatrix filters={filters} />}
-        {activeTab === "player" && <PlayerMatrix filters={filters} />}
-        {activeTab === "fpa" && <FpaTable filters={filters} />}
-        {activeTab === "schedule" && <ScheduleTable filters={filters} />}
-
-        <section className="mt-16 bg-card border border-border p-6 rounded-lg max-w-4xl">
-          <h2 className="text-xl font-bold mb-4 font-mono tracking-tight text-primary">OUR METHODOLOGY</h2>
-          <div className="space-y-4 text-muted-foreground text-sm leading-relaxed">
-            <p>
-              StatChasers SOS uses adjusted fantasy points allowed by position, normalized to remove schedule bias so defenses are compared fairly across opponents.
-            </p>
-            <p>
-              Instead of looking at raw points allowed (which unfairly penalizes defenses that have played elite offenses), our model adjusts for the strength of the opponent. This gives you a much clearer picture of whether a matchup is a true "Smash Spot" or a trap.
-            </p>
-            <p>
-              The color coding highlights the opportunity: <span className="text-emerald-600 font-semibold">Green (Smash Spot/Favorable)</span> indicates a highly exploitable matchup, while <span className="text-red-600 font-semibold">Red (Very Tough)</span> warns of a shutdown defense.
-            </p>
-          </div>
-        </section>
+        {/* Scroll region so a wide table scrolls within the tool instead of pushing the page wider on the right.
+            pb-4 reserves space for the horizontal scrollbar so the last rows aren't clipped in the iframe embed. */}
+        <div className="w-full overflow-x-auto pb-4">
+          {activeTab === "team" && <TeamMatrix filters={filters} focus={focus} />}
+          {activeTab === "player" && <PlayerMatrix filters={filters} focus={focus} />}
+        </div>
       </main>
     </div>
   );

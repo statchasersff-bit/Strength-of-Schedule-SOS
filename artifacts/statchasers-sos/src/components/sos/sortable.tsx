@@ -1,5 +1,6 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 export type SortDir = "asc" | "desc";
 export type SortState = { key: string; dir: SortDir } | null;
@@ -39,7 +40,11 @@ export function useSort<T>(rows: T[] | undefined, accessors: Record<string, Acce
       return null;
     });
 
-  return { sorted, sort, toggle };
+  // Imperatively force a specific sort — used when an insight card "jumps" the
+  // table to a column/direction rather than cycling through it.
+  const setSortDirect = (key: string, dir: SortDir) => setSort({ key, dir });
+
+  return { sorted, sort, toggle, setSortDirect };
 }
 
 interface SortHeaderProps {
@@ -49,6 +54,8 @@ interface SortHeaderProps {
   onSort: (key: string, defaultDir?: SortDir) => void;
   defaultDir?: SortDir;
   align?: "left" | "center";
+  /** Hover explanation for this column. Adds a dotted underline cue. */
+  tooltip?: ReactNode;
   className?: string;
 }
 
@@ -59,23 +66,37 @@ export function SortHeader({
   onSort,
   defaultDir = "asc",
   align = "center",
+  tooltip,
   className,
 }: SortHeaderProps) {
   const active = sort?.key === sortKey;
-  const arrow = !active ? "↕" : sort!.dir === "asc" ? "▲" : "▼";
+  const button = (
+    <button
+      type="button"
+      onClick={() => onSort(sortKey, defaultDir)}
+      className={cn(
+        "inline-flex items-center gap-1 w-full uppercase font-semibold cursor-pointer select-none transition-colors",
+        active ? "text-amber-400" : "hover:text-primary",
+        align === "center" ? "justify-center" : "justify-start",
+      )}
+    >
+      <span className={cn(tooltip && "underline decoration-dotted decoration-from-font underline-offset-4")}>
+        {label}
+      </span>
+    </button>
+  );
   return (
     <th className={className} aria-sort={active ? (sort!.dir === "asc" ? "ascending" : "descending") : "none"}>
-      <button
-        type="button"
-        onClick={() => onSort(sortKey, defaultDir)}
-        className={cn(
-          "inline-flex items-center gap-1 w-full uppercase font-semibold cursor-pointer select-none hover:text-primary transition-colors",
-          align === "center" ? "justify-center" : "justify-start",
-        )}
-      >
-        <span>{label}</span>
-        <span className={cn("text-[10px] leading-none", active ? "opacity-100" : "opacity-40")}>{arrow}</span>
-      </button>
+      {tooltip ? (
+        <Tooltip>
+          <TooltipTrigger asChild>{button}</TooltipTrigger>
+          <TooltipContent className="max-w-[260px] text-center font-normal normal-case leading-snug">
+            {tooltip}
+          </TooltipContent>
+        </Tooltip>
+      ) : (
+        button
+      )}
     </th>
   );
 }

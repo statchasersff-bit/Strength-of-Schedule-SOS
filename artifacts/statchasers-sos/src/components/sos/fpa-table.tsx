@@ -47,22 +47,22 @@ export function FpaTable({ filters }: FpaTableProps) {
       <table className="w-full text-sm text-left border-collapse">
         <thead className="text-xs uppercase bg-foreground text-background sticky top-0 z-20">
           <tr>
-            <SortHeader label="Defense" sortKey="defense" sort={sort} onSort={toggle} align="left" className="sticky left-0 bg-foreground px-4 py-3 border-b border-r border-border z-30 min-w-[120px]" />
-            <SortHeader label="Rank" sortKey="rank" sort={sort} onSort={toggle} className="px-4 py-3 border-b border-r border-border min-w-[80px]" />
-            <SortHeader label="Raw Pts" sortKey="raw" sort={sort} onSort={toggle} defaultDir="desc" className="px-4 py-3 border-b border-r border-border min-w-[120px]" />
-            <SortHeader label="Adj Pts" sortKey="adj" sort={sort} onSort={toggle} defaultDir="desc" className="px-4 py-3 border-b border-r border-border min-w-[120px]" />
-            <SortHeader label="Difficulty" sortKey="difficulty" sort={sort} onSort={toggle} className="px-4 py-3 border-b border-border min-w-[100px]" />
+            <SortHeader label="Defense" sortKey="defense" sort={sort} onSort={toggle} align="left" tooltip="Defensive team, based on 2025 results vs this position." className="sticky left-0 bg-foreground px-[11px] py-3 border-b border-r border-border z-30 min-w-[clamp(92px,9vw,108px)]" />
+            <SortHeader label="Rank" sortKey="rank" sort={sort} onSort={toggle} tooltip="Difficulty rank vs this position. 1 = toughest (fewest adjusted points allowed), 32 = easiest." className="px-[11px] py-3 border-b border-r border-border min-w-[clamp(61px,6vw,72px)]" />
+            <SortHeader label="Raw Pts" sortKey="raw" sort={sort} onSort={toggle} defaultDir="desc" tooltip="Raw fantasy points allowed to this position per game (2025 baseline), before opponent adjustment." className="px-[11px] py-3 border-b border-r border-border min-w-[clamp(92px,9vw,108px)]" />
+            <SortHeader label="Adj Pts" sortKey="adj" sort={sort} onSort={toggle} defaultDir="desc" tooltip="Opponent-adjusted points allowed: raw minus how strong the offenses faced were vs league average. This is what the rank is based on." className="px-[11px] py-3 border-b border-r border-border min-w-[clamp(92px,9vw,108px)]" />
+            <SortHeader label="Difficulty" sortKey="difficulty" sort={sort} onSort={toggle} tooltip="Bucket from rank: 1-5 Very Tough, 6-10 Tough, 11-22 Neutral, 23-27 Favorable, 28-32 Smash Spot." className="px-[11px] py-3 border-b border-border min-w-[clamp(77px,7.5vw,90px)]" />
           </tr>
         </thead>
         <tbody className="font-mono">
           {(sorted ?? []).map((row, i) => (
             <tr key={row.defenseTeam} data-testid={`fpa-row-${row.defenseTeam}`} className={cn("border-b border-border/50 hover:bg-muted/20 transition-colors", i % 2 === 0 ? "bg-transparent" : "bg-muted/10")}>
-              <td className="sticky left-0 bg-card px-4 py-2 border-r border-border font-semibold flex items-center gap-2 z-10">
+              <td className="sticky left-0 bg-card px-[11px] py-2 border-r border-border font-semibold flex items-center gap-2 z-10">
                 <span className="text-foreground">{row.defenseTeam}</span>
               </td>
-              <td className="px-4 py-2 border-r border-border text-center font-bold">{row.rank}</td>
-              <td className="px-4 py-2 border-r border-border text-center text-muted-foreground">{row.rawPointsAllowed.toFixed(1)}</td>
-              <td className="px-4 py-2 border-r border-border text-center font-bold text-primary">{row.adjustedPointsAllowed.toFixed(1)}</td>
+              <td className="px-[11px] py-2 border-r border-border text-center font-bold">{row.rank}</td>
+              <td className="px-[11px] py-2 border-r border-border text-center text-muted-foreground">{row.rawPointsAllowed.toFixed(1)}</td>
+              <td className="px-[11px] py-2 border-r border-border text-center font-bold text-primary">{row.adjustedPointsAllowed.toFixed(1)}</td>
               <td className="px-1 py-1 text-center text-xs font-semibold p-0.5">
                 <div className={cn("w-full h-full flex items-center justify-center py-2 rounded-sm", getDifficultyColorClass(row.difficultyBucket))}>
                   {row.difficultyBucket}

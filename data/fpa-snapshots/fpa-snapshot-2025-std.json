@@ -1,0 +1,1891 @@
+{
+  "season": 2025,
+  "scoring": "STANDARD",
+  "updatedAt": "2026-06-08T13:52:29.561Z",
+  "positions": {
+    "QB": {
+      "leagueAvg": 17.140156249999997,
+      "defenses": [
+        {
+          "defenseTeam": "MIN",
+          "raw": 12.08625,
+          "adj": 11.872109375,
+          "rank": 1,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "HOU",
+          "raw": 13.20625,
+          "adj": 12.752343749999994,
+          "rank": 2,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "PHI",
+          "raw": 15.143749999999999,
+          "adj": 13.670624999999996,
+          "rank": 3,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "CLE",
+          "raw": 13.43625,
+          "adj": 14.100859374999997,
+          "rank": 4,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "CAR",
+          "raw": 14.728750000000002,
+          "adj": 14.305859374999997,
+          "rank": 5,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "LAC",
+          "raw": 13.89375,
+          "adj": 14.427187499999995,
+          "rank": 6,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "NO",
+          "raw": 14.865,
+          "adj": 14.934062500000001,
+          "rank": 7,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "DEN",
+          "raw": 15.125000000000002,
+          "adj": 14.968046875,
+          "rank": 8,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "BUF",
+          "raw": 14.09125,
+          "adj": 15.043749999999998,
+          "rank": 9,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "KC",
+          "raw": 16.342499999999998,
+          "adj": 15.469296874999998,
+          "rank": 10,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "GB",
+          "raw": 15.87375,
+          "adj": 15.729999999999995,
+          "rank": 11,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "SEA",
+          "raw": 15.611249999999998,
+          "adj": 15.954609374999997,
+          "rank": 12,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "LV",
+          "raw": 17.326249999999998,
+          "adj": 16.283671874999992,
+          "rank": 13,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "LAR",
+          "raw": 16.07375,
+          "adj": 16.522343749999997,
+          "rank": 14,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "NE",
+          "raw": 15.66125,
+          "adj": 16.923984375,
+          "rank": 15,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "ARI",
+          "raw": 16.991250000000004,
+          "adj": 17.020937500000002,
+          "rank": 16,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "ATL",
+          "raw": 16.91625,
+          "adj": 17.143437499999997,
+          "rank": 17,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "JAX",
+          "raw": 17.534999999999997,
+          "adj": 17.720859374999993,
+          "rank": 18,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "IND",
+          "raw": 17.58625,
+          "adj": 18.118124999999996,
+          "rank": 19,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "SF",
+          "raw": 17.99875,
+          "adj": 18.174687499999997,
+          "rank": 20,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "BAL",
+          "raw": 18.32875,
+          "adj": 18.346249999999998,
+          "rank": 21,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "TEN",
+          "raw": 19.13125,
+          "adj": 18.655468749999997,
+          "rank": 22,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "NYG",
+          "raw": 19.45875,
+          "adj": 18.658281249999995,
+          "rank": 23,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "DET",
+          "raw": 19.017500000000002,
+          "adj": 18.889999999999997,
+          "rank": 24,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "MIA",
+          "raw": 18.815,
+          "adj": 18.990624999999994,
+          "rank": 25,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "NYJ",
+          "raw": 19.392500000000002,
+          "adj": 19.490234374999996,
+          "rank": 26,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "PIT",
+          "raw": 19.56625,
+          "adj": 19.848125,
+          "rank": 27,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "WAS",
+          "raw": 20.437499999999996,
+          "adj": 20.005078124999994,
+          "rank": 28,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "CIN",
+          "raw": 19.943750000000005,
+          "adj": 20.123515625,
+          "rank": 29,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "CHI",
+          "raw": 19.689999999999998,
+          "adj": 20.224296874999997,
+          "rank": 30,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "TB",
+          "raw": 20.32125,
+          "adj": 20.418437499999996,
+          "rank": 31,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "DAL",
+          "raw": 23.890000000000004,
+          "adj": 23.697890625000003,
+          "rank": 32,
+          "bucket": "SMASH_SPOT"
+        }
+      ],
+      "players": [
+        {
+          "playerId": "00-0034857",
+          "playerName": "Josh Allen",
+          "baselineTeam": "BUF",
+          "totalPoints": 374.6
+        },
+        {
+          "playerId": "00-0039851",
+          "playerName": "Drake Maye",
+          "baselineTeam": "NE",
+          "totalPoints": 343.2
+        },
+        {
+          "playerId": "00-0026498",
+          "playerName": "Matthew Stafford",
+          "baselineTeam": "LAR",
+          "totalPoints": 331.7
+        },
+        {
+          "playerId": "00-0036971",
+          "playerName": "Trevor Lawrence",
+          "baselineTeam": "JAX",
+          "totalPoints": 326.9
+        },
+        {
+          "playerId": "00-0033077",
+          "playerName": "Dak Prescott",
+          "baselineTeam": "DAL",
+          "totalPoints": 323.1
+        },
+        {
+          "playerId": "00-0036389",
+          "playerName": "Jalen Hurts",
+          "baselineTeam": "PHI",
+          "totalPoints": 307.1
+        },
+        {
+          "playerId": "00-0039918",
+          "playerName": "Caleb Williams",
+          "baselineTeam": "CHI",
+          "totalPoints": 305.6
+        },
+        {
+          "playerId": "00-0039732",
+          "playerName": "Bo Nix",
+          "baselineTeam": "DEN",
+          "totalPoints": 305.3
+        },
+        {
+          "playerId": "00-0036355",
+          "playerName": "Justin Herbert",
+          "baselineTeam": "LAC",
+          "totalPoints": 299.9
+        },
+        {
+          "playerId": "00-0033873",
+          "playerName": "Patrick Mahomes",
+          "baselineTeam": "KC",
+          "totalPoints": 295.7
+        },
+        {
+          "playerId": "00-0033106",
+          "playerName": "Jared Goff",
+          "baselineTeam": "DET",
+          "totalPoints": 288.8
+        },
+        {
+          "playerId": "00-0034855",
+          "playerName": "Baker Mayfield",
+          "baselineTeam": "TB",
+          "totalPoints": 268.7
+        },
+        {
+          "playerId": "00-0036264",
+          "playerName": "Jordan Love",
+          "baselineTeam": "GB",
+          "totalPoints": 241.1
+        },
+        {
+          "playerId": "00-0034869",
+          "playerName": "Sam Darnold",
+          "baselineTeam": "SEA",
+          "totalPoints": 240.6
+        },
+        {
+          "playerId": "00-0035710",
+          "playerName": "Daniel Jones",
+          "baselineTeam": "IND",
+          "totalPoints": 234.4
+        },
+        {
+          "playerId": "00-0040691",
+          "playerName": "Jaxson Dart",
+          "baselineTeam": "NYG",
+          "totalPoints": 226.2
+        },
+        {
+          "playerId": "00-0033119",
+          "playerName": "Jacoby Brissett",
+          "baselineTeam": "ARI",
+          "totalPoints": 218.8
+        },
+        {
+          "playerId": "00-0023459",
+          "playerName": "Aaron Rodgers",
+          "baselineTeam": "PIT",
+          "totalPoints": 215.3
+        },
+        {
+          "playerId": "00-0039150",
+          "playerName": "Bryce Young",
+          "baselineTeam": "CAR",
+          "totalPoints": 211.5
+        },
+        {
+          "playerId": "00-0034796",
+          "playerName": "Lamar Jackson",
+          "baselineTeam": "BAL",
+          "totalPoints": 200.4
+        },
+        {
+          "playerId": "00-0039163",
+          "playerName": "C.J. Stroud",
+          "baselineTeam": "HOU",
+          "totalPoints": 199.3
+        },
+        {
+          "playerId": "00-0030565",
+          "playerName": "Geno Smith",
+          "baselineTeam": "LV",
+          "totalPoints": 190.9
+        },
+        {
+          "playerId": "00-0040676",
+          "playerName": "Cam Ward",
+          "baselineTeam": "TEN",
+          "totalPoints": 184.5
+        },
+        {
+          "playerId": "00-0037834",
+          "playerName": "Brock Purdy",
+          "baselineTeam": "SF",
+          "totalPoints": 181.2
+        },
+        {
+          "playerId": "00-0036212",
+          "playerName": "Tua Tagovailoa",
+          "baselineTeam": "MIA",
+          "totalPoints": 175.7
+        },
+        {
+          "playerId": "00-0026158",
+          "playerName": "Joe Flacco",
+          "baselineTeam": "CIN",
+          "totalPoints": 156.5
+        },
+        {
+          "playerId": "00-0036945",
+          "playerName": "Justin Fields",
+          "baselineTeam": "NYJ",
+          "totalPoints": 143.7
+        },
+        {
+          "playerId": "00-0040743",
+          "playerName": "Tyler Shough",
+          "baselineTeam": "NO",
+          "totalPoints": 141.2
+        },
+        {
+          "playerId": "00-0036972",
+          "playerName": "Mac Jones",
+          "baselineTeam": "SF",
+          "totalPoints": 136
+        },
+        {
+          "playerId": "00-0032268",
+          "playerName": "Marcus Mariota",
+          "baselineTeam": "WAS",
+          "totalPoints": 132.5
+        },
+        {
+          "playerId": "00-0039923",
+          "playerName": "J.J. McCarthy",
+          "baselineTeam": "MIN",
+          "totalPoints": 129.4
+        },
+        {
+          "playerId": "00-0039917",
+          "playerName": "Michael Penix Jr.",
+          "baselineTeam": "ATL",
+          "totalPoints": 123.3
+        },
+        {
+          "playerId": "00-0036442",
+          "playerName": "Joe Burrow",
+          "baselineTeam": "CIN",
+          "totalPoints": 117.3
+        },
+        {
+          "playerId": "00-0039910",
+          "playerName": "Jayden Daniels",
+          "baselineTeam": "WAS",
+          "totalPoints": 117.3
+        },
+        {
+          "playerId": "00-0039376",
+          "playerName": "Spencer Rattler",
+          "baselineTeam": "NO",
+          "totalPoints": 103.1
+        },
+        {
+          "playerId": "00-0029604",
+          "playerName": "Kirk Cousins",
+          "baselineTeam": "ATL",
+          "totalPoints": 98.3
+        },
+        {
+          "playerId": "00-0040668",
+          "playerName": "Shedeur Sanders",
+          "baselineTeam": "CLE",
+          "totalPoints": 89.9
+        },
+        {
+          "playerId": "00-0035228",
+          "playerName": "Kyler Murray",
+          "baselineTeam": "ARI",
+          "totalPoints": 80.8
+        },
+        {
+          "playerId": "00-0032950",
+          "playerName": "Carson Wentz",
+          "baselineTeam": "MIN",
+          "totalPoints": 75.3
+        },
+        {
+          "playerId": "00-0040704",
+          "playerName": "Dillon Gabriel",
+          "baselineTeam": "CLE",
+          "totalPoints": 72.1
+        }
+      ]
+    },
+    "RB": {
+      "leagueAvg": 18.000703125,
+      "defenses": [
+        {
+          "defenseTeam": "SEA",
+          "raw": 13.549999999999999,
+          "adj": 13.847656250000002,
+          "rank": 1,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "PIT",
+          "raw": 14.73125,
+          "adj": 14.195781249999996,
+          "rank": 2,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "LAR",
+          "raw": 15.943750000000001,
+          "adj": 14.909609374999999,
+          "rank": 3,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "NE",
+          "raw": 14.756250000000001,
+          "adj": 14.974453125,
+          "rank": 4,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "JAX",
+          "raw": 14.187500000000002,
+          "adj": 15.0371875,
+          "rank": 5,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "MIN",
+          "raw": 16.681249999999995,
+          "adj": 15.320468749999993,
+          "rank": 6,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "KC",
+          "raw": 15.731250000000003,
+          "adj": 15.801015625000002,
+          "rank": 7,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "HOU",
+          "raw": 15.8375,
+          "adj": 15.83703125,
+          "rank": 8,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "CLE",
+          "raw": 17.49875,
+          "adj": 16.276171875000003,
+          "rank": 9,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "GB",
+          "raw": 17.081250000000004,
+          "adj": 16.46390625,
+          "rank": 10,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "IND",
+          "raw": 16.29375,
+          "adj": 16.468671875,
+          "rank": 11,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "DET",
+          "raw": 16.225,
+          "adj": 16.796562500000004,
+          "rank": 12,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "DEN",
+          "raw": 14.73125,
+          "adj": 16.806718749999995,
+          "rank": 13,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "LAC",
+          "raw": 15.48125,
+          "adj": 16.918359374999998,
+          "rank": 14,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "NO",
+          "raw": 18.15625,
+          "adj": 17.150078125,
+          "rank": 15,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "BAL",
+          "raw": 17.3625,
+          "adj": 17.413750000000004,
+          "rank": 16,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "TB",
+          "raw": 18.45625,
+          "adj": 17.65625,
+          "rank": 17,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "MIA",
+          "raw": 17.775000000000002,
+          "adj": 17.69046875,
+          "rank": 18,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "SF",
+          "raw": 17.368750000000002,
+          "adj": 17.824921874999998,
+          "rank": 19,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "CHI",
+          "raw": 17.337500000000002,
+          "adj": 17.849609375,
+          "rank": 20,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "ATL",
+          "raw": 18.1875,
+          "adj": 18.052890625,
+          "rank": 21,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "PHI",
+          "raw": 19.237500000000004,
+          "adj": 19.155390625000003,
+          "rank": 22,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "CAR",
+          "raw": 20.124999999999996,
+          "adj": 19.316093749999997,
+          "rank": 23,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "TEN",
+          "raw": 18.687500000000004,
+          "adj": 19.551093750000003,
+          "rank": 24,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "LV",
+          "raw": 19.3375,
+          "adj": 20.360078124999994,
+          "rank": 25,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "BUF",
+          "raw": 20.931250000000002,
+          "adj": 21.210234375,
+          "rank": 26,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "DAL",
+          "raw": 20.056250000000002,
+          "adj": 21.3153125,
+          "rank": 27,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "WAS",
+          "raw": 22.431250000000006,
+          "adj": 22.039375000000003,
+          "rank": 28,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "NYG",
+          "raw": 21.21875,
+          "adj": 22.040546875000004,
+          "rank": 29,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "ARI",
+          "raw": 22.906250000000004,
+          "adj": 22.117890625000005,
+          "rank": 30,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "NYJ",
+          "raw": 23.05625,
+          "adj": 22.151484374999995,
+          "rank": 31,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "CIN",
+          "raw": 24.661250000000006,
+          "adj": 23.473437500000003,
+          "rank": 32,
+          "bucket": "SMASH_SPOT"
+        }
+      ],
+      "players": [
+        {
+          "playerId": "00-0036223",
+          "playerName": "Jonathan Taylor",
+          "baselineTeam": "IND",
+          "totalPoints": 312.4
+        },
+        {
+          "playerId": "00-0033280",
+          "playerName": "Christian McCaffrey",
+          "baselineTeam": "SF",
+          "totalPoints": 308.9
+        },
+        {
+          "playerId": "00-0038542",
+          "playerName": "Bijan Robinson",
+          "baselineTeam": "ATL",
+          "totalPoints": 287.5
+        },
+        {
+          "playerId": "00-0039139",
+          "playerName": "Jahmyr Gibbs",
+          "baselineTeam": "DET",
+          "totalPoints": 272.6
+        },
+        {
+          "playerId": "00-0037248",
+          "playerName": "James Cook",
+          "baselineTeam": "BUF",
+          "totalPoints": 267.7
+        },
+        {
+          "playerId": "00-0039040",
+          "playerName": "De'Von Achane",
+          "baselineTeam": "MIA",
+          "totalPoints": 255.8
+        },
+        {
+          "playerId": "00-0032764",
+          "playerName": "Derrick Henry",
+          "baselineTeam": "BAL",
+          "totalPoints": 251.9
+        },
+        {
+          "playerId": "00-0037840",
+          "playerName": "Kyren Williams",
+          "baselineTeam": "LAR",
+          "totalPoints": 219.2
+        },
+        {
+          "playerId": "00-0036973",
+          "playerName": "Travis Etienne",
+          "baselineTeam": "JAX",
+          "totalPoints": 214.1
+        },
+        {
+          "playerId": "00-0036997",
+          "playerName": "Javonte Williams",
+          "baselineTeam": "DAL",
+          "totalPoints": 207.8
+        },
+        {
+          "playerId": "00-0035700",
+          "playerName": "Josh Jacobs",
+          "baselineTeam": "GB",
+          "totalPoints": 201.1
+        },
+        {
+          "playerId": "00-0038597",
+          "playerName": "Chase Brown",
+          "baselineTeam": "CIN",
+          "totalPoints": 198.6
+        },
+        {
+          "playerId": "00-0034844",
+          "playerName": "Saquon Barkley",
+          "baselineTeam": "PHI",
+          "totalPoints": 195.3
+        },
+        {
+          "playerId": "00-0036275",
+          "playerName": "D'Andre Swift",
+          "baselineTeam": "CHI",
+          "totalPoints": 189.8
+        },
+        {
+          "playerId": "00-0040122",
+          "playerName": "Ashton Jeanty",
+          "baselineTeam": "LV",
+          "totalPoints": 180.7
+        },
+        {
+          "playerId": "00-0036139",
+          "playerName": "Rico Dowdle",
+          "baselineTeam": "CAR",
+          "totalPoints": 176.3
+        },
+        {
+          "playerId": "00-0038120",
+          "playerName": "Breece Hall",
+          "baselineTeam": "NYJ",
+          "totalPoints": 171.7
+        },
+        {
+          "playerId": "00-0037228",
+          "playerName": "Jaylen Warren",
+          "baselineTeam": "PIT",
+          "totalPoints": 167.2
+        },
+        {
+          "playerId": "00-0040730",
+          "playerName": "RJ Harvey",
+          "baselineTeam": "DEN",
+          "totalPoints": 156.3
+        },
+        {
+          "playerId": "00-0040734",
+          "playerName": "TreVeyon Henderson",
+          "baselineTeam": "NE",
+          "totalPoints": 153.9
+        },
+        {
+          "playerId": "00-0038134",
+          "playerName": "Kenneth Walker III",
+          "baselineTeam": "SEA",
+          "totalPoints": 147.6
+        },
+        {
+          "playerId": "00-0035261",
+          "playerName": "Tony Pollard",
+          "baselineTeam": "TEN",
+          "totalPoints": 146.3
+        },
+        {
+          "playerId": "00-0039165",
+          "playerName": "Zach Charbonnet",
+          "baselineTeam": "SEA",
+          "totalPoints": 145.7
+        },
+        {
+          "playerId": "00-0040784",
+          "playerName": "Quinshon Judkins",
+          "baselineTeam": "CLE",
+          "totalPoints": 143.8
+        },
+        {
+          "playerId": "00-0035685",
+          "playerName": "David Montgomery",
+          "baselineTeam": "DET",
+          "totalPoints": 137.4
+        },
+        {
+          "playerId": "00-0036919",
+          "playerName": "Kenneth Gainwell",
+          "baselineTeam": "PIT",
+          "totalPoints": 134.9
+        },
+        {
+          "playerId": "00-0040242",
+          "playerName": "Jacory Croskey-Merritt",
+          "baselineTeam": "WAS",
+          "totalPoints": 128.4
+        },
+        {
+          "playerId": "00-0033923",
+          "playerName": "Kareem Hunt",
+          "baselineTeam": "KC",
+          "totalPoints": 123.9
+        },
+        {
+          "playerId": "00-0040236",
+          "playerName": "Kyle Monangai",
+          "baselineTeam": "CHI",
+          "totalPoints": 123.8
+        },
+        {
+          "playerId": "00-0040583",
+          "playerName": "Woody Marks",
+          "baselineTeam": "HOU",
+          "totalPoints": 116.3
+        },
+        {
+          "playerId": "00-0036875",
+          "playerName": "Rhamondre Stevenson",
+          "baselineTeam": "NE",
+          "totalPoints": 113.5
+        },
+        {
+          "playerId": "00-0039738",
+          "playerName": "Blake Corum",
+          "baselineTeam": "LAR",
+          "totalPoints": 107.3
+        },
+        {
+          "playerId": "00-0037263",
+          "playerName": "Tyler Allgeier",
+          "baselineTeam": "ATL",
+          "totalPoints": 107.1
+        },
+        {
+          "playerId": "00-0037525",
+          "playerName": "Jordan Mason",
+          "baselineTeam": "MIN",
+          "totalPoints": 105.5
+        },
+        {
+          "playerId": "00-0036158",
+          "playerName": "J.K. Dobbins",
+          "baselineTeam": "DEN",
+          "totalPoints": 104.9
+        },
+        {
+          "playerId": "00-0039384",
+          "playerName": "Tyrone Tracy Jr.",
+          "baselineTeam": "NYG",
+          "totalPoints": 104.9
+        },
+        {
+          "playerId": "00-0040715",
+          "playerName": "Cam Skattebo",
+          "baselineTeam": "NYG",
+          "totalPoints": 103.7
+        },
+        {
+          "playerId": "00-0040666",
+          "playerName": "Omarion Hampton",
+          "baselineTeam": "LAC",
+          "totalPoints": 103.7
+        },
+        {
+          "playerId": "00-0039391",
+          "playerName": "Kimani Vidal",
+          "baselineTeam": "LAC",
+          "totalPoints": 100.9
+        },
+        {
+          "playerId": "00-0037256",
+          "playerName": "Rachaad White",
+          "baselineTeam": "TB",
+          "totalPoints": 98.9
+        }
+      ]
+    },
+    "WR": {
+      "leagueAvg": 19.9176171875,
+      "defenses": [
+        {
+          "defenseTeam": "PHI",
+          "raw": 16.525,
+          "adj": 14.3105078125,
+          "rank": 1,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "MIN",
+          "raw": 15.743750000000002,
+          "adj": 14.826679687499997,
+          "rank": 2,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "HOU",
+          "raw": 15.506250000000001,
+          "adj": 15.311367187500004,
+          "rank": 3,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "DEN",
+          "raw": 15.6875,
+          "adj": 15.644101562499998,
+          "rank": 4,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "SEA",
+          "raw": 16.69375,
+          "adj": 16.5625390625,
+          "rank": 5,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "KC",
+          "raw": 17.49375,
+          "adj": 16.6386328125,
+          "rank": 6,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "CAR",
+          "raw": 17.425000000000004,
+          "adj": 17.018320312500002,
+          "rank": 7,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "ARI",
+          "raw": 19.01875,
+          "adj": 17.3508203125,
+          "rank": 8,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "LAC",
+          "raw": 17.345000000000002,
+          "adj": 18.060507812500003,
+          "rank": 9,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "NO",
+          "raw": 17.706249999999997,
+          "adj": 18.221835937499996,
+          "rank": 10,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "CLE",
+          "raw": 16.45625,
+          "adj": 18.373476562500002,
+          "rank": 11,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "BUF",
+          "raw": 17.45625,
+          "adj": 18.7366015625,
+          "rank": 12,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "JAX",
+          "raw": 19.55625,
+          "adj": 18.792226562499998,
+          "rank": 13,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "CIN",
+          "raw": 17.236250000000002,
+          "adj": 18.799179687500004,
+          "rank": 14,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "TB",
+          "raw": 19.39375,
+          "adj": 19.6523046875,
+          "rank": 15,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "LV",
+          "raw": 21.218750000000004,
+          "adj": 19.907460937500005,
+          "rank": 16,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "GB",
+          "raw": 20.512500000000003,
+          "adj": 20.033320312500003,
+          "rank": 17,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "SF",
+          "raw": 20.775,
+          "adj": 20.2664453125,
+          "rank": 18,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "NYJ",
+          "raw": 19.9875,
+          "adj": 20.3280078125,
+          "rank": 19,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "MIA",
+          "raw": 19.325,
+          "adj": 21.132460937499996,
+          "rank": 20,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "LAR",
+          "raw": 21.200000000000006,
+          "adj": 21.218789062500004,
+          "rank": 21,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "NYG",
+          "raw": 22.55,
+          "adj": 21.308710937500003,
+          "rank": 22,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "ATL",
+          "raw": 22.199999999999996,
+          "adj": 22.079257812499996,
+          "rank": 23,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "PIT",
+          "raw": 21.85,
+          "adj": 22.1141015625,
+          "rank": 24,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "WAS",
+          "raw": 23.306250000000002,
+          "adj": 22.1342578125,
+          "rank": 25,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "TEN",
+          "raw": 23.41875,
+          "adj": 22.232070312499996,
+          "rank": 26,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "NE",
+          "raw": 19.156250000000004,
+          "adj": 22.737773437500003,
+          "rank": 27,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "BAL",
+          "raw": 22.925000000000004,
+          "adj": 22.86449218750001,
+          "rank": 28,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "IND",
+          "raw": 23.03125,
+          "adj": 23.392929687500004,
+          "rank": 29,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "DET",
+          "raw": 24.826249999999998,
+          "adj": 24.3497265625,
+          "rank": 30,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "CHI",
+          "raw": 23.91875,
+          "adj": 24.7374609375,
+          "rank": 31,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "DAL",
+          "raw": 27.91875,
+          "adj": 28.2273828125,
+          "rank": 32,
+          "bucket": "SMASH_SPOT"
+        }
+      ],
+      "players": [
+        {
+          "playerId": "00-0038543",
+          "playerName": "Jaxon Smith-Njigba",
+          "baselineTeam": "SEA",
+          "totalPoints": 232.5
+        },
+        {
+          "playerId": "00-0039075",
+          "playerName": "Puka Nacua",
+          "baselineTeam": "LAR",
+          "totalPoints": 230
+        },
+        {
+          "playerId": "00-0037247",
+          "playerName": "George Pickens",
+          "baselineTeam": "DAL",
+          "totalPoints": 198
+        },
+        {
+          "playerId": "00-0036963",
+          "playerName": "Amon-Ra St. Brown",
+          "baselineTeam": "DET",
+          "totalPoints": 193.1
+        },
+        {
+          "playerId": "00-0036900",
+          "playerName": "Ja'Marr Chase",
+          "baselineTeam": "CIN",
+          "totalPoints": 173
+        },
+        {
+          "playerId": "00-0037239",
+          "playerName": "Chris Olave",
+          "baselineTeam": "NO",
+          "totalPoints": 169
+        },
+        {
+          "playerId": "00-0031381",
+          "playerName": "Davante Adams",
+          "baselineTeam": "LAR",
+          "totalPoints": 162.9
+        },
+        {
+          "playerId": "00-0036554",
+          "playerName": "Nico Collins",
+          "baselineTeam": "HOU",
+          "totalPoints": 155.2
+        },
+        {
+          "playerId": "00-0037240",
+          "playerName": "Jameson Williams",
+          "baselineTeam": "DET",
+          "totalPoints": 147.5
+        },
+        {
+          "playerId": "00-0034348",
+          "playerName": "Courtland Sutton",
+          "baselineTeam": "DEN",
+          "totalPoints": 145.2
+        },
+        {
+          "playerId": "00-0035676",
+          "playerName": "A.J. Brown",
+          "baselineTeam": "PHI",
+          "totalPoints": 142.3
+        },
+        {
+          "playerId": "00-0036410",
+          "playerName": "Tee Higgins",
+          "baselineTeam": "CIN",
+          "totalPoints": 139.9
+        },
+        {
+          "playerId": "00-0040124",
+          "playerName": "Tetairoa McMillan",
+          "baselineTeam": "CAR",
+          "totalPoints": 134.9
+        },
+        {
+          "playerId": "00-0040129",
+          "playerName": "Emeka Egbuka",
+          "baselineTeam": "TB",
+          "totalPoints": 131.9
+        },
+        {
+          "playerId": "00-0039064",
+          "playerName": "Zay Flowers",
+          "baselineTeam": "BAL",
+          "totalPoints": 131.5
+        },
+        {
+          "playerId": "00-0036613",
+          "playerName": "Jaylen Waddle",
+          "baselineTeam": "MIA",
+          "totalPoints": 130.1
+        },
+        {
+          "playerId": "00-0035640",
+          "playerName": "DK Metcalf",
+          "baselineTeam": "PIT",
+          "totalPoints": 128.2
+        },
+        {
+          "playerId": "00-0038559",
+          "playerName": "Michael Wilson",
+          "baselineTeam": "ARI",
+          "totalPoints": 126.7
+        },
+        {
+          "playerId": "00-0038117",
+          "playerName": "Wan'Dale Robinson",
+          "baselineTeam": "NYG",
+          "totalPoints": 125.9
+        },
+        {
+          "playerId": "00-0036358",
+          "playerName": "CeeDee Lamb",
+          "baselineTeam": "DAL",
+          "totalPoints": 125.5
+        },
+        {
+          "playerId": "00-0036252",
+          "playerName": "Michael Pittman",
+          "baselineTeam": "IND",
+          "totalPoints": 121.3
+        },
+        {
+          "playerId": "00-0034827",
+          "playerName": "DJ Moore",
+          "baselineTeam": "CHI",
+          "totalPoints": 121.1
+        },
+        {
+          "playerId": "00-0031588",
+          "playerName": "Stefon Diggs",
+          "baselineTeam": "NE",
+          "totalPoints": 121
+        },
+        {
+          "playerId": "00-0038544",
+          "playerName": "Quentin Johnston",
+          "baselineTeam": "LAC",
+          "totalPoints": 120.2
+        },
+        {
+          "playerId": "00-0037238",
+          "playerName": "Drake London",
+          "baselineTeam": "ATL",
+          "totalPoints": 120.1
+        },
+        {
+          "playerId": "00-0036912",
+          "playerName": "DeVonta Smith",
+          "baselineTeam": "PHI",
+          "totalPoints": 119.6
+        },
+        {
+          "playerId": "00-0039915",
+          "playerName": "Ladd McConkey",
+          "baselineTeam": "LAC",
+          "totalPoints": 114.9
+        },
+        {
+          "playerId": "00-0036259",
+          "playerName": "Jauan Jennings",
+          "baselineTeam": "SF",
+          "totalPoints": 114.8
+        },
+        {
+          "playerId": "00-0035719",
+          "playerName": "Deebo Samuel Sr.",
+          "baselineTeam": "WAS",
+          "totalPoints": 114.1
+        },
+        {
+          "playerId": "00-0039868",
+          "playerName": "Troy Franklin",
+          "baselineTeam": "DEN",
+          "totalPoints": 112.1
+        },
+        {
+          "playerId": "00-0037664",
+          "playerName": "Alec Pierce",
+          "baselineTeam": "IND",
+          "totalPoints": 111.1
+        },
+        {
+          "playerId": "00-0037816",
+          "playerName": "Romeo Doubs",
+          "baselineTeam": "GB",
+          "totalPoints": 110.4
+        },
+        {
+          "playerId": "00-0036322",
+          "playerName": "Justin Jefferson",
+          "baselineTeam": "MIN",
+          "totalPoints": 107.1
+        },
+        {
+          "playerId": "00-0039919",
+          "playerName": "Rome Odunze",
+          "baselineTeam": "CHI",
+          "totalPoints": 102.1
+        },
+        {
+          "playerId": "00-0038563",
+          "playerName": "Tre Tucker",
+          "baselineTeam": "LV",
+          "totalPoints": 101.3
+        },
+        {
+          "playerId": "00-0038606",
+          "playerName": "Parker Washington",
+          "baselineTeam": "JAX",
+          "totalPoints": 100
+        },
+        {
+          "playerId": "00-0030279",
+          "playerName": "Keenan Allen",
+          "baselineTeam": "LAC",
+          "totalPoints": 98.1
+        },
+        {
+          "playerId": "00-0038124",
+          "playerName": "Christian Watson",
+          "baselineTeam": "GB",
+          "totalPoints": 97.4
+        },
+        {
+          "playerId": "00-0039067",
+          "playerName": "Rashee Rice",
+          "baselineTeam": "KC",
+          "totalPoints": 97.1
+        },
+        {
+          "playerId": "00-0034960",
+          "playerName": "Jakobi Meyers",
+          "baselineTeam": "JAX",
+          "totalPoints": 96.4
+        }
+      ]
+    },
+    "TE": {
+      "leagueAvg": 8.06828125,
+      "defenses": [
+        {
+          "defenseTeam": "PHI",
+          "raw": 4.199999999999999,
+          "adj": 4.617109375,
+          "rank": 1,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "BUF",
+          "raw": 5.168749999999999,
+          "adj": 5.347421874999998,
+          "rank": 2,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "BAL",
+          "raw": 6.14375,
+          "adj": 5.6539062499999995,
+          "rank": 3,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "ATL",
+          "raw": 5.875,
+          "adj": 6.163359374999999,
+          "rank": 4,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "LAC",
+          "raw": 6.45,
+          "adj": 6.6636718749999995,
+          "rank": 5,
+          "bucket": "VERY_TOUGH"
+        },
+        {
+          "defenseTeam": "MIN",
+          "raw": 6.6000000000000005,
+          "adj": 6.686250000000001,
+          "rank": 6,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "GB",
+          "raw": 6.64375,
+          "adj": 6.707343750000002,
+          "rank": 7,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "LV",
+          "raw": 6.1125,
+          "adj": 6.76046875,
+          "rank": 8,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "NYG",
+          "raw": 6.6475,
+          "adj": 6.796328124999999,
+          "rank": 9,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "KC",
+          "raw": 6.275,
+          "adj": 6.983906250000001,
+          "rank": 10,
+          "bucket": "TOUGH"
+        },
+        {
+          "defenseTeam": "HOU",
+          "raw": 7.3062499999999995,
+          "adj": 7.0944531249999985,
+          "rank": 11,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "LAR",
+          "raw": 7.1499999999999995,
+          "adj": 7.257031249999998,
+          "rank": 12,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "CHI",
+          "raw": 7.74375,
+          "adj": 7.436718750000001,
+          "rank": 13,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "CLE",
+          "raw": 8.075000000000001,
+          "adj": 7.446484375000001,
+          "rank": 14,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "DAL",
+          "raw": 6.8812500000000005,
+          "adj": 7.505781250000001,
+          "rank": 15,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "TEN",
+          "raw": 8.087499999999999,
+          "adj": 7.547265624999996,
+          "rank": 16,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "NO",
+          "raw": 7.33125,
+          "adj": 7.567578125000002,
+          "rank": 17,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "CAR",
+          "raw": 8.168750000000001,
+          "adj": 7.73609375,
+          "rank": 18,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "DET",
+          "raw": 7.85625,
+          "adj": 7.8432812499999995,
+          "rank": 19,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "SEA",
+          "raw": 8.950000000000001,
+          "adj": 8.404687500000001,
+          "rank": 20,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "DEN",
+          "raw": 8.350000000000001,
+          "adj": 8.781562500000001,
+          "rank": 21,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "SF",
+          "raw": 9.4125,
+          "adj": 8.921875,
+          "rank": 22,
+          "bucket": "NEUTRAL"
+        },
+        {
+          "defenseTeam": "NE",
+          "raw": 8.92,
+          "adj": 8.965447916666667,
+          "rank": 23,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "IND",
+          "raw": 9.325000000000001,
+          "adj": 9.048437499999999,
+          "rank": 24,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "JAX",
+          "raw": 9.1,
+          "adj": 9.160078125,
+          "rank": 25,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "NYJ",
+          "raw": 9.22625,
+          "adj": 9.192031250000001,
+          "rank": 26,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "TB",
+          "raw": 9.9,
+          "adj": 9.477500000000001,
+          "rank": 27,
+          "bucket": "FAVORABLE"
+        },
+        {
+          "defenseTeam": "ARI",
+          "raw": 9.387500000000001,
+          "adj": 9.521875,
+          "rank": 28,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "PIT",
+          "raw": 10.73125,
+          "adj": 10.59453125,
+          "rank": 29,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "MIA",
+          "raw": 10.500000000000002,
+          "adj": 10.684375000000001,
+          "rank": 30,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "WAS",
+          "raw": 10.812499999999996,
+          "adj": 11.292187499999997,
+          "rank": 31,
+          "bucket": "SMASH_SPOT"
+        },
+        {
+          "defenseTeam": "CIN",
+          "raw": 14.900000000000002,
+          "adj": 14.382031249999999,
+          "rank": 32,
+          "bucket": "SMASH_SPOT"
+        }
+      ],
+      "players": [
+        {
+          "playerId": "00-0037744",
+          "playerName": "Trey McBride",
+          "baselineTeam": "ARI",
+          "totalPoints": 183.4
+        },
+        {
+          "playerId": "00-0034351",
+          "playerName": "Dallas Goedert",
+          "baselineTeam": "PHI",
+          "totalPoints": 125.1
+        },
+        {
+          "playerId": "00-0036970",
+          "playerName": "Kyle Pitts",
+          "baselineTeam": "ATL",
+          "totalPoints": 117
+        },
+        {
+          "playerId": "00-0030506",
+          "playerName": "Travis Kelce",
+          "baselineTeam": "KC",
+          "totalPoints": 116
+        },
+        {
+          "playerId": "00-0040663",
+          "playerName": "Harold Fannin Jr.",
+          "baselineTeam": "CLE",
+          "totalPoints": 114.4
+        },
+        {
+          "playerId": "00-0033090",
+          "playerName": "Hunter Henry",
+          "baselineTeam": "NE",
+          "totalPoints": 113.2
+        },
+        {
+          "playerId": "00-0039338",
+          "playerName": "Brock Bowers",
+          "baselineTeam": "LV",
+          "totalPoints": 112.2
+        },
+        {
+          "playerId": "00-0040128",
+          "playerName": "Tyler Warren",
+          "baselineTeam": "IND",
+          "totalPoints": 109.9
+        },
+        {
+          "playerId": "00-0038041",
+          "playerName": "Jake Ferguson",
+          "baselineTeam": "DAL",
+          "totalPoints": 105.6
+        },
+        {
+          "playerId": "00-0033288",
+          "playerName": "George Kittle",
+          "baselineTeam": "SF",
+          "totalPoints": 101.6
+        },
+        {
+          "playerId": "00-0036040",
+          "playerName": "Juwan Johnson",
+          "baselineTeam": "NO",
+          "totalPoints": 98.8
+        },
+        {
+          "playerId": "00-0039793",
+          "playerName": "AJ Barner",
+          "baselineTeam": "SEA",
+          "totalPoints": 93.9
+        },
+        {
+          "playerId": "00-0040126",
+          "playerName": "Colston Loveland",
+          "baselineTeam": "CHI",
+          "totalPoints": 92
+        },
+        {
+          "playerId": "00-0034383",
+          "playerName": "Dalton Schultz",
+          "baselineTeam": "HOU",
+          "totalPoints": 88.4
+        },
+        {
+          "playerId": "00-0038996",
+          "playerName": "Tucker Kraft",
+          "baselineTeam": "GB",
+          "totalPoints": 85.2
+        },
+        {
+          "playerId": "00-0039847",
+          "playerName": "Theo Johnson",
+          "baselineTeam": "NYG",
+          "totalPoints": 82.8
+        },
+        {
+          "playerId": "00-0038933",
+          "playerName": "Dalton Kincaid",
+          "baselineTeam": "BUF",
+          "totalPoints": 82.3
+        },
+        {
+          "playerId": "00-0034753",
+          "playerName": "Mark Andrews",
+          "baselineTeam": "BAL",
+          "totalPoints": 81.6
+        },
+        {
+          "playerId": "00-0040189",
+          "playerName": "Oronde Gadsden II",
+          "baselineTeam": "LAC",
+          "totalPoints": 80.1
+        },
+        {
+          "playerId": "00-0030061",
+          "playerName": "Zach Ertz",
+          "baselineTeam": "WAS",
+          "totalPoints": 76.4
+        },
+        {
+          "playerId": "00-0036244",
+          "playerName": "Colby Parkinson",
+          "baselineTeam": "LAR",
+          "totalPoints": 71.2
+        },
+        {
+          "playerId": "00-0037809",
+          "playerName": "Chig Okonkwo",
+          "baselineTeam": "TEN",
+          "totalPoints": 67.8
+        },
+        {
+          "playerId": "00-0036894",
+          "playerName": "Pat Freiermuth",
+          "baselineTeam": "PIT",
+          "totalPoints": 67.5
+        },
+        {
+          "playerId": "00-0039065",
+          "playerName": "Sam LaPorta",
+          "baselineTeam": "DET",
+          "totalPoints": 66.9
+        },
+        {
+          "playerId": "00-0031610",
+          "playerName": "Darren Waller",
+          "baselineTeam": "MIA",
+          "totalPoints": 64.7
+        },
+        {
+          "playerId": "00-0035229",
+          "playerName": "T.J. Hockenson",
+          "baselineTeam": "MIN",
+          "totalPoints": 61.8
+        },
+        {
+          "playerId": "00-0038935",
+          "playerName": "Brenton Strange",
+          "baselineTeam": "JAX",
+          "totalPoints": 60.8
+        },
+        {
+          "playerId": "00-0037112",
+          "playerName": "Jake Tonges",
+          "baselineTeam": "SF",
+          "totalPoints": 59.3
+        },
+        {
+          "playerId": "00-0035689",
+          "playerName": "Dawson Knox",
+          "baselineTeam": "BUF",
+          "totalPoints": 59.3
+        },
+        {
+          "playerId": "00-0033885",
+          "playerName": "David Njoku",
+          "baselineTeam": "CLE",
+          "totalPoints": 53.3
+        },
+        {
+          "playerId": "00-0033881",
+          "playerName": "Evan Engram",
+          "baselineTeam": "DEN",
+          "totalPoints": 48.3
+        },
+        {
+          "playerId": "00-0038129",
+          "playerName": "Cade Otton",
+          "baselineTeam": "TB",
+          "totalPoints": 47.8
+        },
+        {
+          "playerId": "00-0040584",
+          "playerName": "Gunnar Helm",
+          "baselineTeam": "TEN",
+          "totalPoints": 47.7
+        },
+        {
+          "playerId": "00-0033858",
+          "playerName": "Jonnu Smith",
+          "baselineTeam": "PIT",
+          "totalPoints": 46.8
+        },
+        {
+          "playerId": "00-0036290",
+          "playerName": "Cole Kmet",
+          "baselineTeam": "CHI",
+          "totalPoints": 45.1
+        },
+        {
+          "playerId": "00-0040736",
+          "playerName": "Mason Taylor",
+          "baselineTeam": "NYJ",
+          "totalPoints": 44.9
+        },
+        {
+          "playerId": "00-0038558",
+          "playerName": "Darnell Washington",
+          "baselineTeam": "PIT",
+          "totalPoints": 42.4
+        },
+        {
+          "playerId": "00-0035644",
+          "playerName": "Noah Fant",
+          "baselineTeam": "CIN",
+          "totalPoints": 42.3
+        },
+        {
+          "playerId": "00-0034829",
+          "playerName": "Mike Gesicki",
+          "baselineTeam": "CIN",
+          "totalPoints": 41.4
+        },
+        {
+          "playerId": "00-0040737",
+          "playerName": "Terrance Ferguson",
+          "baselineTeam": "LAR",
+          "totalPoints": 41.1
+        }
+      ]
+    }
+  }
+}

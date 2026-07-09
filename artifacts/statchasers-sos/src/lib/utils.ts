@@ -27,9 +27,9 @@ export function getDifficultyColorClass(
     case "NEUTRAL":
       return "bg-zinc-700 text-zinc-100"
     case "FAVORABLE":
-      return "bg-emerald-800 text-emerald-100"
+      return "bg-emerald-600 text-emerald-50"
     case "SMASH_SPOT":
-      return "bg-emerald-600 text-emerald-50 font-bold"
+      return "bg-emerald-800 text-emerald-100 font-bold"
     default:
       return "bg-zinc-800 text-zinc-400"
   }

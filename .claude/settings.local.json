@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -f build-plugin/statchasers-sos/assets/*)",
+      "Bash(cp dist/public/assets/* build-plugin/statchasers-sos/assets/)",
+      "Bash(cp public/data/sos/*.json build-plugin/statchasers-sos/data/sos/)",
+      "Bash(rm -f statchasers-sos.zip)",
+      "Bash(zip -rq statchasers-sos.zip statchasers-sos)",
+      "Bash(unzip -l statchasers-sos.zip)",
+      "Bash(PORT=3000 BASE_PATH=/ pnpm run build)"
+    ]
+  }
+}
