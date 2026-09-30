@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import { ShadowContainerProvider } from "./lib/shadow-container";
+import { initVitals } from "./lib/vitals";
 import cssText from "./index.css?inline";
 
 /**
@@ -56,6 +57,14 @@ function mount(host: HTMLElement) {
       shadow = host.attachShadow({ mode: "open" });
     }
 
+    // The WordPress shortcode server-renders the tool data (semantic tables)
+    // into the wrapper's light DOM for SEO / no-JS visitors. Attaching the
+    // shadow root already stops it from displaying; drop it from the DOM so
+    // the page never carries the content twice.
+    host
+      .querySelectorAll(":scope > .sos-ssr")
+      .forEach((node) => node.remove());
+
     // --- inline <style> (always refresh so CSS edits take effect via HMR) ---
     let styleEl = shadow.querySelector("style");
     if (!styleEl) {
@@ -87,17 +96,55 @@ function mount(host: HTMLElement) {
   }
 }
 
-function mountAll() {
+/**
+ * Mount into every host currently in the DOM. Returns how many were found so
+ * the bootstrap can decide whether to keep waiting for a late-injected one.
+ * mount() is idempotent (it reuses the shadow/React root), so re-running this
+ * over an already-mounted host is a no-op — safe to call repeatedly.
+ */
+function mountAll(): number {
   const hosts = document.querySelectorAll<HTMLElement>(".sos-app-root");
   if (hosts.length > 0) {
     hosts.forEach(mount);
-  } else {
-    const root = document.getElementById("root");
-    if (root) mount(root);
+    return hosts.length;
   }
+  // Standalone dev shell (index.html) has no `.sos-app-root`, just `#root`.
+  const root = document.getElementById("root");
+  if (root) {
+    mount(root);
+    return 1;
+  }
+  return 0;
 }
 
-mountAll();
+/**
+ * Robust bootstrap for the WordPress/Divi embed. The bundle can start running
+ * at awkward times: before the shortcode markup is parsed, or — with page
+ * builders and "delay JS until interaction" optimizers — after the host is
+ * injected via AJAX. So we (1) wait for the DOM to be ready, (2) try to mount,
+ * and (3) if no host exists yet, watch for one to appear and mount it then,
+ * rather than silently leaving a blank space.
+ */
+function bootstrap() {
+  initVitals();
+  if (mountAll() > 0) return;
+
+  // No host yet — the shortcode markup may be injected later (Divi dynamic
+  // content / AJAX). Watch for it, and give up after a short window so the
+  // observer never lingers on pages that simply don't embed the tool.
+  const observer = new MutationObserver(() => {
+    if (mountAll() > 0) observer.disconnect();
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+  // Safety valve: stop watching after 10s regardless.
+  window.setTimeout(() => observer.disconnect(), 10_000);
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", bootstrap, { once: true });
+} else {
+  bootstrap();
+}
 
 // Tell Vite this module handles its own HMR updates. Without this, any change
 // that touches main.tsx (including transitive CSS updates via the ?inline import)

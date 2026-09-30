@@ -7,7 +7,8 @@
       "Bash(rm -f statchasers-sos.zip)",
       "Bash(zip -rq statchasers-sos.zip statchasers-sos)",
       "Bash(unzip -l statchasers-sos.zip)",
-      "Bash(PORT=3000 BASE_PATH=/ pnpm run build)"
+      "Bash(PORT=3000 BASE_PATH=/ pnpm run build)",
+      "Bash(PORT=3000 BASE_PATH=/ npm run build)"
     ]
   }
 }

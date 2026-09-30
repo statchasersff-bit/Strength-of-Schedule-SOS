@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { FilterState } from "@/hooks/use-filters";
 import { useGetPlayerSos, getGetPlayerSosQueryKey } from "@/lib/sos-client";
-import { cn, getDifficultyColorClass, getPlayerProfileUrl } from "@/lib/utils";
+import { cn, getDifficultyColorClass, getPlayerProfileUrl, abbreviateName } from "@/lib/utils";
 import { WeekCell } from "@workspace/api-client-react";
 import { SortHeader, useSort, type Accessor } from "./sortable";
 import { useCardFocus } from "./use-card-focus";
@@ -10,21 +10,6 @@ import type { CardFocus } from "./insight-cards";
 interface PlayerMatrixProps {
   filters: FilterState;
   focus?: CardFocus | null;
-}
-
-/**
- * "DeVonta Smith" -> "D. Smith" (first initial + last name). Hyphenated last
- * names collapse to the first initial plus the first segment so they don't blow
- * out the column — "Jacory Croskey-Merritt" -> "J. Croskey".
- */
-function abbreviateName(name: string): string {
-  const sp = name.indexOf(" ");
-  if (sp <= 0) return name;
-  const last = name.slice(sp + 1);
-  if (last.includes("-")) {
-    return `${name[0]}. ${last.split("-")[0]}`;
-  }
-  return `${name[0]}. ${last}`;
 }
 
 type PlayerRow = {
@@ -181,14 +166,14 @@ export function PlayerMatrix({ filters, focus }: PlayerMatrixProps) {
                     href={getPlayerProfileUrl(row.playerName) ?? undefined}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[10.1px] text-foreground truncate hover:text-primary hover:underline"
+                    className="text-[11.2px] text-foreground truncate hover:text-primary hover:underline"
                     title={`View ${row.playerName} on StatChasers`}
                   >
                     {compactNames ? abbreviateName(row.playerName) : row.playerName}
                   </a>
                 </div>
               </td>
-              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-muted-foreground">{row.team}</td>
+              <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] text-muted-foreground">{row.team}</td>
               <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.sosRank}</td>
               <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold text-muted-foreground">{row.rosSosRank}</td>
               <td className="px-[var(--pad-x)] py-1 border-r border-border text-center text-[11.2px] font-bold">{row.playoffSosRank}</td>

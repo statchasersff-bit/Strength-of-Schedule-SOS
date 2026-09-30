@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cn, getPlayerProfileUrl } from "@/lib/utils";
+import { cn, getPlayerProfileUrl, abbreviateName } from "@/lib/utils";
 import { useSharedFit, useSharedTruncation, MIN_SCALE } from "./insight-fit";
 
 export type SosInsightTone = "good" | "bad" | "neutral";
@@ -70,13 +70,25 @@ export function SosPlayerInsightCard({
   const titleFit = useSharedFit("insight-title");
   const statFit = useSharedFit("insight-stat");
   const noteFit = useSharedFit("insight-note", { lines: 2 });
-  // Once the name + aFPA row can't share a single line even at the minimum
-  // auto-fit scale, every card switches to a compact layout together: the aFPA
-  // value drops under the player name (so the name keeps the full width) and the
-  // "team · pos" and delta identity row is dropped entirely. `factor` is
-  // 1/MIN_SCALE because the row shrinks to MIN_SCALE before it would truncate.
+  // First line of defense against a cramped name: rather than ellipsis-truncate
+  // it, drop to "F. Lastname" once the *full* name + aFPA can't fit even at the
+  // minimum auto-fit scale. All cards switch together so the row stays uniform.
+  const abbrevFit = useSharedTruncation("insight-name-abbrev", { factor: 1 / MIN_SCALE });
+  const displayName = abbrevFit.hidden ? abbreviateName(playerName) : playerName;
+  // If even the abbreviated name + aFPA can't share a line at the minimum scale,
+  // every card switches to a compact layout together: the aFPA value drops under
+  // the name (which keeps the full width) and the "team · pos" and delta identity
+  // row is dropped. `factor` is 1/MIN_SCALE because the row shrinks to MIN_SCALE
+  // before it would truncate.
   const compactFit = useSharedTruncation("insight-compact", { factor: 1 / MIN_SCALE });
   const compact = compactFit.hidden;
+
+  // Both detectors measure against the same column width, so their box refs
+  // point at the same element.
+  const setColRef = (el: HTMLDivElement | null) => {
+    abbrevFit.boxRef.current = el;
+    compactFit.boxRef.current = el;
+  };
 
   const subName = `${team} · ${position}`;
 
@@ -195,7 +207,7 @@ export function SosPlayerInsightCard({
             className="h-7 w-7 shrink-0 object-contain"
           />
         ) : null}
-        <div ref={compactFit.boxRef} className="min-w-0 flex-1">
+        <div ref={setColRef} className="relative min-w-0 flex-1">
           {/* Row 1: player name (+ the aFPA stat, when both fit on one line).
               Auto-fits down in lockstep with the siblings; when even the
               minimum scale can't fit both, `compact` drops the aFPA from this
@@ -209,7 +221,7 @@ export function SosPlayerInsightCard({
                 className="min-w-0 truncate font-black leading-none tracking-[0.01em] text-foreground hover:text-primary hover:underline"
                 title={`View ${playerName} on StatChasers`}
               >
-                {playerName}
+                {displayName}
               </a>
               {!compact && valueBlock}
             </div>
@@ -220,7 +232,7 @@ export function SosPlayerInsightCard({
               className="pointer-events-none invisible absolute left-0 top-0 flex w-max items-baseline gap-[0.4em]"
               style={{ fontSize: "19.9px" }}
             >
-              <span className="whitespace-nowrap font-black leading-none tracking-[0.01em] text-foreground">{playerName}</span>
+              <span className="whitespace-nowrap font-black leading-none tracking-[0.01em] text-foreground">{displayName}</span>
               {!compact && valueBlock}
             </div>
           </div>
@@ -244,15 +256,28 @@ export function SosPlayerInsightCard({
             </div>
           )}
 
-          {/* Invisible natural-size probe for the compact detector: the full
-              name + aFPA row at design size, so we know when both fit again. */}
+          {/* Invisible probe for the abbreviate detector: the *full* name + aFPA
+              at design size, so we can tell when the full name would truncate
+              (and switch to "F. Lastname") — and restore it when space grows. */}
+          <div
+            ref={abbrevFit.probeRef}
+            aria-hidden="true"
+            className="pointer-events-none invisible absolute left-0 top-0 flex w-max items-baseline gap-[0.4em]"
+            style={{ fontSize: "19.9px" }}
+          >
+            <span className="whitespace-nowrap font-black leading-none tracking-[0.01em] text-foreground">{playerName}</span>
+            {valueBlock}
+          </div>
+          {/* Invisible probe for the compact detector: the *displayed* name (full
+              or abbreviated) + aFPA at design size, so we know when even that no
+              longer fits on one line and the value must restack below. */}
           <div
             ref={compactFit.probeRef}
             aria-hidden="true"
             className="pointer-events-none invisible absolute left-0 top-0 flex w-max items-baseline gap-[0.4em]"
             style={{ fontSize: "19.9px" }}
           >
-            <span className="whitespace-nowrap font-black leading-none tracking-[0.01em] text-foreground">{playerName}</span>
+            <span className="whitespace-nowrap font-black leading-none tracking-[0.01em] text-foreground">{displayName}</span>
             {valueBlock}
           </div>
         </div>

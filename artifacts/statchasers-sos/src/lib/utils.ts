@@ -32,6 +32,22 @@ export function getPlayerProfileUrl(name?: string | null): string | null {
 }
 
 /**
+ * Shorten a player's name to first-initial + last name when the full name is
+ * too wide to fit — "Justin Jefferson" -> "J. Jefferson", and for hyphenated
+ * surnames "Jacory Croskey-Merritt" -> "J. Croskey". Preferred over an ellipsis
+ * truncation, which can hide the part of the name that identifies the player.
+ */
+export function abbreviateName(name: string): string {
+  const sp = name.indexOf(" ")
+  if (sp <= 0) return name
+  const last = name.slice(sp + 1)
+  if (last.includes("-")) {
+    return `${name[0]}. ${last.split("-")[0]}`
+  }
+  return `${name[0]}. ${last}`
+}
+
+/**
  * Map a rest-of-season schedule rank (1 = easiest remaining schedule … 32 =
  * hardest) onto the same difficulty buckets used for weekly/PO matchup cells, so
  * the ROS aFPA-average column can share their green→red shading. Easiest lands in

@@ -27,6 +27,12 @@ export interface SosRuntimeConfig {
     position?: string;
     scoring?: string;
   };
+  /**
+   * Optional URL to beacon real-user Core Web Vitals to (JSON payloads via
+   * navigator.sendBeacon). Independent of gtag/dataLayer, which are used
+   * automatically when present on the host page.
+   */
+  vitalsEndpoint?: string;
 }
 
 export function getRuntimeConfig(): SosRuntimeConfig {
